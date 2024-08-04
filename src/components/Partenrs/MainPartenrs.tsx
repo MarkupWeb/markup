@@ -12,6 +12,8 @@ import { LuBarChart3 } from "react-icons/lu";
 import { HiChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
 import { HiMap } from "react-icons/hi2";
 import { useLocale } from 'next-intl';
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
 
 
 // CAROUSEL DATA
@@ -99,6 +101,8 @@ const settings = {
   // centerMode: true,
   slidesToScroll: 2,
   arrows: true,
+  nextArrow: <NextArrow /> ,
+  prevArrow: <PrevArrow /> ,
   autoplay: false,
   speed: 500,
   cssEase: "linear",
