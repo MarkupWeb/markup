@@ -14,13 +14,12 @@ import heroData from "./heroData";
 import Lottie from "lottie-react";
 import videoClick from "../../../public/lotyFiles/videoClick.json";
 
-
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
 
   // Content translation
   const t = useTranslations("Hero");
-  const heroContent = heroData(t)
+  const heroContent = heroData(t);
 
   const local = useLocale();
 
@@ -28,7 +27,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className={`relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
       >
         <ModalVideo
           channel="youtube"
@@ -40,12 +39,19 @@ const Hero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className={`grid grid-cols-1 gap-8 xl:grid-cols-2 ${local === "ar" ? "__rtl_lang" : ""}`}>
-
+              <div
+                className={`grid grid-cols-1 gap-8 xl:grid-cols-2 ${local === "ar" ? "__rtl_lang" : ""}`}
+              >
                 {heroContent.length >= 1
                   ? heroContent.map((item) => (
                       <div className="" key={item.id}>
-                        <h1 className="mb-5 overflow-hidden text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                        <h1
+                          className={`mb-5 overflow-hidden text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight ${
+                            local === "ar"
+                              ? ""
+                              : "text-[1.5rem] md:text[1.7rem] lg:text[2rem]"
+                          }  `}
+                        >
                           {item.title}{" "}
                           <span className="text-orange-400   ">
                             {/* Style will be inherited from the parent element */}
@@ -70,7 +76,7 @@ const Hero = () => {
                         </p>
 
                         <div className="flex justify-center  md:justify-start ">
-                          <button className="text-md mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-4 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12">
+                          <button className="text-[12px] md:text[14px] lg:text-[16px] mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12">
                             <span className="">{item.btnTitle1}</span>
                             <span className="scale-x transform text-[20px]">
                               <HiOutlinePhone />
@@ -81,10 +87,9 @@ const Hero = () => {
                             className="flex items-center justify-center  text-slate-800 dark:text-white"
                           >
                             <span className="w-[70px] ">
-                            <Lottie animationData={videoClick} />
-
+                              <Lottie animationData={videoClick} />
                             </span>
-                            
+
                             {item.btnTitle2}
                           </button>
                         </div>

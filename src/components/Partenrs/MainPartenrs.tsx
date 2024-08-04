@@ -2,15 +2,12 @@
 
 
 "use client";
-import SectionTitle from "../Common/SectionTitle";
+
 import Image from "next/image";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { LuBarChart3 } from "react-icons/lu";
-import { HiChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
-import { HiMap } from "react-icons/hi2";
 import { useLocale } from 'next-intl';
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
@@ -141,15 +138,15 @@ const MainPartenrs = () => {
       <section  className="" >
         
 
-          <Slider {...settings}>
+          <Slider {...settings} >
             {postData.map((items, i) => (
               <div key={i}>
-                <div className=" flex items-center justify-center shadow-courses m-3  rounded-2xl  px-3 pb-12 pt-3 cursor-pointer   bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark   ">
+                <div  className={` flex items-center justify-center shadow-courses mx-3 my-2  rounded-2xl  px-3 pb-12 pt-3 cursor-pointer   bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}>
                   <div className={`relative rounded-3xl flex justify-center `}>
 
-                    <div  className={`bg-slate-800 dark:bg-white w-[150px] h-[150px] rounded-full flex justify-center items-center shadow-lg ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}>
+                    <div  className={`bg-slate-800 dark:bg-white w-[80px] h-[80px] rounded-full flex justify-center items-center shadow-lg ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}>
                     <span className="">
-                       <Image className="" src={items.imgSrc} alt="partners_logo" width={150} height={150}/>
+                       <Image className="" src={items.imgSrc} alt="partners_logo" width={80} height={80}/>
                     </span>
 
                     </div>
@@ -157,47 +154,25 @@ const MainPartenrs = () => {
                   </div>
 
                   <div className="px-3 ">
-                    <h4 className="pt-6 text-2xl font-bold text-black dark:text-white  ">
+                    <h4 className=" pt-6 text-md md:text[16px]  font-bold text-black dark:text-white  ">
                       {items.heading} 
                     </h4>
                     
 
                     <div>
-                      <h3 className="pt-3 text-base font-normal opacity-75 ">
+                      <h3 className="pt-3 text-[12px] md:text-[14px] font-normal opacity-75 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit.
                       </h3>
                     </div>
 
+{/*                     
+
                     <div>
-                      <h3 className="pt-6 text-base font-normal opacity-75">
+                      <h3 className="pt-6   font-normal opacity-75">
                         {items.name} 
                       </h3>
                     </div>
-
-                    {/* <hr style={{ color: "#C4C4C4" }} />
-
-                    <div className="flex justify-between pt-6">
-                      <div className="flex gap-4">
-                        <span className="text-[24px] text-orange-400 dark:text-white">
-                        <HiMap />
-
-                        </span>
-                        
-                        <h3 className="text-base font-medium text-black opacity-75 dark:text-gray-200">
-                          {items.classes} classes
-                        </h3>
-                      </div>
-                      <div className="flex gap-4 items-center">
-                        <span className="text-[24px] text-orange-400 dark:text-white">
-                          <HiChatBubbleOvalLeftEllipsis />
-                        </span>
-                      
-
-                        <h3 className="text-base font-medium text-black opacity-75 dark:text-gray-200">
-                          {items.students} students
-                        </h3>
-                      </div>
-                    </div> */}
+ */}
 
 
                   </div>
