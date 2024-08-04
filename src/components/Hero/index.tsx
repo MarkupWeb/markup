@@ -11,6 +11,9 @@ import DealImg from "../../../public/images/hero/banner1-2.png";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { useLocale, useTranslations } from "next-intl";
 import heroData from "./heroData";
+import Lottie from "lottie-react";
+import videoClick from "../../../public/lotyFiles/videoClick.json";
+
 
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
@@ -77,13 +80,11 @@ const Hero = () => {
                             onClick={() => setOpen(true)}
                             className="flex items-center justify-center  text-slate-800 dark:text-white"
                           >
-                            <Image
-                              src={"/images/Hero/playbutton.svg"}
-                              alt="button-image"
-                              className="mr-3 rounded-full bg-slate-800 dark:bg-transparent"
-                              width={47}
-                              height={47}
-                            />
+                            <span className="w-[70px] ">
+                            <Lottie animationData={videoClick} />
+
+                            </span>
+                            
                             {item.btnTitle2}
                           </button>
                         </div>
