@@ -44,7 +44,7 @@ export default function Home() {
       <Atchievements />
       <NewsUs />
       <OurServices />
-      <Comments />
+      
       
       
       <Temework />
