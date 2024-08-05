@@ -11,8 +11,7 @@ import { FaChartSimple } from "react-icons/fa6";
 import Image from "next/image";
 import PrevArrow from "../Partenrs/PrevArrow";
 import NextArrow from "../Partenrs/NextArrow";
-import { Tweet } from "../NewComment/Comments";
-import { NewsUsCard } from "../NewsUs/NewsUsCard";
+
 
 // CAROUSEL DATA
 
