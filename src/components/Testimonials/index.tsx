@@ -83,9 +83,16 @@ const Testimonials = () => {
   return (
     <section className="bg-bg-color-dark dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 text-white">
       <div className="container">
+
+        <div className=" text-center mb-10">
+          <h1 className="text-[3rem] ">Testimonials</h1>
+          <h3 className="text-md mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ad.
+          </h3>
+        </div>
       
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8 overflow-hidden py-5 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 overflow-hidden py-5 px-4">
           {testimonialData.map((item) => (
             <div className="relative group " key={item.id}>
               <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200" />

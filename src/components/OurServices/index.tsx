@@ -112,13 +112,13 @@ const OurServices = () => {
             {postData.map((items, i) => (
               <div key={i}>
                 <div
-                  className={`pt-10 pl-8 pb-10 pr-6 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-blue-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
+                  className={`pt-10 pl-8 pb-10 pr-6 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-blue-400 p-8  duration-300 hover:shadow-one hover:dark:bg-blue-400 dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
                 >
                   <div className={`relative rounded-3xl flex  `}>
                     <div
                       className={` ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
                     >
-                      <h4 className="text-4xl font-semibold  text-black mb-5 group-hover:text-white">
+                      <h4 className="text-4xl font-semibold  text-black mb-5 group-hover:text-white dark:text-white">
                         {items.heading}
                       </h4>
                       <Image
@@ -132,7 +132,7 @@ const OurServices = () => {
                   </div>
 
                   <div className="px-3 ">
-                    <h4 className="text-lg font-normal text-black group-hover:text-offwhite mb-5">
+                    <h4 className="text-lg font-normal text-black group-hover:text-offwhite mb-5 dark:text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Voluptatibus, sint?
                     </h4>

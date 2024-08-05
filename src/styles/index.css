@@ -67,7 +67,7 @@ html[dir='ltr'] {
 
 /* ======= Start NewsUs Section ============ */
 .news_btn {
-  background: rgba(36, 37, 46, 1);
+  background: #222;
   color: white;
   width: 11rem;
   padding: 0.75rem;
