@@ -27,7 +27,7 @@ interface DataType {
   classes?: number;
   price?: number;
   rating?: number;
-  bttnName?: string;
+  bttnname?: string;
   
 }
 
@@ -79,20 +79,6 @@ const postData: DataType[] = [
   
 ];
 
-const ButtonData: DataType[] = [
-  {
-    bttnName: 'All Food'
-  },
-  {
-    bttnName: 'Pasta'
-  },
-  {
-    bttnName: 'Pizaa'
-  },
-  {
-    bttnName: 'Apple'
-  },
-]
 
 
 
@@ -110,15 +96,10 @@ function NewsUs() {
 
         <div className="lg:flex lg:items-center gap-[3rem]  lg:justify-start lg:gap-10 ">
           <div className="flex lg:flex-col gap-[10px] pb-5 ">
-            {
-              ButtonData.map((item, index) => (
-                <button className="news_btn">
-                  {item.bttnName}
-
-                </button>
-
-              ))
-            }
+            <button className="news_btn active">All News</button>
+            <button className="news_btn">Orange one</button>
+            <button className="news_btn">Apple two</button>
+            <button className="news_btn">Bnana three</button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden">
