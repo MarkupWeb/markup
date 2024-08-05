@@ -3,16 +3,12 @@
 import React from "react";
 import SectionTitle from "../Common/SectionTitle";
 import Image from "next/image";
-import Link from "next/link";
-
 import { BsLink45Deg } from "react-icons/bs";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useLocale } from "next-intl";
-
 
 import videoImg from "../../../public/images/news/branding.jpg";
 
@@ -81,58 +77,10 @@ const postData: DataType[] = [
   
 ];
 
-const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-  nextArrow: <NextArrow />,
-  prevArrow: <PrevArrow />,
-  
- 
-
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    }
-  ]
-
-
-
-
-};
-
-
-
-
 
 
 
 function NewsUs() {
-  const local = useLocale();
   return (
     <section id="news" className="">
       <div className="container">
@@ -150,46 +98,51 @@ function NewsUs() {
             <button className="news_btn">Bnana three</button>
           </div>
 
-          <Slider {...settings}>
-            {postData.map((items, i) => (
-              <div key={i}>
-                <div
-                  className={`pt-10 pl-8 pb-10 pr-6 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-blue-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
-                >
-                  <div className={`relative rounded-3xl flex  `}>
-                    <div
-                      className={` ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
-                    >
-                      <h4 className="text-4xl font-semibold  text-black mb-5 group-hover:text-white">
-                        {items.title}
-                      </h4>
-                      <Image
-                        src={items.imgSrc}
-                        alt={items.imgSrc}
-                        width={100}
-                        height={100}
-                        className="mb-5"
-                      />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-hidden">
+          
+            {postData.map((item, index) => (
+              <article className="news_card border-[1px] border-[#5d9dfc] " key={index}>
+                <div className="relative">
+                  <span className="absolute text-[2.2rem]  left-[35%] top-[35%] hover:text-blue-600 cursor-pointer  bg-white  dark:bg-black rounded-full  p-4 z-10">
+                    <MdOutlineSlowMotionVideo />
+                  </span>
+                  <Image
+                    src={videoImg}
+                    alt="news-img"
+                    className=""
+                    width={466}
+                    height={466}
+                  />
+                </div>
+
+                <div className="news_card_box  px-2 py-2 ">
+                  <h1 className="news_card_title mt-2 mb-1">{item.title}</h1>
+                  <p className="news_card_subtitle mt-1 mb-2">
+                    {item.subtitle}
+                  </p>
+
+                  <div className="News_cart_links flex items-center justify-between ">
+                    <div className="iconLink flex items-center gap-2">
+                      <span className="cursor-pointer">
+                        <BsLink45Deg />
+                      </span>
+                      <span className="cursor-pointer">
+                        <FaSquareFacebook />
+                      </span>
+                    </div>
+                    <div className="more flex items-center gap-1 cursor-pointer  text-blue-500 ">
+                      <span className="text-[12px]">More</span>
+                      <span className="">
+                        <HiArrowSmallRight />
+                      </span>
                     </div>
                   </div>
-
-                  <div className="px-3 ">
-                    <h4 className="text-lg font-normal text-black group-hover:text-offwhite mb-5">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus, sint?
-                    </h4>
-                    <Link
-                      href="#"
-                      className="text-lg font-semibold group-hover:text-white text-blue hover-underline"
-                    >
-                      show more
-                    </Link>
-                  </div>
                 </div>
-              </div>
+              </article>
             ))}
-          </Slider>
+            
 
+          </div>
         </div>
       </div>
     </section>

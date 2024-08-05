@@ -4,6 +4,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -138,49 +140,60 @@ const MainPartenrs = () => {
       <section  className="" >
         
 
-          <Slider {...settings} >
+      <Slider {...settings}>
             {postData.map((items, i) => (
               <div key={i}>
-                <div  className={` flex items-center justify-center shadow-courses mx-3 my-2  rounded-2xl  px-3 pb-12 pt-3 cursor-pointer   bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}>
-                  <div className={`relative rounded-3xl flex justify-center `}>
-
-                    <div  className={`bg-slate-800 dark:bg-white w-[80px] h-[80px] rounded-full flex justify-center items-center shadow-lg ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}>
-                    <span className="">
-                       <Image className="" src={items.imgSrc} alt="partners_logo" width={80} height={80}/>
-                    </span>
-
+                <div
+                  className={`flex items-center gap-3 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-orange-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
+                >
+                  
+                    <div
+                      className={` bg-slate-800 rounded-full w-[180px] h-[80px] lg:h-[90px] flex items-center justify-center ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
+                    >
+                      
+                      <Image
+                        src={items.imgSrc}
+                        alt={items.imgSrc}
+                        width={80}
+                        height={80}
+                        className="text-center"
+                      />
                     </div>
-                    
-                  </div>
+            
 
                   <div className="px-3 ">
-                    <h4 className=" pt-6 text-md md:text[16px]  font-bold text-black dark:text-white  ">
-                      {items.heading} 
+                    <h2 className="text-lg font-semibold text-black dark:text-white group-hover:text-offwhite mb-2 ">
+                      {items.heading}
+                    </h2>
+                    <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatibus, sint?
                     </h4>
                     
-
-                    <div>
-                      <h3 className="pt-3 text-[12px] md:text-[14px] font-normal opacity-75 ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, reprehenderit.
-                      </h3>
-                    </div>
-
-{/*                     
-
-                    <div>
-                      <h3 className="pt-6   font-normal opacity-75">
-                        {items.name} 
-                      </h3>
-                    </div>
- */}
+                    <hr />
 
 
+                    <div className=" ">
+                    <h2 className="text-md font-semibold text-black dark:text-white group-hover:text-offwhite mt-2 ">
+                      {items.heading}
+                    </h2>
+                    <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Voluptatibus, sint?
+                    </h4>
+                    
+                    
                   </div>
+                  </div>
+
+
+                  
+
+
                 </div>
+                
               </div>
             ))}
-
-            
           </Slider>
         
       </section>
