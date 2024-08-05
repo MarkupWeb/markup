@@ -83,19 +83,7 @@ const Testimonials = () => {
   return (
     <section className="bg-bg-color-dark dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 text-white">
       <div className="container">
-      <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-          <div className="mb-12 space-y-5 md:mb-16 md:text-center">
-            <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
-              Words from Others
-            </div>
-            <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-              It's not just us.
-            </h1>
-            <p className="text-xl text-gray-100 md:text-center md:text-2xl">
-              Here's what others have to say about us.
-            </p>
-          </div>
-        </div>
+      
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-8 overflow-hidden py-5 px-4">
           {testimonialData.map((item) => (
