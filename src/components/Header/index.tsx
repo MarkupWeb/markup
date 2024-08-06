@@ -6,9 +6,11 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import logoImg from '../images/logo-mark.png';
+import darklogo from '../../../public/images/logo/dark-logo.png';
 import { useTranslations } from "next-intl";
 import LocalSwitcher from "../LocalSwitcher/local-switcher";
 import { useLocale } from 'next-intl';
+import { useTheme } from "next-themes";
 
 
 const Header = () => {
@@ -53,6 +55,10 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  // change dark logo
+  const { theme, setTheme } = useTheme();
+
+
   return (
     <>
       <header
@@ -72,7 +78,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src={logoImg}
+                  src={theme === "dark" ? darklogo : logoImg}
                   alt="logo"
                   width={140}
                   height={30}
