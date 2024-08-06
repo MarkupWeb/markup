@@ -109,7 +109,7 @@ const Temework = () => {
               {postData.map((items, i) => (
                 <div key={i}>
                   <div
-                    className={`flex items-center gap-3 w-[280px] grayscale hover:grayscale-0 h-[380px] shadow-xl group mx-3 my-2  rounded-3xl  px-3  cursor-pointer   bg-white hover:bg-blue-300 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
+                    className={`flex items-center gap-3 w-[380px] grayscale hover:grayscale-0 h-[380px] shadow-xl group mx-3 my-2  rounded-3xl  px-3  cursor-pointer   bg-white hover:bg-blue-300 p-8  duration-300 hover:shadow-one hover:text-white dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
                   >
                     
                       <div className="m-3 py-14 text-center md:my-10">
