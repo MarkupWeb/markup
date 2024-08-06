@@ -11,7 +11,8 @@ import { FaChartSimple } from "react-icons/fa6";
 import Image from "next/image";
 import PrevArrow from "../Partenrs/PrevArrow";
 import NextArrow from "../Partenrs/NextArrow";
-
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
 
 // CAROUSEL DATA
 
@@ -75,31 +76,72 @@ const settings = {
   cssEase: "linear",
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         infinite: true,
-        dots: false,
-      },
+        dots: true
+      }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-      },
+        initialSlide: 1
+      }
     },
-  ],
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 };
 
 const OurServices = () => {
   const local = useLocale();
 
+  // pop Up Contect
+
+  let [isOpens, setIsOpens] = useState(false);
+
   return (
     <>
+      <Dialog
+        open={isOpens}
+        onClose={() => setIsOpens(false)}
+        className="relative z-50"
+      >
+        {/* The backdrop, rendered as a fixed sibling to the panel container */}
+        <div
+          className="fixed inset-0 bg-black/30 dark:bg-white/30"
+          aria-hidden="true"
+        />
+
+        {/* Full-screen scrollable container */}
+        <div className="fixed inset-0 w-screen overflow-y-auto">
+          {/* Container to center the panel */}
+          <div className="flex min-h-full items-center justify-center p-4">
+            {/* The actual dialog panel  */}
+
+            <Dialog.Panel className="mx-auto max-w-sm rounded bg-black">
+              <div className="bg-black py-3 mx-4 flex justify-end">
+                <span
+                  className=" text-center bg-[#7c7c7c] cursor-pointer rounded-lg w-[30px] h-[30px]"
+                  onClick={() => setIsOpens(false)}
+                >
+                  X
+                </span>
+              </div>
+            </Dialog.Panel>
+          </div>
+        </div>
+      </Dialog>
+
       <section id="services" className="py-10 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
@@ -113,6 +155,7 @@ const OurServices = () => {
               <div key={i}>
                 <div
                   className={`pt-10 pl-8 pb-10 pr-6 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-blue-400 p-8  duration-300 hover:shadow-one hover:dark:bg-blue-400 dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
+                  onClick={() => setIsOpens(true)}
                 >
                   <div className={`relative rounded-3xl flex  `}>
                     <div

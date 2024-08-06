@@ -1,19 +1,17 @@
-
-
-
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
+import { Dialog } from "@headlessui/react";
 
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useLocale } from 'next-intl';
+import { useLocale } from "next-intl";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
-
+import { useState } from "react";
 
 // CAROUSEL DATA
 
@@ -100,8 +98,8 @@ const settings = {
   // centerMode: true,
   slidesToScroll: 2,
   arrows: true,
-  nextArrow: <NextArrow /> ,
-  prevArrow: <PrevArrow /> ,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
   autoplay: false,
   speed: 500,
   cssEase: "linear",
@@ -130,50 +128,83 @@ const settings = {
 
 
 const MainPartenrs = () => {
+  const local = useLocale();
 
-  const local = useLocale()
 
+  // pop Up Contect
+
+  let [isOpens, setIsOpens] = useState(false);
 
 
   return (
     <>
-      <section  className="" >
-        
+      <Dialog
+        open={isOpens}
+        onClose={() => setIsOpens(false)}
+        className="relative z-50"
+      >
+        {/* The backdrop, rendered as a fixed sibling to the panel container */}
+        <div
+          className="fixed inset-0 bg-black/30 dark:bg-white/30"
+          aria-hidden="true"
+        />
 
-      <Slider {...settings}>
-            {postData.map((items, i) => (
-              <div key={i}>
-                <div
-                  className={`flex items-center gap-3 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-orange-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
+        {/* Full-screen scrollable container */}
+        <div className="fixed inset-0 w-screen overflow-y-auto">
+          {/* Container to center the panel */}
+          <div className="flex min-h-full items-center justify-center p-4">
+            {/* The actual dialog panel  */}
+
+            <Dialog.Panel className="mx-auto max-w-sm rounded bg-black">
+              <div className="bg-black py-3 mx-4 flex justify-end">
+                <span
+                  className=" text-center bg-[#7c7c7c] cursor-pointer rounded-lg w-[30px] h-[30px]"
+                  onClick={() => setIsOpens(false)}
                 >
+                  X
+                </span>
+              </div>
+              
+            </Dialog.Panel>
+          </div>
+        </div>
+      </Dialog>
+
+
+      <section className="">
+        <Slider {...settings}>
+          {postData.map((items, i) => (
+            <div key={i} >
+              <div
+                className={`flex items-center gap-3 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-orange-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
+                onClick={() => setIsOpens(true)}
+
+              >
+                <div
+                  className={` bg-slate-800 rounded-full w-[180px] h-[80px] lg:h-[90px] flex items-center justify-center ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
                   
-                    <div
-                      className={` bg-slate-800 rounded-full w-[180px] h-[80px] lg:h-[90px] flex items-center justify-center ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
-                    >
-                      
-                      <Image
-                        src={items.imgSrc}
-                        alt={items.imgSrc}
-                        width={80}
-                        height={80}
-                        className="text-center"
-                      />
-                    </div>
-            
+                >
+                  <Image
+                    src={items.imgSrc}
+                    alt={items.imgSrc}
+                    width={80}
+                    height={80}
+                    className="text-center"
+                  />
+                </div>
 
-                  <div className="px-3 ">
-                    <h2 className="text-lg font-semibold text-black dark:text-white group-hover:text-offwhite mb-2 ">
-                      {items.heading}
-                    </h2>
-                    <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus, sint?
-                    </h4>
-                    
-                    <hr />
+                <div className="px-3 ">
+                  <h2 className="text-lg font-semibold text-black dark:text-white group-hover:text-offwhite mb-2 ">
+                    {items.heading}
+                  </h2>
+                  <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, sint?
+                  </h4>
 
+                  <hr />
 
-                    <div className=" ">
+                  <div className=" ">
                     <h2 className="text-md font-semibold text-black dark:text-white group-hover:text-offwhite mt-2 ">
                       {items.heading}
                     </h2>
@@ -181,21 +212,12 @@ const MainPartenrs = () => {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Voluptatibus, sint?
                     </h4>
-                    
-                    
                   </div>
-                  </div>
-
-
-                  
-
-
                 </div>
-                
               </div>
-            ))}
-          </Slider>
-        
+            </div>
+          ))}
+        </Slider>
       </section>
     </>
   );
