@@ -106,8 +106,8 @@ const Temework = () => {
             center
           />
 
-          <div className="relative mx-auto max-w-2xl px-4 sm:py-4 lg:max-w-7xl lg:px-8">
-            <h2 className="lh-82 text-midnightblue md:text-55xl text-center text-4xl font-semibold md:text-start">
+          <div className="relative mx-auto max-w-2xl px-4 sm:py-4 lg:max-w-7xl lg:px-8 ">
+            <h2 className="lh-82 text-midnightblue md:text-55xl text-center text-4xl font-semibold md:text-start pb-8">
               Meet with our <br /> mentor.
             </h2>
 

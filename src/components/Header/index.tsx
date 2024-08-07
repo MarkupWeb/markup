@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import logoImg from '../images/logo-mark.png';
@@ -10,8 +11,6 @@ import darklogo from '../../../public/images/logo/dark-logo.png';
 import { useTranslations } from "next-intl";
 import LocalSwitcher from "../LocalSwitcher/local-switcher";
 import { useLocale } from 'next-intl';
-import { useTheme } from "next-themes";
-
 
 const Header = () => {
   // Navbar toggle
@@ -24,8 +23,7 @@ const Header = () => {
   const t = useTranslations('Menu');
   const menuLinks = menuData(t);
 
-  const local = useLocale()
-
+  const locale = useLocale();
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -53,11 +51,10 @@ const Header = () => {
     }
   };
 
-  const usePathName = usePathname();
+  const pathname = usePathname();
 
-  // change dark logo
-  const { theme, setTheme } = useTheme();
-
+  // Dark mode handling
+  const { theme } = useTheme();
 
   return (
     <>
@@ -82,11 +79,10 @@ const Header = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="w-full dark: "
+                  className="w-full"
                 />
               </Link>
             </div>
-
 
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -120,14 +116,14 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className={`block lg:flex lg:items-center light:font-[400] lg:gap-8 ${local === "ar" ? " __rtl_lang font-[500]  " : ""} `} >
+                  <ul className={`block lg:flex lg:items-center light:font-[400] lg:gap-8 ${locale === "ar" ? " __rtl_lang font-[500]  " : ""} `} >
                     {menuLinks.map((menuItem, index) => (
                       <li key={index} className=" group relative ">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
                             className={` flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
+                              pathname === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
@@ -175,16 +171,12 @@ const Header = () => {
                 </nav>
               </div>
 
-
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                
                 <div className="flex items-center gap-3">
                   <LocalSwitcher/>
                   <ThemeToggler />
-
                 </div>
               </div>
-
 
             </div>
           </div>
