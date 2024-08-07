@@ -91,7 +91,7 @@ const Temework = () => {
     <>
       <section
         id="temework"
-        className="md:py-15 lg:py-18 py-5  bg-sky-50 dark:bg-transparent"
+        className="md:py-15 lg:py-20 py-5  bg-sky-50 dark:bg-transparent"
       >
         <div className="container">
           <SectionTitle
@@ -109,7 +109,7 @@ const Temework = () => {
               {postData.map((items, i) => (
                 <div key={i}>
                   <div
-                    className={`flex items-center gap-3 w-[380px] grayscale hover:grayscale-0 h-[380px] shadow-xl group mx-3 my-2  rounded-3xl  px-3  cursor-pointer   bg-white hover:bg-slate-800 dark:hover:bg-white dark:hover:text-black  p-8  duration-300 hover:shadow-one hover:text-white dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
+                    className={`flex items-center gap-3 w-[350px] grayscale hover:grayscale-0 h-[380px] shadow-xl group mx-3 my-2  rounded-3xl  px-3  cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black  p-8  duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
                   >
                     
                       <div className="m-3 py-14 text-center md:my-10">

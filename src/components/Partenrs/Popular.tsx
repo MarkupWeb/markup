@@ -105,7 +105,9 @@ const Popular = () => {
                
                 {data.map((item, i) => (
                   <div className="" key={i}>
+                    <div className="bg-slate-200 w-[100px]">
                     <Image src={item.imgSrc} alt={item.imgSrc} width={125} height={125} />
+                    </div>
                   </div>
                 ))}
               </Slider>

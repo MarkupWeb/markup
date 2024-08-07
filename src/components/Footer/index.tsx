@@ -1,9 +1,12 @@
 "use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import logoImg from '../images/logo-mark.png';
+import darklogo from '../../../public/images/logo/dark-logo.png';
 
 
 
@@ -46,6 +49,8 @@ const socialLinks: socialLinks[] = [
 
 
 const Footer = () => {
+  // change dark logo
+  const { theme, setTheme } = useTheme();
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -55,19 +60,13 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/icons/logo-mark.png"
+                    src={theme === "dark" ? darklogo : logoImg}
                     alt="logo"
-                    className="w-full dark:hidden"
+                    className="w-full "
                     width={140}
                     height={30}
                   />
-                  <Image
-                    src="/icons/logo-mark.png"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
+                  
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
