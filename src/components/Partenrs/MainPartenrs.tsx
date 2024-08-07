@@ -12,13 +12,29 @@ import { useLocale } from "next-intl";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 import { useState } from "react";
+// Images 
+import Img01 from "../../../public/images/Partnars_Logos/01-saltaoon.png"
+import Img02 from "../../../public/images/Partnars_Logos/02-nos-dasta.png"
+import Img03 from "../../../public/images/Partnars_Logos/03-baheya.png"
+import Img04 from "../../../public/images/Partnars_Logos/04-dokan-fteer.png"
+import Img05 from "../../../public/images/Partnars_Logos/05-kbsha.png"
+import Img06 from "../../../public/images/Partnars_Logos/06-bonoh.png"
+import Img08 from "../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png"
+import Img09 from "../../../public/images/Partnars_Logos/08-hamam-abdo.png"
+import Img10 from "../../../public/images/Partnars_Logos/09-mshakeek.png"
+import Img11 from "../../../public/images/Partnars_Logos/10-basha.png"
+import Img12 from "../../../public/images/Partnars_Logos/11-chicken-planet.png"
+import Img13 from "../../../public/images/Partnars_Logos/12-chicken-fila.png"
+import Img14 from "../../../public/images/Partnars_Logos/13-xlarge.png"
+import Img15 from "../../../public/images/Partnars_Logos/14-adrenaleen.png"
+import Img16 from "../../../public/images/Partnars_Logos/15-cairo-guys.png"
 
 // CAROUSEL DATA
 
 interface DataType {
   heading: string;
   heading2: string;
-  imgSrc: string;
+  imgSrc: any;
   name: string;
   students: number;
   classes: number;
@@ -31,7 +47,7 @@ const postData: DataType[] = [
     heading: "Full stack modern",
     heading2: "javascript",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/04.png",
+    imgSrc: Img01,
     students: 150,
     classes: 12,
     price: 20,
@@ -41,7 +57,7 @@ const postData: DataType[] = [
     heading: "Design system",
     heading2: "with React programme",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/06.png",
+    imgSrc: Img02,
     students: 130,
     classes: 12,
     price: 20,
@@ -51,7 +67,7 @@ const postData: DataType[] = [
     heading: "Design banner",
     heading2: "with Figma",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/12.png",
+    imgSrc: Img03,
     students: 120,
     classes: 12,
     price: 20,
@@ -61,7 +77,7 @@ const postData: DataType[] = [
     heading: "We Launch Delia",
     heading2: "Webflow this Week!",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/02.png",
+    imgSrc: Img04,
     students: 150,
     classes: 12,
     price: 20,
@@ -71,7 +87,7 @@ const postData: DataType[] = [
     heading: "We Launch Delia",
     heading2: "Webflow this Week!",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/08.png",
+    imgSrc: Img05,
     students: 150,
     classes: 12,
     price: 20,
@@ -81,12 +97,49 @@ const postData: DataType[] = [
     heading: "We Launch Delia",
     heading2: "Webflow this Week!",
     name: "Colt stelle",
-    imgSrc: "/images/Partnars_Logos/10.png",
+    imgSrc: Img06,
     students: 150,
     classes: 12,
     price: 20,
     rating: 4.7,
   },
+
+
+  {
+    heading: "We Launch Delia",
+    heading2: "Webflow this Week!",
+    name: "Colt stelle",
+    imgSrc: Img08,
+    students: 150,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+  {
+    heading: "We Launch Delia",
+    heading2: "Webflow this Week!",
+    name: "Colt stelle",
+    imgSrc: Img09,
+    students: 150,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+  {
+    heading: "We Launch Delia",
+    heading2: "Webflow this Week!",
+    name: "Colt stelle",
+    imgSrc: Img10,
+    students: 150,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+
+
 ];
 
 // CAROUSEL SETTINGS
@@ -94,7 +147,7 @@ const postData: DataType[] = [
 const settings = {
   dots: false,
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   // centerMode: true,
   slidesToScroll: 2,
   arrows: true,
@@ -107,12 +160,35 @@ const settings = {
     {
       breakpoint: 1200,
       settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+
+    {
+      breakpoint: 900,
+      settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
       },
     },
+
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+
+
+    
     {
       breakpoint: 600,
       settings: {
@@ -172,52 +248,41 @@ const MainPartenrs = () => {
 
 
       <section className="">
-        <Slider {...settings}>
-          {postData.map((items, i) => (
-            <div key={i} >
-              <div
-                className={`flex items-center gap-3 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-orange-400 p-8  duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
-                onClick={() => setIsOpens(true)}
-
-              >
-                <div
-                  className={` bg-slate-800 rounded-full w-[180px] h-[80px] lg:h-[90px] flex items-center justify-center ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
-                  
-                >
-                  <Image
-                    src={items.imgSrc}
-                    alt={items.imgSrc}
-                    width={80}
-                    height={80}
-                    className="text-center"
-                  />
-                </div>
-
-                <div className="px-3 ">
-                  <h2 className="text-lg font-semibold text-black dark:text-white group-hover:text-offwhite mb-2 ">
-                    {items.heading}
-                  </h2>
-                  <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatibus, sint?
-                  </h4>
-
-                  <hr />
-
-                  <div className=" ">
-                    <h2 className="text-md font-semibold text-black dark:text-white group-hover:text-offwhite mt-2 ">
-                      {items.heading}
-                    </h2>
-                    <h4 className="text-sm font-normal text-black dark:text-gray-500 group-hover:text-offwhite mb-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus, sint?
-                    </h4>
+      <Slider {...settings}>
+              
+              {postData.map((items, i) => (
+                <div key={i} className="">
+                  <div
+                  onClick={() => setIsOpens(true)}
+                    className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-white hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
+                  >
+                    
+                      <div className="m-3 py-14 text-center md:my-10">
+                        <div className="relative ">
+                          <Image
+                            src={items.imgSrc}
+                            alt="user-image"
+                            width={100}
+                            height={0}
+                            className="m-auto inline-block "
+                          />
+                          
+                        </div>
+                        <div className="">
+                          <h3 className="text-lightblack text-2xl font-semibold">
+                            {items.heading}
+                          </h3>
+                          <h4 className="text-lightblack pt-2 text-lg font-normal opacity-50">
+                            {items.heading2}
+                          </h4>
+                        </div>
+                      </div>
+                      
+                    
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
+              ))}
+            </Slider>
       </section>
     </>
   );

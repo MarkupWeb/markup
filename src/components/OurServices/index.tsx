@@ -58,14 +58,58 @@ const postData: DataType[] = [
     price: 20,
     rating: 4.7,
   },
+
+  {
+    heading: "Design banner",
+    heading2: "with Figma",
+    name: "Colt stelle",
+    imgSrc: "/images/about/imgThree.svg",
+    students: 120,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+  {
+    heading: "Design banner",
+    heading2: "with Figma",
+    name: "Colt stelle",
+    imgSrc: "/images/about/imgThree.svg",
+    students: 120,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+
+  {
+    heading: "Design banner",
+    heading2: "with Figma",
+    name: "Colt stelle",
+    imgSrc: "/images/about/imgThree.svg",
+    students: 120,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
+
+  {
+    heading: "Design banner",
+    heading2: "with Figma",
+    name: "Colt stelle",
+    imgSrc: "/images/about/imgThree.svg",
+    students: 120,
+    classes: 12,
+    price: 20,
+    rating: 4.7,
+  },
 ];
 
 // CAROUSEL SETTINGS
-
 const settings = {
   dots: false,
   infinite: true,
-  slidesToShow: 3,
+  slidesToShow: 4,
   // centerMode: true,
   slidesToScroll: 2,
   arrows: true,
@@ -76,31 +120,49 @@ const settings = {
   cssEase: "linear",
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
-        dots: true
-      }
+        dots: false,
+      },
     },
+
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+
+
+    
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 1
-      }
+        infinite: true,
+        dots: false,
+      },
     },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+  ],
 };
+
 
 const OurServices = () => {
   const local = useLocale();
@@ -152,39 +214,29 @@ const OurServices = () => {
 
           <Slider {...settings}>
             {postData.map((items, i) => (
-              <div key={i}>
+              <div key={i} className="">
                 <div
-                  className={`pt-10 pl-8 pb-10 pr-6 shadow-xl group mx-3 my-2  rounded-2xl  px-3  cursor-pointer   bg-white hover:bg-blue-400 p-8  duration-300 hover:shadow-one hover:dark:bg-blue-400 dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}   `}
                   onClick={() => setIsOpens(true)}
+                  className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto  my-4  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-white  hover:bg-blue-400 dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
                 >
-                  <div className={`relative rounded-3xl flex  `}>
-                    <div
-                      className={` ${local === "ar" ? "__rtl_lang bg-gree  " : ""} `}
-                    >
-                      <h4 className="text-4xl font-semibold  text-black mb-5 group-hover:text-white dark:text-white">
-                        {items.heading}
-                      </h4>
+                  <div className="m-3 py-14 text-center md:my-10">
+                    <div className="relative ">
                       <Image
                         src={items.imgSrc}
-                        alt={items.imgSrc}
+                        alt="user-image"
                         width={100}
-                        height={100}
-                        className="mb-5"
+                        height={0}
+                        className="m-auto inline-block "
                       />
                     </div>
-                  </div>
-
-                  <div className="px-3 ">
-                    <h4 className="text-lg font-normal text-black group-hover:text-offwhite mb-5 dark:text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatibus, sint?
-                    </h4>
-                    <Link
-                      href="#"
-                      className="text-lg font-semibold group-hover:text-white text-blue hover-underline"
-                    >
-                      show more
-                    </Link>
+                    <div className="">
+                      <h3 className="text-lightblack text-2xl font-semibold">
+                        {items.heading}
+                      </h3>
+                      <h4 className="text-lightblack pt-2 text-lg font-normal opacity-50">
+                        {items.heading2}
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>

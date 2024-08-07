@@ -1,9 +1,11 @@
 "use client";
+import Lottie from "lottie-react";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import questionImg from "../../../public/lotyFiles/question3.json"
 
 import Image from "next/image";
 
@@ -58,13 +60,13 @@ const Features = () => {
             <div className="">
               {faqdata.map((items, i) => (
                 <div
-                  className="border-[1px] border-gray-400 hover:border-blue-600  mx-auto mb-5 w-full max-w-5xl rounded-2xl px-6 py-8 shadow-md transition-colors"
+                  className="border-[1px]  border-gray-400 hover:border-blue-600  mx-auto mb-5 w-full max-w-5xl rounded-2xl px-6 py-2 md:py-4  shadow-md transition-colors"
                   key={i}
                 >
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="text-offwhite  flex w-full justify-between rounded-lg text-left font-medium sm:px-4 sm:py-2 md:text-2xl">
+                        <Disclosure.Button className="text-offwhite  flex w-full justify-between rounded-lg text-left font-medium sm:px-4 sm:py-2 md:text-sm">
                           <span>{items.heading}</span>
                           <ChevronUpIcon
                             className={`${
@@ -82,14 +84,15 @@ const Features = () => {
               ))}
             </div>
 
-            <div className="">
-              <Image
-                src={"/images/questions/03.svg"}
-                alt="faq-image"
-                width={741}
-                height={279}
-              />
-            </div>
+            <div className="flex items-center justify-center">
+            <span className="w-[350px] lg:w-[350px]">
+            <Lottie animationData={questionImg} />
+
+            </span>
+            
+            
+            
+          </div>
           </div>
         </div>
       </section>

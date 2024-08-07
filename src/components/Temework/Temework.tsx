@@ -56,7 +56,7 @@ const Temework = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     // centerMode: true,
     slidesToScroll: 2,
     arrows: true,
@@ -67,24 +67,30 @@ const Temework = () => {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
-          dots: false,
-        },
+          dots: true
+        }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
       },
-    ],
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -106,10 +112,11 @@ const Temework = () => {
             </h2>
 
             <Slider {...settings}>
+              
               {postData.map((items, i) => (
-                <div key={i}>
+                <div key={i} className="">
                   <div
-                    className={`flex items-center gap-3 w-[340px] grayscale hover:grayscale-0 h-[380px] shadow-xl group mx-3 my-2  rounded-3xl  px-3  cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black  p-8  duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
+                    className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
                   >
                     
                       <div className="m-3 py-14 text-center md:my-10">

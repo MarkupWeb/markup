@@ -4,51 +4,87 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
+import Img01 from "../../../public/images/Partnars_Logos/01-saltaoon.png"
+import Img02 from "../../../public/images/Partnars_Logos/02-nos-dasta.png"
+import Img03 from "../../../public/images/Partnars_Logos/03-baheya.png"
+import Img04 from "../../../public/images/Partnars_Logos/04-dokan-fteer.png"
+import Img05 from "../../../public/images/Partnars_Logos/05-kbsha.png"
+import Img06 from "../../../public/images/Partnars_Logos/06-bonoh.png"
+import Img08 from "../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png"
+import Img09 from "../../../public/images/Partnars_Logos/08-hamam-abdo.png"
+import Img10 from "../../../public/images/Partnars_Logos/09-mshakeek.png"
+import Img11 from "../../../public/images/Partnars_Logos/10-basha.png"
+import Img12 from "../../../public/images/Partnars_Logos/11-chicken-planet.png"
+import Img13 from "../../../public/images/Partnars_Logos/12-chicken-fila.png"
+import Img14 from "../../../public/images/Partnars_Logos/13-xlarge.png"
+import Img15 from "../../../public/images/Partnars_Logos/14-adrenaleen.png"
+import Img16 from "../../../public/images/Partnars_Logos/15-cairo-guys.png"
+
+
+
 
 
 // IMAGES DATA FOR CAROUSEL
 interface Data {
-  imgSrc: string;
+  imgSrc :any;
 }
 
 const data: Data[] = [
   {
-    imgSrc: "/images/Partnars_Logos/01.png",
+    imgSrc: Img01,
   },
   {
-    imgSrc: "/images/Partnars_Logos/02.png",
+    imgSrc: Img02,
   },
   
 
   {
-    imgSrc: "/images/Partnars_Logos/04.png",
+    imgSrc: Img03,
   },
   {
-    imgSrc: "/images/Partnars_Logos/05.png",
+    imgSrc: Img04,
   },
   {
-    imgSrc: "/images/Partnars_Logos/06.png",
+    imgSrc: Img05,
   },
   
   {
-    imgSrc: "/images/Partnars_Logos/08.png",
+    imgSrc: Img06,
   },
   {
-    imgSrc: "/images/Partnars_Logos/09.png",
+    imgSrc: Img08,
   },
   {
-    imgSrc: "/images/Partnars_Logos/10.png",
-  },
-  {
-    imgSrc: "/images/Partnars_Logos/11.png",
+    imgSrc: Img09,
   },
 
+
   {
-    imgSrc: "/images/Partnars_Logos/12.png",
+    imgSrc: Img10,
   },
   {
-    imgSrc: "/images/Partnars_Logos/13.png",
+    imgSrc: Img11,
   },
+  
+
+  {
+    imgSrc: Img12,
+  },
+  {
+    imgSrc: Img13,
+  },
+  {
+    imgSrc: Img14,
+  },
+   {
+    imgSrc: Img15,
+  },
+  {
+    imgSrc: Img16,
+  },
+  
+  
   
 ];
 
@@ -82,10 +118,12 @@ const Popular = () => {
           dots: false,
         },
       },
+
+      
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -105,7 +143,7 @@ const Popular = () => {
                
                 {data.map((item, i) => (
                   <div className="" key={i}>
-                    <div className="bg-slate-200 w-[100px]">
+                    <div className="bg-black dark:bg-white text-center rounded-lg w-[120px]">
                     <Image src={item.imgSrc} alt={item.imgSrc} width={125} height={125} />
                     </div>
                   </div>

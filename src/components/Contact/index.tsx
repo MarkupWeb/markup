@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <span className="w-[350px] lg:w-[450px]">
+            <span className="w-[350px] lg:w-[350px]">
             <Lottie animationData={SendContact} />
 
             </span>
