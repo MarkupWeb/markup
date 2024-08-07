@@ -143,8 +143,8 @@ const Popular = () => {
                
                 {data.map((item, i) => (
                   <div className="" key={i}>
-                    <div className="bg-black dark:bg-white text-center rounded-lg w-[120px]">
-                    <Image src={item.imgSrc} alt={item.imgSrc} width={125} height={125} />
+                    <div className="bg-white  dark:bg-white text-center rounded-full w-[120px]">
+                    <Image className="" src={item.imgSrc} alt={item.imgSrc} width={125} height={125} />
                     </div>
                   </div>
                 ))}
