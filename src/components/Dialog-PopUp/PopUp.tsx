@@ -24,7 +24,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
   const listItems = data?.content || []; // Default to an empty array if data or data.list is undefined
 
   return (
-    <Dialog open={isOpen} onClose={onClose} className="relative z-50">
+    <Dialog open={isOpen} onClose={onClose} className="relative z-[999999]">
       {/* The backdrop, rendered as a fixed sibling to the panel container */}
       <div className="fixed inset-0 bg-black/30 dark:bg-white/30" aria-hidden="true" />
 
