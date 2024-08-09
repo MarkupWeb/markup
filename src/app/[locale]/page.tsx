@@ -18,6 +18,7 @@ import Temework from "@/components/Temework/Temework";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
+import NewsUs from '@/components/NewsUs/NewsUs';
 
 
 
@@ -41,6 +42,7 @@ export default function Home() {
       <Hero />
       <OurPartners />
       <Features />
+      <NewsUs />
       <Atchievements />
       <OurServices />
       
