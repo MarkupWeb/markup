@@ -82,7 +82,7 @@ const Hero = () => {
                           {item.description}
                         </p>
 
-                        <div className="flex justify-center  md:justify-start ">
+                        <div className="flex items-center">
                           
                             <Dialog
                               open={isOpens}
@@ -116,7 +116,7 @@ const Hero = () => {
                             </Dialog>
 
                             <button
-                              className="text-[12px] md:text[14px] lg:text-[16px] mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12"
+                              className="text-[12px] md:text[14px] lg:text-[16px] mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12 lg:py-4"
                               onClick={() => setIsOpens(true)}
                             >
                               <span className="">{item.btnTitle1}</span>
