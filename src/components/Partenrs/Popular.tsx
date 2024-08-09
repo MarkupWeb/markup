@@ -103,7 +103,7 @@ const Popular = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -112,7 +112,7 @@ const Popular = () => {
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -123,7 +123,7 @@ const Popular = () => {
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -143,8 +143,8 @@ const Popular = () => {
                
                 {data.map((item, i) => (
                   <div className="" key={i}>
-                    <div className="bg-white  dark:bg-slate-800 text-center rounded-full w-[120px]">
-                    <Image className="" src={item.imgSrc} alt={item.imgSrc} width={125} height={125} />
+                    <div className="bg-white flex justify-center  dark:bg-slate-800 text-center rounded-full w-[70px] md:w-[90] lg:w-[110px] ">
+                    <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={50} height={0}  />
                     </div>
                   </div>
                 ))}

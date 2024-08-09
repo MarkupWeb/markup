@@ -33,10 +33,10 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
         {/* Container to center the panel */}
         <div className="flex min-h-full items-center">
           {/* The actual dialog panel */}
-          <Dialog.Panel className={`mx-auto max-w-md rounded bg-black text-white p-4 ${local === "ar" ? "__rtl_lang  " : ""}`}>
-            <div className="py-1 mx-4 flex justify-end">
+          <Dialog.Panel className={`mx-auto max-w-md rounded bg-black   text-white px-3 py-4  ${local === "ar" ? "__rtl_lang  " : ""}`}>
+            <div className="pt-1 mx-4 flex justify-end">
               <span
-                className="text-center bg-[#7c7c7c] cursor-pointer rounded-lg w-[30px] h-[30px]"
+                className="text-center bg-slate-800 shadow-2xl hover:bg-slate-900  cursor-pointer rounded-lg w-[25px] h-[25px]"
                 onClick={onClose}
               >
                 X
@@ -44,33 +44,35 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
             </div>
             {data && (
               <div>
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex items-center gap-3 mb-5">
                   <div className="bg-white rounded-full">
                     <Image
                       src={data.imgSrc}
                       alt={data.heading}
-                      width={50}
-                      height={50}
+                      width={60}
+                      height={60}
                       className="m-auto inline-block"
                     />
                   </div>
-                  <h3 className="text-white dark:text-lightblack text-lg font-semibold">
+                  <h3 className="text-white dark:text-lightblack text-md font-semibold">
                     {data.heading}
                   </h3>
                 </div>
 
-                <h4 className="text-lightblack pt-2 text-lg font-normal opacity-50">
+                <h4 className="text-lightblack pt-1 text-md  font-normal opacity-50">
                   {data.heading2}
                 </h4>
                 
 
                 {/* List of titles and descriptions */}
-                <div className="pt-4">
+                <div className="pt-2">
                   {listItems.length > 0 ? (
                     listItems.map((item, index) => (
-                      <div key={index} className="mb-2 bg-slate-500 px-5 py-2 rounded-md">
-                        <h5 className="text-white font-semibold">{item.title}</h5>
-                        <p className="text-lightblack">{item.description}</p>
+                      <div key={index} className="mb-2 bg-slate-800 shadow-2xl px-5 md:px-1 py-2 rounded-md">
+                        <h5 className="text-white text-sm ">{item.title}</h5>
+                        <p className="text-gray-400 text-[10px] md:text-[10px] py-1">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam.
+                        </p>
                       </div>
                     ))
                   ) : (
