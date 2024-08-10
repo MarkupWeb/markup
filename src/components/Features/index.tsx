@@ -66,7 +66,7 @@ const Features = () => {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="text-offwhite  flex w-full justify-between rounded-lg text-left font-medium sm:px-4 sm:py-2 md:text-sm">
+                        <Disclosure.Button className="text-offwhite  flex w-full justify-between rounded-lg text-left font-medium sm:px-4 sm:py-2 text-[14px] md:text-[15px]">
                           <span>{items.heading}</span>
                           <ChevronUpIcon
                             className={`${
@@ -74,7 +74,7 @@ const Features = () => {
                             } h-5 w-5 text-blue-500`}
                           />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-bluish px-4 pb-2 pt-4 font-normal opacity-50 md:text-lg">
+                        <Disclosure.Panel className="text-bluish px-4 pb-2 pt-4 font-normal opacity-50 md:text-sm">
                           {items.subheading}
                         </Disclosure.Panel>
                       </>

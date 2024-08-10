@@ -19,6 +19,7 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import NewsUs from '@/components/NewsUs/NewsUs';
+import AchievementsTwo from '@/components/Achievements2/ActievementsTwo';
 
 
 
@@ -43,7 +44,7 @@ export default function Home() {
       <OurPartners />
       <Features />
       <NewsUs />
-      <Atchievements />
+      <AchievementsTwo />
       <OurServices />
       
       <Temework />
