@@ -1,5 +1,5 @@
 "use client";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../../Common/SectionTitle/SectionTitle";
 import Link from "next/link";
 
 import Slider from "react-slick";
@@ -81,7 +81,6 @@ const postData: DataType[] = [
     rating: 4.7,
   },
 
-
   {
     heading: "Design banner",
     heading2: "with Figma",
@@ -149,8 +148,6 @@ const settings = {
       },
     },
 
-
-    
     {
       breakpoint: 600,
       settings: {
@@ -162,7 +159,6 @@ const settings = {
     },
   ],
 };
-
 
 const OurServices = () => {
   const local = useLocale();

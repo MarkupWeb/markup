@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import logoImg from "../images/logo-mark.png";
 import darklogo from "../../../public/images/logo/dark-logo.png";
-import SendContact from "../../../public/lotyFiles/sendEmail.json";
 import Lottie from "lottie-react";
 
 const Contact = () => {

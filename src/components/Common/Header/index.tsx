@@ -6,11 +6,11 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import lightLogo from '../../../public/images/logo/light-logo.png';
-import darklogo from '../../../public/images/logo/dark-logo.png';
+import lightLogo from "../../../../public/images/logo/light-logo.png";
+import darklogo from "../../../../public/images/logo/dark-logo.png";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "../LocalSwitcher/local-switcher";
-import { useLocale } from 'next-intl';
+import LocalSwitcher from "../../LocalSwitcher/local-switcher";
+import { useLocale } from "next-intl";
 
 const Header = () => {
   // Navbar toggle
@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   // Content translation
-  const t = useTranslations('Menu');
+  const t = useTranslations("Menu");
   const menuLinks = menuData(t);
 
   const locale = useLocale();
@@ -116,7 +116,9 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className={`block lg:flex lg:items-center light:font-[400] lg:gap-8 ${locale === "ar" ? " __rtl_lang font-[500]  " : ""} `} >
+                  <ul
+                    className={`block lg:flex lg:items-center light:font-[400] lg:gap-8 ${locale === "ar" ? " __rtl_lang font-[500]  " : ""} `}
+                  >
                     {menuLinks.map((menuItem, index) => (
                       <li key={index} className=" group relative ">
                         {menuItem.path ? (
@@ -173,11 +175,10 @@ const Header = () => {
 
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div className="flex items-center gap-3">
-                  <LocalSwitcher/>
+                  <LocalSwitcher />
                   <ThemeToggler />
                 </div>
               </div>
-
             </div>
           </div>
         </div>

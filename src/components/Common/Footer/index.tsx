@@ -5,8 +5,8 @@ import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import lightLogo from '../../../public/images/logo/light-logo.png';
-import darklogo from '../../../public/images/logo/dark-logo.png';
+import lightLogo from '../../../../public/images/logo/light-logo.png';
+import darklogo from '../../../../public/images/logo/dark-logo.png';
 
 
 

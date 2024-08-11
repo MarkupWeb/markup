@@ -1,11 +1,11 @@
 "use client";
 import Lottie from "lottie-react";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../../Common/SectionTitle/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
-import questionImg from "../../../public/lotyFiles/question3.json"
+import questionImg from "../../../../public/lotyFiles/question3.json";
 
 import Image from "next/image";
 
@@ -36,14 +36,7 @@ const faqdata: faqdata[] = [
     subheading:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into",
   },
-
-
-  
 ];
-
-
-
-
 
 const Features = () => {
   return (
@@ -85,14 +78,10 @@ const Features = () => {
             </div>
 
             <div className="flex items-center justify-center">
-            <span className="w-[350px] lg:w-[350px]">
-            <Lottie animationData={questionImg} />
-
-            </span>
-            
-            
-            
-          </div>
+              <span className="w-[350px] lg:w-[350px]">
+                <Lottie animationData={questionImg} />
+              </span>
+            </div>
           </div>
         </div>
       </section>

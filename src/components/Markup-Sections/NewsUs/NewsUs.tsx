@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
 import Image from "next/image";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { HiArrowSmallRight } from "react-icons/hi2";
 import { MdOutlineSlowMotionVideo } from "react-icons/md";
-import videoImg from "../../../public/images/news/branding.jpg";
+import videoImg from "../../../../public/images/news/branding.jpg";
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 
 // CAROUSEL DATA
 
@@ -79,7 +79,7 @@ function NewsUs() {
 
   // Filter the news data based on the active button
   const filteredData = postData.filter(
-    (item) => activeButton === "All News" || item.bttnname === activeButton
+    (item) => activeButton === "All News" || item.bttnname === activeButton,
   );
 
   return (
@@ -93,20 +93,25 @@ function NewsUs() {
 
         <div className="lg:flex lg:items-center gap-[3rem] lg:justify-start lg:gap-10 ">
           <div className="flex lg:flex-col gap-[10px] pb-5 ">
-            {["All News", "Orange one", "Apple two", "Bnana three"].map((btn) => (
-              <button
-                key={btn}
-                className={`news_btn ${activeButton === btn ? 'active' : ''}`}
-                onClick={() => setActiveButton(btn)}
-              >
-                {btn}
-              </button>
-            ))}
+            {["All News", "Orange one", "Apple two", "Bnana three"].map(
+              (btn) => (
+                <button
+                  key={btn}
+                  className={`news_btn ${activeButton === btn ? "active" : ""}`}
+                  onClick={() => setActiveButton(btn)}
+                >
+                  {btn}
+                </button>
+              ),
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden">
             {filteredData.map((item, index) => (
-              <article className="news_card border-[1px] border-[#5d9dfc] " key={index}>
+              <article
+                className="news_card border-[1px] border-[#5d9dfc] "
+                key={index}
+              >
                 <div className="relative">
                   <span className="absolute text-[2.2rem] left-[35%] top-[35%] hover:text-blue-600 cursor-pointer bg-white dark:bg-black rounded-full p-4 z-10">
                     <MdOutlineSlowMotionVideo />

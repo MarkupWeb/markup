@@ -1,7 +1,7 @@
 import React from "react";
 import Popular from "./Popular";
 import MainPartenrs from "./MainPartenrs";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 
 const OurPartners = () => {
   return (
@@ -18,8 +18,6 @@ const OurPartners = () => {
             <Popular />
             <MainPartenrs />
           </div>
-
-
         </div>
       </section>
     </>
