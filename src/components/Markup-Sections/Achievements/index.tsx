@@ -1,6 +1,6 @@
 "use client";
-import SectionTitle from "../Common/SectionTitle/SectionTitle";
 
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 import Image from "next/image";
 
 interface faqdata {
