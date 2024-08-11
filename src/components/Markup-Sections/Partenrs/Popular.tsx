@@ -19,6 +19,7 @@ import Img13 from "../../../../public/images/Partnars_Logos/12-chicken-fila.png"
 import Img14 from "../../../../public/images/Partnars_Logos/13-xlarge.png";
 import Img15 from "../../../../public/images/Partnars_Logos/14-adrenaleen.png";
 import Img16 from "../../../../public/images/Partnars_Logos/15-cairo-guys.png";
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 
 
 
@@ -134,6 +135,11 @@ const Popular = () => {
   return (
     <>
       <section id="partners" className="">
+      <SectionTitle
+            title=""
+            paragraph=""
+            center
+          />
         
 
           <div className="px-4s mx-auto max-w-2xl py-16 sm:px-6 lg:max-w-7xl ">
