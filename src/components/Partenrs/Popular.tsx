@@ -144,7 +144,7 @@ const Popular = () => {
                 {data.map((item, i) => (
                   <div className="" key={i}>
                     <div className="bg-white flex justify-center  dark:bg-slate-800 text-center rounded-full w-[70px] md:w-[90] lg:w-[110px] ">
-                    <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={50} height={0}  />
+                    <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={0} height={0}  />
                     </div>
                   </div>
                 ))}
