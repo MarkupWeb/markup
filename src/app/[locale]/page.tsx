@@ -12,6 +12,7 @@ import NewsUs from "@/components/Markup-Sections/NewsUs/NewsUs";
 import AchievementsTwo from "@/components/Markup-Sections/Achievements2/ActievementsTwo";
 import OurServices from "@/components/Markup-Sections/OurServices";
 import Contact from "@/components/Markup-Sections/Contact";
+import PartnersCategory from "@/components/Markup-Sections/TestingPartners/PartnersCategory";
 
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function Home() {
     <>
       <Hero />
       <OurPartners />
+      <PartnersCategory />
       <Features />
       <NewsUs />
       <AchievementsTwo />
