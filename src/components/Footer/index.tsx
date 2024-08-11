@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import logoImg from '../images/logo-mark.png';
+import lightLogo from '../../../public/images/logo/light-logo.png';
 import darklogo from '../../../public/images/logo/dark-logo.png';
 
 
@@ -60,7 +60,7 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src={theme === "dark" ? darklogo : logoImg}
+                    src={theme === "dark" ? darklogo : lightLogo}
                     alt="logo"
                     className="w-full "
                     width={140}

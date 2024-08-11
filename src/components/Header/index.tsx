@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import logoImg from '../images/logo-mark.png';
+import lightLogo from '../../../public/images/logo/light-logo.png';
 import darklogo from '../../../public/images/logo/dark-logo.png';
 import { useTranslations } from "next-intl";
 import LocalSwitcher from "../LocalSwitcher/local-switcher";
@@ -75,7 +75,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src={theme === "dark" ? darklogo : logoImg}
+                  src={theme === "dark" ? darklogo : lightLogo}
                   alt="logo"
                   width={140}
                   height={30}

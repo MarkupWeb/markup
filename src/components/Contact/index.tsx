@@ -103,22 +103,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
-            <span className="w-[350px] lg:w-[350px]">
-            <Lottie animationData={SendContact} />
-
-            </span>
-            
-            
-            
-          </div>
-          {/*           
-
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
-          </div>
- */}
+          
         </div>
+        
       </div>
     </section>
   );
