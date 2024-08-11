@@ -122,7 +122,7 @@ const Popular = () => {
 
   return (
     <>
-      <section id="partners" className="">
+      <section className="">
         <div className="px-4s mx-auto max-w-2xl py-16 sm:px-6 lg:max-w-7xl ">
           <div>
             <Slider {...settings}>
