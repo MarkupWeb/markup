@@ -1,7 +1,7 @@
 import React from "react";
-import Popular from "./Popular";
 import MainPartenrs from "./MainPartenrs";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
+import PopularPartners from "./PopularPartners";
 
 const OurPartners = () => {
   return (
@@ -15,11 +15,9 @@ const OurPartners = () => {
           />
 
           <div className="pb-20">
-            <Popular />
+            <PopularPartners />
             <MainPartenrs />
           </div>
-
-
         </div>
       </section>
     </>

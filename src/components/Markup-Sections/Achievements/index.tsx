@@ -1,13 +1,12 @@
 "use client";
-import SectionTitle from "../Common/SectionTitle";
 
+import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 import Image from "next/image";
 
 interface faqdata {
   heading: string;
   subheading: string;
 }
-
 
 const Atchievements = () => {
   return (
@@ -21,9 +20,7 @@ const Atchievements = () => {
           />
 
           <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-0 lg:px-8">
-
             <div className="mt-8 sm:mt-12">
-              
               <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100 dark:sm:divide-gray-800">
                 <div className="flex flex-col px-4 py-8 text-center">
                   <dt className="order-last text-lg font-medium text-gray-500 dark:text-gray-400">

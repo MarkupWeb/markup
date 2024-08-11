@@ -7,14 +7,13 @@ import ModalVideo from "react-modal-video";
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 
-import DealImg from "../../../public/images/hero/banner1-2.png";
+import DealImg from "../../../../public/images/hero/banner1-2.png";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { useLocale, useTranslations } from "next-intl";
 import heroData from "./heroData";
 import Lottie from "lottie-react";
-import videoClick from "../../../public/lotyFiles/videoClick.json";
+import videoClick from "../../../../public/lotyFiles/videoClick.json";
 import { Dialog } from "@headlessui/react";
-import NewsLatterBox from "../Contact/NewsLatterBox";
 import { HiXMark } from "react-icons/hi2";
 
 const Hero = () => {
@@ -83,48 +82,50 @@ const Hero = () => {
                         </p>
 
                         <div className="flex items-center">
-                          
-                            <Dialog
-                              open={isOpens}
-                              onClose={() => setIsOpens(false)}
-                              className="relative z-50"
-                            >
-                              {/* The backdrop, rendered as a fixed sibling to the panel container */}
-                              <div
-                                className="fixed inset-0 bg-black/30 dark:bg-white/30"
-                                aria-hidden="true"
-                              />
+                          <Dialog
+                            open={isOpens}
+                            onClose={() => setIsOpens(false)}
+                            className="relative z-50"
+                          >
+                            {/* The backdrop, rendered as a fixed sibling to the panel container */}
+                            <div
+                              className="fixed inset-0 bg-black/30 dark:bg-white/30"
+                              aria-hidden="true"
+                            />
 
-                              {/* Full-screen scrollable container */}
-                              <div className="fixed inset-0 w-screen overflow-y-auto">
-                                {/* Container to center the panel */}
-                                <div className="flex min-h-full items-center justify-center p-4">
-                                  {/* The actual dialog panel  */}
-                                  
-                                  <Dialog.Panel className="mx-auto max-w-sm rounded bg-black">
+                            {/* Full-screen scrollable container */}
+                            <div className="fixed inset-0 w-screen overflow-y-auto">
+                              {/* Container to center the panel */}
+                              <div className="flex min-h-full items-center justify-center p-4">
+                                {/* The actual dialog panel  */}
+
+                                <Dialog.Panel className="mx-auto max-w-sm rounded bg-black">
                                   <div className="bg-black py-3 mx-4 flex justify-end">
-                                    
-                                    <span className=" text-center bg-[#7c7c7c] cursor-pointer rounded-lg w-[30px] h-[30px]"
-                                    onClick={() => setIsOpens(false)}
-                                    >X</span>
-
+                                    <span
+                                      className=" text-center bg-[#7c7c7c] cursor-pointer rounded-lg w-[30px] h-[30px]"
+                                      onClick={() => setIsOpens(false)}
+                                    >
+                                      X
+                                    </span>
                                   </div>
-                                    <NewsLatterBox />
-                                  </Dialog.Panel>
-                                </div>
-                              </div>
-                            </Dialog>
+                                  
 
-                            <button
-                              className="text-[12px] md:text[14px] lg:text-[16px] mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12 lg:py-4"
-                              onClick={() => setIsOpens(true)}
-                            >
-                              <span className="">{item.btnTitle1}</span>
-                              <span className="scale-x transform text-[20px]">
-                                <HiOutlinePhone />
-                              </span>
-                            </button>
-                          
+                                  {/* <NewsLatterBox /> */}
+
+                                </Dialog.Panel>
+                              </div>
+                            </div>
+                          </Dialog>
+
+                          <button
+                            className="text-[12px] md:text[14px] lg:text-[16px] mr-6 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-12 lg:py-4"
+                            onClick={() => setIsOpens(true)}
+                          >
+                            <span className="">{item.btnTitle1}</span>
+                            <span className="scale-x transform text-[20px]">
+                              <HiOutlinePhone />
+                            </span>
+                          </button>
 
                           <button
                             onClick={() => setOpen(true)}

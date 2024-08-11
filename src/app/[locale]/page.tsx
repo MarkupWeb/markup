@@ -1,23 +1,17 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Atchievements from "@/components/Achievements";
-import ScrollUp from "@/components/Common/ScrollUp";
-import Contact from "@/components/Contact";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import OurServices from "@/components/OurServices";
-import OurPartners from "@/components/Partenrs/OurPartners";
-
-import Temework from "@/components/Temework/Temework";
-import Testimonials from "@/components/Testimonials";
+import Temework from "@/components/Markup-Sections/Temework/Temework";
+import Testimonials from "@/components/Markup-Sections/Testimonials";
 
 import { Metadata } from "next";
-import NewsUs from '@/components/NewsUs/NewsUs';
-import AchievementsTwo from '@/components/Achievements2/ActievementsTwo';
-
+import Hero from "@/components/Markup-Sections/Hero";
+import OurPartners from "@/components/Markup-Sections/Partenrs/OurPartners";
+import Features from "@/components/Markup-Sections/Features";
+import NewsUs from "@/components/Markup-Sections/NewsUs/NewsUs";
+import AchievementsTwo from "@/components/Markup-Sections/Achievements2/ActievementsTwo";
+import OurServices from "@/components/Markup-Sections/OurServices";
+import Contact from "@/components/Markup-Sections/Contact";
 
 
 export const metadata: Metadata = {
@@ -29,14 +23,9 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-
-
-
 export default function Home() {
-
   return (
     <>
-      
       <Hero />
       <OurPartners />
       <Features />
@@ -44,10 +33,9 @@ export default function Home() {
       <AchievementsTwo />
       <OurServices />
       
+
       <Temework />
       <Contact />
-      
-
     </>
   );
 }
