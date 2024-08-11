@@ -20,9 +20,13 @@ import Img14 from "../../../../public/images/Partnars_Logos/13-xlarge.png";
 import Img15 from "../../../../public/images/Partnars_Logos/14-adrenaleen.png";
 import Img16 from "../../../../public/images/Partnars_Logos/15-cairo-guys.png";
 
+
+
+
+
 // IMAGES DATA FOR CAROUSEL
 interface Data {
-  imgSrc: any;
+  imgSrc :any;
 }
 
 const data: Data[] = [
@@ -32,6 +36,7 @@ const data: Data[] = [
   {
     imgSrc: Img02,
   },
+  
 
   {
     imgSrc: Img03,
@@ -42,7 +47,7 @@ const data: Data[] = [
   {
     imgSrc: Img05,
   },
-
+  
   {
     imgSrc: Img06,
   },
@@ -53,12 +58,14 @@ const data: Data[] = [
     imgSrc: Img09,
   },
 
+
   {
     imgSrc: Img10,
   },
   {
     imgSrc: Img11,
   },
+  
 
   {
     imgSrc: Img12,
@@ -69,12 +76,15 @@ const data: Data[] = [
   {
     imgSrc: Img14,
   },
-  {
+   {
     imgSrc: Img15,
   },
   {
     imgSrc: Img16,
   },
+  
+  
+  
 ];
 
 const Popular = () => {
@@ -108,6 +118,7 @@ const Popular = () => {
         },
       },
 
+      
       {
         breakpoint: 500,
         settings: {
@@ -122,26 +133,23 @@ const Popular = () => {
 
   return (
     <>
-      <section className="">
-        <div className="px-4s mx-auto max-w-2xl py-16 sm:px-6 lg:max-w-7xl ">
-          <div>
-            <Slider {...settings}>
-              {data.map((item, i) => (
-                <div className="" key={i}>
-                  <div className="bg-white flex justify-center  dark:bg-slate-800 text-center rounded-full w-[70px] md:w-[90] lg:w-[110px] ">
-                    <Image
-                      className="w-[60px] md:w-[80px] lg:w-[100px]"
-                      src={item.imgSrc}
-                      alt={item.imgSrc}
-                      width={0}
-                      height={0}
-                    />
+      <section id="partners" className="">
+        
+
+          <div className="px-4s mx-auto max-w-2xl py-16 sm:px-6 lg:max-w-7xl ">
+            <div>
+              <Slider {...settings}>
+               
+                {data.map((item, i) => (
+                  <div className="" key={i}>
+                    <div className="bg-white flex justify-center  dark:bg-slate-800 text-center rounded-full w-[70px] md:w-[90] lg:w-[110px] ">
+                    <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={0} height={0}  />
+                    </div>
                   </div>
-                </div>
-              ))}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
           </div>
-        </div>
       </section>
     </>
   );
