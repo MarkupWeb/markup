@@ -1,11 +1,11 @@
 // Images
-import Img01 from "../../../../public/images/Partnars_Logos/01-saltaoon.png";
-import Img02 from "../../../../public/images/Partnars_Logos/02-nos-dasta.png";
-import Img03 from "../../../../public/images/Partnars_Logos/03-baheya.png";
-import Img04 from "../../../../public/images/Partnars_Logos/04-dokan-fteer.png";
-import Img05 from "../../../../public/images/Partnars_Logos/05-kbsha.png";
-import Img06 from "../../../../public/images/Partnars_Logos/06-bonoh.png";
-import Img08 from "../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
+import Img01 from "../../../../../public/images/Partnars_Logos/01-saltaoon.png";
+import Img02 from "../../../../../public/images/Partnars_Logos/02-nos-dasta.png";
+import Img03 from "../../../../../public/images/Partnars_Logos/03-baheya.png";
+import Img04 from "../../../../../public/images/Partnars_Logos/04-dokan-fteer.png";
+import Img05 from "../../../../../public/images/Partnars_Logos/05-kbsha.png";
+import Img06 from "../../../../../public/images/Partnars_Logos/06-bonoh.png";
+import Img08 from "../../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
 
 
 interface ContentItem {
