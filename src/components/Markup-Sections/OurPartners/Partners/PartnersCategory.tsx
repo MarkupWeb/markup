@@ -3,7 +3,7 @@ import React from "react";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import PartnersData from "./PartnersData";
 import { useTranslations } from "next-intl";
-import CategoryCard from "@/components/Common/Categories/CategoryCard";
+import CategoryCard from "../../../Common/Categories/CategoryCard";
 
 function PartnersCategory() {
   // translation
