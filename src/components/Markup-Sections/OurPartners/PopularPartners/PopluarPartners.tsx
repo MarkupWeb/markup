@@ -4,21 +4,21 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
-import Img01 from "../../../../public/images/Partnars_Logos/01-saltaoon.png";
-import Img02 from "../../../../public/images/Partnars_Logos/02-nos-dasta.png";
-import Img03 from "../../../../public/images/Partnars_Logos/03-baheya.png";
-import Img04 from "../../../../public/images/Partnars_Logos/04-dokan-fteer.png";
-import Img05 from "../../../../public/images/Partnars_Logos/05-kbsha.png";
-import Img06 from "../../../../public/images/Partnars_Logos/06-bonoh.png";
-import Img08 from "../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
-import Img09 from "../../../../public/images/Partnars_Logos/08-hamam-abdo.png";
-import Img10 from "../../../../public/images/Partnars_Logos/09-mshakeek.png";
-import Img11 from "../../../../public/images/Partnars_Logos/10-basha.png";
-import Img12 from "../../../../public/images/Partnars_Logos/11-chicken-planet.png";
-import Img13 from "../../../../public/images/Partnars_Logos/12-chicken-fila.png";
-import Img14 from "../../../../public/images/Partnars_Logos/13-xlarge.png";
-import Img15 from "../../../../public/images/Partnars_Logos/14-adrenaleen.png";
-import Img16 from "../../../../public/images/Partnars_Logos/15-cairo-guys.png";
+import Img01 from "../../../../../public/images/Partnars_Logos/01-saltaoon.png";
+import Img02 from "../../../../../public/images/Partnars_Logos/02-nos-dasta.png";
+import Img03 from "../../../../../public/images/Partnars_Logos/03-baheya.png";
+import Img04 from "../../../../../public/images/Partnars_Logos/04-dokan-fteer.png";
+import Img05 from "../../../../../public/images/Partnars_Logos/05-kbsha.png";
+import Img06 from "../../../../../public/images/Partnars_Logos/06-bonoh.png";
+import Img08 from "../../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
+import Img09 from "../../../../../public/images/Partnars_Logos/08-hamam-abdo.png";
+import Img10 from "../../../../../public/images/Partnars_Logos/09-mshakeek.png";
+import Img11 from "../../../../../public/images/Partnars_Logos/10-basha.png";
+import Img12 from "../../../../../public/images/Partnars_Logos/11-chicken-planet.png";
+import Img13 from "../../../../../public/images/Partnars_Logos/12-chicken-fila.png";
+import Img14 from "../../../../../public/images/Partnars_Logos/13-xlarge.png";
+import Img15 from "../../../../../public/images/Partnars_Logos/14-adrenaleen.png";
+import Img16 from "../../../../../public/images/Partnars_Logos/15-cairo-guys.png";
 
 
 

@@ -1,97 +1,25 @@
 "use client";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
+import CategoryCard from "@/components/Common/Categories/CategoryCard";
+import { useTranslations } from "next-intl";
+import TeameworData from "./TeameworkData";
 import Image from "next/image";
-import { HiChevronRight } from "react-icons/hi2";
-import NextArrow from "../Partenrs/NextArrow";
-import PrevArrow from "../Partenrs/PrevArrow";
-import { useLocale } from "next-intl";
+
 
 // CAROUSEL DATA
 
-interface DataType {
-  profession: string;
-  name: string;
-  imgSrc: string;
-}
-
-const postData: DataType[] = [
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user3.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user2.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user1.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user3.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user2.png",
-  },
-  {
-    profession: "Senior UX Designer",
-    name: "Shoo Thar Mien",
-    imgSrc: "/images/mentor/user1.png",
-  },
-];
-
 const Temework = () => {
-  const local = useLocale();
+  const t = useTranslations("Teamework");
+  const TeameworkContent = TeameworData(t);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 4,
-    // centerMode: true,
-    slidesToScroll: 2,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    autoplay: false,
-    speed: 500,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  const records = TeameworkContent;
+
+  const renderCategories = (itemData) => (
+    <div className="" key={itemData}  >
+      <CategoryCard {...itemData}  />
+    </div>
+  );
 
   return (
     <>
@@ -105,41 +33,13 @@ const Temework = () => {
             paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             center
           />
-
-          <div className="relative mx-auto max-w-2xl px-4 sm:py-4 lg:max-w-7xl lg:px-8 ">
-            <h2 className="lh-82 text-midnightblue md:text-55xl text-center text-4xl font-semibold md:text-start pb-8">
-              Meet with our <br /> mentor.
-            </h2>
-
-            <Slider {...settings}>
-              {postData.map((items, i) => (
-                <div key={i} className="">
-                  <div
-                    className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark ${local === "ar" ? "__rtl_lang  " : ""}`}
-                  >
-                    <div className="m-3 py-14 text-center md:my-10">
-                      <div className="relative ">
-                        <Image
-                          src={items.imgSrc}
-                          alt="user-image"
-                          width={306}
-                          height={0}
-                          className="m-auto inline-block "
-                        />
-                      </div>
-                      <div className="-mt-10">
-                        <h3 className="text-lightblack text-2xl font-semibold">
-                          {items.name}
-                        </h3>
-                        <h4 className="text-lightblack pt-2 text-lg font-normal opacity-50">
-                          {items.profession}
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+          <div className="">
+            <SliderList
+              records={records}
+              renderItem={renderCategories}
+              
+              className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
+            />
           </div>
         </div>
       </section>

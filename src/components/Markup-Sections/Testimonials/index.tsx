@@ -1,7 +1,6 @@
 "use client";
 import { Testimonial } from "@/types/testimonial";
-import SectionTitle from "../../Common/SectionTitle/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,8 +8,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useLocale } from "next-intl";
-import NextArrow from "../Partenrs/NextArrow";
-import PrevArrow from "../Partenrs/PrevArrow";
+import NextArrow from "@/components/Logic-List/MultipleSlider/SliderArrows/NextArrow";
+import PrevArrow from "@/components/Logic-List/MultipleSlider/SliderArrows/PrevArrow";
 
 const settings = {
   dots: false,
