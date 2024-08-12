@@ -19,7 +19,7 @@ const OurServices = () => {
 
   let [isOpens, setIsOpens] = useState(false);
 
-  const t = useTranslations("Partners");
+  const t = useTranslations("Services");
   const ServicesContent = ServicesData(t);
 
   const records = ServicesContent;

@@ -1,7 +1,6 @@
 "use client";
 import { Testimonial } from "@/types/testimonial";
-import SectionTitle from "../../Common/SectionTitle/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+
 import Image from "next/image";
 import Link from "next/link";
 

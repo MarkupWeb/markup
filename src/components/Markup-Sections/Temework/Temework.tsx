@@ -13,7 +13,7 @@ import Image from "next/image";
 // CAROUSEL DATA
 
 const Temework = () => {
-  const t = useTranslations("Partners");
+  const t = useTranslations("Teamework");
   const TeameworkContent = TeameworData(t);
 
   const records = TeameworkContent;
