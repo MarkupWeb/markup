@@ -29,10 +29,11 @@ function CategoryCard(itemData: TCategory) {
       />
 
       <div
+      key={id}
         onClick={() => handleCardClick(itemData)}
         className={className}
       >
-        <div className={`m-3 py-11 text-center md:my-10`}>
+        <div className={`m-3 py-11 text-center md:my-10`} >
           <div className="relative ">
             <Image
               src={imgSrc}

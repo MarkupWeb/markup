@@ -1,8 +1,5 @@
 "use client";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import CategoryCard from "@/components/Common/Categories/CategoryCard";
 import { useTranslations } from "next-intl";

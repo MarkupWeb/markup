@@ -1,11 +1,7 @@
 "use client";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle";
-import Link from "next/link";
 
 import { useLocale, useTranslations } from "next-intl";
-
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import ServicesData from "./ServicesData";
 import CategoryCard from "@/components/Common/Categories/CategoryCard";
@@ -13,11 +9,8 @@ import CategoryCard from "@/components/Common/Categories/CategoryCard";
 // CAROUSEL DATA
 
 const OurServices = () => {
-  const local = useLocale();
 
-  // pop Up Contect
-
-  let [isOpens, setIsOpens] = useState(false);
+  
 
   const t = useTranslations("Services");
   const ServicesContent = ServicesData(t);

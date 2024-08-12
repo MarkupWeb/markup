@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useTranslations, useLocale } from "next-intl";
 
 import DialogPopUp from "@/components/Common/Dialog-PopUp/PopUp";
 import NextArrow from "./SliderArrows/NextArrow";
@@ -81,13 +80,13 @@ const SliderList = <T extends HasId>({
 
   const CategoryRender =
   records.length > 0 ? (
-    records.map((itemData) => (
-        <>
-          <div className={className} key={itemData.id}>
+    records.map((itemData, index) => (
+        
+          <div className={className} key={itemData.id || index}>
             {renderItem(itemData)}
             
           </div>
-        </>
+        
       ))
     ) : (
       <h4>There is no data</h4>
