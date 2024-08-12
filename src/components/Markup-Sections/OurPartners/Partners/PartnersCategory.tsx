@@ -21,11 +21,14 @@ function PartnersCategory() {
 
   return (
     <div className="container">
+      <div className="">
       <SliderList
         records={records}
         renderItem={renderCategories}
-        className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[240px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-white hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark `}
       />
+
+      </div>
+      
     </div>
   );
 }
