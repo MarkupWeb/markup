@@ -21,14 +21,10 @@ function PartnersCategory() {
 
   return (
     <div className="container">
-      <div className="">
       <SliderList
         records={records}
         renderItem={renderCategories}
       />
-
-      </div>
-      
     </div>
   );
 }

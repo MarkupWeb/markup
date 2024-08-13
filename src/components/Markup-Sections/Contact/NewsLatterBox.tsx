@@ -1,7 +1,7 @@
 "use client";
 
+import SocialLinks from "@/components/Common/SocialLinks/SocialLinks";
 import { useTheme } from "next-themes";
-import SocialLinks from "../SocialLinks/SocialLinks";
 
 const NewsLatterBox = () => {
   const { theme } = useTheme();

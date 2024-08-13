@@ -1,5 +1,8 @@
+import { useTranslations } from "next-intl";
+
 import Temework from "@/components/Markup-Sections/Temework/Temework";
 import Testimonials from "@/components/Markup-Sections/Testimonials";
+
 import { Metadata } from "next";
 import Hero from "@/components/Markup-Sections/Hero";
 import Features from "@/components/Markup-Sections/Features";
@@ -22,7 +25,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <OurPartners />  
+      <OurPartners />
+      
       <Features />
       <NewsUs />
       <AchievementsTwo />

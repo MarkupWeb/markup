@@ -2,12 +2,49 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
 import lightLogo from '../../../../public/images/logo/light-logo.png';
 import darklogo from '../../../../public/images/logo/dark-logo.png';
-import SocialLinks from "@/components/Markup-Sections/SocialLinks/SocialLinks";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 
 
+
+
+
+interface socialLinks {
+  imgSrc: string;
+  link: string;
+  width: number;
+  iconLink: React.ReactNode;
+}
+
+
+const socialLinks: socialLinks[] = [
+  {
+      imgSrc: '/assets/footer/facebook.svg',
+      link: 'www.facebook.com',
+      width: 10,
+      iconLink: <FaFacebookF />,
+  },
+
+  {
+      imgSrc: '/assets/footer/insta.svg',
+      link: 'www.instagram.com',
+      width: 14,
+      iconLink: <FaInstagram />,
+  },
+
+  {
+      imgSrc: '/assets/footer/twitter.svg',
+      link: 'www.twitter.com',
+      width: 14,
+      iconLink: <FaLinkedinIn />,
+  },
+
+]
 
 
 
@@ -36,11 +73,10 @@ const Footer = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lobortis.
                 </p>
+                <div className='flex gap-4'>
 
-                <div className="">
-                  <SocialLinks />
-                </div>
-                
+                      <SocialLinks />
+                    </div>
               </div>
             </div>
 
@@ -147,34 +183,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           
-          {/* <div className="py-8">
-            <p className="text-center text-base text-body-color dark:text-white">
-              Template by{" "}
-              <a
-                href="http://uideck.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                UIdeck
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
-            </p>
-          </div> */}
-
-
+          
         </div>
-        
       </footer>
     </>
   );
