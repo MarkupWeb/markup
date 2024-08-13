@@ -1,10 +1,10 @@
 "use client";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
-import CategoryCard from "@/components/Common/Categories/CategoryCard";
 import { useTranslations } from "next-intl";
 import TeameworData from "./TeameworkData";
 import Image from "next/image";
+import CategoryCardTeamework from "@/components/Common/Categories/CategoryCardTeamework";
 
 
 // CAROUSEL DATA
@@ -17,7 +17,7 @@ const Temework = () => {
 
   const renderCategories = (itemData) => (
     <div className="" key={itemData}  >
-      <CategoryCard {...itemData}  />
+      <CategoryCardTeamework {...itemData}  />
     </div>
   );
 
