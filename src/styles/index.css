@@ -10,18 +10,12 @@
 html[dir='rtl']{
   direction: rtl;
   scroll-behavior: smooth;
-  
-
-  
-  
 }
 
 html[dir='ltr'] {
   direction: ltr;
   scroll-behavior: smooth;
 
-
-  
 }
 
 

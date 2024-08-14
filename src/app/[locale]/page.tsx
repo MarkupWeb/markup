@@ -11,6 +11,7 @@ import AchievementsTwo from "@/components/Markup-Sections/Achievements2/Actievem
 import OurServices from "@/components/Markup-Sections/OurServices";
 import Contact from "@/components/Markup-Sections/Contact";
 import OurPartners from "@/components/Markup-Sections/OurPartners";
+import OurTarget from "@/components/Markup-Sections/Our-Target/OurTarget";
 
 export const metadata: Metadata = {
   title: "Markup",
@@ -25,6 +26,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <OurTarget />
       <OurPartners />
       
       <Features />

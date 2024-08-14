@@ -40,14 +40,8 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 const AchievementsTwo: React.FC = () => {
   return (
-    <section id="atchievements" className="py-10 md:py-20 lg:py-28">
-      <div className="container">
-        <SectionTitle
-          title="Our Atchievements"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center
-        />
-
+    <section id="atchievements" className="">
+      
         <div className="bg-slate-100 shadow-sm dark:bg-slate-800 rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
           {achievementsList.map((achievement, index) => (
             <div
@@ -72,7 +66,7 @@ const AchievementsTwo: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      
     </section>
   );
 };
