@@ -97,7 +97,7 @@ function NewsUs() {
               (btn) => (
                 <button
                   key={btn}
-                  className={`news_btn ${activeButton === btn ? "active" : ""}`}
+                  className={`news_btn text-[12px] py-[1px] md:py-2.5 lg:py-3 px-4 ${activeButton === btn ? "active" : ""}`}
                   onClick={() => setActiveButton(btn)}
                 >
                   {btn}

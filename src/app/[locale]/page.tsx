@@ -26,8 +26,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <OurTarget />
+      
       <OurPartners />
+      <OurTarget />
       
       <Features />
       <NewsUs />

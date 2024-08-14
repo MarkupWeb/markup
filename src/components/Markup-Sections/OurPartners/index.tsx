@@ -5,7 +5,7 @@ import PartnersCategory from './Partners/PartnersCategory';
 const OurPartners = () => {
     return (
       <>
-        <section id="partners" className="py-10 md:py-20 lg:py-28">
+        <section id="partners" className="py-10 md:py-20 lg:py-28 ">
           <div className="container">
             <SectionTitle
               title="Our Partners"

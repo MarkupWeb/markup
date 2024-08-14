@@ -41,7 +41,7 @@ const Atchievements = () => {
 
                 </div>
 
-                <div className="flex flex-col px-2 py-6 text-center bg-blue-400 shadow-lg rounded-md">
+                <div className=" flex flex-col px-2 py-6 text-center bg-blue-400 shadow-lg rounded-md  ">
                   <dt className="order-last text-lg font-medium text-gray-100 dark:text-gray-400">
                     Official Addons
                   </dt>
