@@ -15,6 +15,7 @@ const OurPartners = () => {
   
             <div className="pb-20">
               <PopularPartners />
+              
               <PartnersCategory />
             </div>
           </div>

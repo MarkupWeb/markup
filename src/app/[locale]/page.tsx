@@ -31,7 +31,7 @@ export default function Home() {
       
       <Features />
       <NewsUs />
-      <AchievementsTwo />
+
       <OurServices />
       <Temework />
       <Testimonials />

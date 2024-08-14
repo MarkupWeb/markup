@@ -53,7 +53,9 @@ const OurTarget: React.FC = () => {
         />
 
         <div className="flex flex-row justify-center">
-        <div className="flex items-center gap-8">
+
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           <Atchievements />
 
           <div className="w-[300px] ">
@@ -63,6 +65,17 @@ const OurTarget: React.FC = () => {
 
         </div>
 
+
+        </div>
+
+
+        <div className="bg-slate-800 p-10 rounded-lg shadow-sm">
+          <h2 className="text-xl text-white fon ">
+            Lorem ipsum dolor sit amet consectetur <span className="text-orange-600 font-semibold">adipisicing elit</span> 
+          </h2>
+          <p className="text-sm text-gray-200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum doloribus quibusdam quos soluta ad?
+          </p>
 
         </div>
 

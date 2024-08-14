@@ -41,7 +41,7 @@ const countriesFlags: IData[] = [
 
 function PartnersFlags() {
   return (
-    <div className="flex gap-4 mt-10">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
       {countriesFlags.map((item, i) => (
         <div key={i} className=" flex justify-center items-center flex-col gap-4 px-10">
           <div className=" ">
@@ -56,7 +56,7 @@ function PartnersFlags() {
             </div>
             
           </div>
-          <h3 className="text-[12px] font-semibold">{item.title}</h3>
+          <h3 className="text-[11px] text-center md:text-[12] font-semibold">{item.title}</h3>
         </div>
       ))}
     </div>
