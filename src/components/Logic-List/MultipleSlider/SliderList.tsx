@@ -33,7 +33,7 @@ const SliderList = <T extends HasId>({
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     autoplay: false,
-    speed: 9000,
+    speed: 500,
     cssEase: "linear",
     responsive: [
       {
