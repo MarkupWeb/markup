@@ -67,6 +67,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
+
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
@@ -84,7 +85,10 @@ const Header = () => {
               </Link>
             </div>
 
+
+
             <div className="flex w-full items-center justify-between px-4">
+
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -117,14 +121,14 @@ const Header = () => {
                   }`}
                 >
                   <ul
-                    className={`block lg:flex lg:items-center light:font-[400] lg:gap-8 ${locale === "ar" ? " __rtl_lang font-[500]  " : ""} `}
+                    className={`block lg:flex lg:text-center lg:items-center lg:justify-center light:font-[400] lg:gap-8 ${locale === "ar" ? " __rtl_lang font-[500]  " : ""} `}
                   >
                     {menuLinks.map((menuItem, index) => (
                       <li key={index} className=" group relative ">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={` flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                            className={` flex py-2 text-base lg:text-[14px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               pathname === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -173,13 +177,18 @@ const Header = () => {
                 </nav>
               </div>
 
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              
+            </div>
+            <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div className="flex items-center gap-3">
                   <LocalSwitcher />
                   <ThemeToggler />
                 </div>
               </div>
-            </div>
+
+
+
+
           </div>
         </div>
       </header>
