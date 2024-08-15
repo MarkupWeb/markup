@@ -22,7 +22,7 @@ export default function RootLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir}>
+    <html lang={locale}>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <ClientWrapper locale={locale}>
           {children}

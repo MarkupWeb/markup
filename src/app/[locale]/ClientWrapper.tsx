@@ -9,14 +9,20 @@ import { ProvidersTheme } from "./ThemeProvider";
 interface ClientWrapperProps {
   children: React.ReactNode;
   locale: string;
+  dir?: string;
 }
 
-export default function ClientWrapper({ children, locale }: ClientWrapperProps) {
+
+
+export default function ClientWrapper({ children, locale, dir }: ClientWrapperProps) {
   return (
     <ProvidersTheme>
       <Providers locale={locale}>
         <Header />
+        <div className="" dir={dir}>
+
         {children}
+        </div>
         <Footer />
         <ScrollToTop />
       </Providers>
