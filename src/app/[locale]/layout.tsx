@@ -1,16 +1,12 @@
-"use client";
-
-import Footer from "@/components/Common/Footer";
-import Header from "@/components/Common/Header";
-import ScrollToTop from "@/components/Common/ScrollToTop";
-import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../../styles/index.css";
-import { Providers } from "./providers";
-
-import { ProvidersTheme } from "./ThemeProvider";
+import { Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Dynamically import the ClientWrapper component
+const ClientWrapper = dynamic(() => import("./ClientWrapper"), { ssr: false });
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -26,18 +22,11 @@ export default function RootLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={dir}>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <ProvidersTheme>
-          <Providers locale={locale}>
-            <Header />
-
-            <div dir={dir}>{children}</div>
-
-            <Footer />
-            <ScrollToTop />
-          </Providers>
-        </ProvidersTheme>
+        <ClientWrapper locale={locale}>
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );
