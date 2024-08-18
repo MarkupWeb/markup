@@ -148,7 +148,7 @@ interface Data {
                  
                   {data.map((item, i) => (
                     <div className="" key={i}>
-                      <div className="  flex justify-center   text-center  w-[70px] md:w-[90] lg:w-[90px] ">
+                      <div className="  flex justify-center   text-center  w-[70px] md:w-[90] lg:w-[90px] cursor-pointer">
                       <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={0} height={0}  />
                       </div>
                     </div>
