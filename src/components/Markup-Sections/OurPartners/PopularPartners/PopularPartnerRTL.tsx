@@ -92,7 +92,7 @@ interface Data {
     
   ];
   
-  const PopularPartners = () => {
+  const PopularPartnerRTL = () => {
     const settings = {
       dots: false,
       infinite: true,
@@ -100,9 +100,10 @@ interface Data {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
-      speed: 4000,
-      autoplaySpeed: 4000,
+      speed: 5000,
+      autoplaySpeed: 5000,
       cssEase: "linear",
+      rtl: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -148,7 +149,7 @@ interface Data {
                  
                   {data.map((item, i) => (
                     <div className="" key={i}>
-                      <div className="  flex justify-center   text-center  w-[70px] md:w-[90] lg:w-[90px] ">
+                      <div className=" flex justify-center   w-[70px] md:w-[90] lg:w-[90px] ">
                       <Image className="w-[60px] md:w-[80px] lg:w-[100px]" src={item.imgSrc} alt={item.imgSrc} width={0} height={0}  />
                       </div>
                     </div>
@@ -161,4 +162,4 @@ interface Data {
     );
   };
   
-  export default PopularPartners;
+  export default PopularPartnerRTL;

@@ -2,6 +2,8 @@ import SectionTitle from '@/components/Common/SectionTitle/SectionTitle';
 import React from 'react'
 import PopularPartners from './PopularPartners/PopluarPartners';
 import PartnersCategory from './Partners/PartnersCategory';
+import PopularPartnerRTL from './PopularPartners/PopularPartnerRTL';
+import Popluar from './PopularPartners';
 const OurPartners = () => {
     return (
       <>
@@ -14,8 +16,7 @@ const OurPartners = () => {
             />
   
             <div className="pb-20">
-              <PopularPartners />
-              
+              <Popluar />
               <PartnersCategory />
             </div>
           </div>
