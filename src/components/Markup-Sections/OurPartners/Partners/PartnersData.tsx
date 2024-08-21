@@ -6,6 +6,10 @@ import Img04 from "../../../../../public/images/Partnars_Logos/04-dokan-fteer.pn
 import Img05 from "../../../../../public/images/Partnars_Logos/05-kbsha.png";
 import Img06 from "../../../../../public/images/Partnars_Logos/06-bonoh.png";
 import Img08 from "../../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
+import Img09 from "../../../../../public/images/Partnars_Logos/09-mshakeek.png";
+import Img10 from "../../../../../public/images/Partnars_Logos/10-basha.png";
+import Img11 from "../../../../../public/images/Partnars_Logos/11-chicken-planet.png";
+import Img12 from "../../../../../public/images/Partnars_Logos/12-chicken-fila.png";
 
 interface ContentItem {
   title: string;
@@ -169,65 +173,156 @@ const PartnersData = (t: (key: string) => string): DataType[] => [
     ],
   },
 
-  {
-    id: 6,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt Stelle",
-    imgSrc: Img06,
-    content: [
-      {
-        title: "Introduction to Figma",
-        description: "Getting started with Figma for banner design.",
-      },
-      {
-        title: "Creating Layouts",
-        description: "Learn how to create effective layouts.",
-      },
-      {
-        title: "Typography",
-        description: "Understanding typography in banner design.",
-      },
-      {
-        title: "Colors and Imagery",
-        description: "Using colors and images effectively.",
-      },
-      {
-        title: "Exporting Banners",
-        description: "How to export and use your banners.",
-      },
-    ],
-  },
 
-  {
-    id: 7,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt Stelle",
-    imgSrc: Img08,
-    content: [
-      {
-        title: "Introduction to Figma",
-        description: "Getting started with Figma for banner design.",
-      },
-      {
-        title: "Creating Layouts",
-        description: "Learn how to create effective layouts.",
-      },
-      {
-        title: "Typography",
-        description: "Understanding typography in banner design.",
-      },
-      {
-        title: "Colors and Imagery",
-        description: "Using colors and images effectively.",
-      },
-      {
-        title: "Exporting Banners",
-        description: "How to export and use your banners.",
-      },
-    ],
-  },
+
+  // {
+  //   id: 6,
+  //   heading: "Design banner",
+  //   heading2: "with Figma",
+  //   name: "Colt Stelle",
+  //   imgSrc: Img06,
+  //   content: [
+  //     {
+  //       title: "Introduction to Figma",
+  //       description: "Getting started with Figma for banner design.",
+  //     },
+  //     {
+  //       title: "Creating Layouts",
+  //       description: "Learn how to create effective layouts.",
+  //     },
+  //     {
+  //       title: "Typography",
+  //       description: "Understanding typography in banner design.",
+  //     },
+  //     {
+  //       title: "Colors and Imagery",
+  //       description: "Using colors and images effectively.",
+  //     },
+  //     {
+  //       title: "Exporting Banners",
+  //       description: "How to export and use your banners.",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   id: 7,
+  //   heading: "Design banner",
+  //   heading2: "with Figma",
+  //   name: "Colt Stelle",
+  //   imgSrc: Img08,
+  //   content: [
+  //     {
+  //       title: "Introduction to Figma",
+  //       description: "Getting started with Figma for banner design.",
+  //     },
+  //     {
+  //       title: "Creating Layouts",
+  //       description: "Learn how to create effective layouts.",
+  //     },
+  //     {
+  //       title: "Typography",
+  //       description: "Understanding typography in banner design.",
+  //     },
+  //     {
+  //       title: "Colors and Imagery",
+  //       description: "Using colors and images effectively.",
+  //     },
+  //     {
+  //       title: "Exporting Banners",
+  //       description: "How to export and use your banners.",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   id: 8,
+  //   heading: "Design banner",
+  //   heading2: "with Figma",
+  //   name: "Colt Stelle",
+  //   imgSrc: Img09,
+  //   content: [
+  //     {
+  //       title: "Introduction to Figma",
+  //       description: "Getting started with Figma for banner design.",
+  //     },
+  //     {
+  //       title: "Creating Layouts",
+  //       description: "Learn how to create effective layouts.",
+  //     },
+  //     {
+  //       title: "Typography",
+  //       description: "Understanding typography in banner design.",
+  //     },
+  //     {
+  //       title: "Colors and Imagery",
+  //       description: "Using colors and images effectively.",
+  //     },
+  //     {
+  //       title: "Exporting Banners",
+  //       description: "How to export and use your banners.",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   heading: "Design banner",
+  //   heading2: "with Figma",
+  //   name: "Colt Stelle",
+  //   imgSrc: Img10,
+  //   content: [
+  //     {
+  //       title: "Introduction to Figma",
+  //       description: "Getting started with Figma for banner design.",
+  //     },
+  //     {
+  //       title: "Creating Layouts",
+  //       description: "Learn how to create effective layouts.",
+  //     },
+  //     {
+  //       title: "Typography",
+  //       description: "Understanding typography in banner design.",
+  //     },
+  //     {
+  //       title: "Colors and Imagery",
+  //       description: "Using colors and images effectively.",
+  //     },
+  //     {
+  //       title: "Exporting Banners",
+  //       description: "How to export and use your banners.",
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   id: 10,
+  //   heading: "Design banner",
+  //   heading2: "with Figma",
+  //   name: "Colt Stelle",
+  //   imgSrc: Img11,
+  //   content: [
+  //     {
+  //       title: "Introduction to Figma",
+  //       description: "Getting started with Figma for banner design.",
+  //     },
+  //     {
+  //       title: "Creating Layouts",
+  //       description: "Learn how to create effective layouts.",
+  //     },
+  //     {
+  //       title: "Typography",
+  //       description: "Understanding typography in banner design.",
+  //     },
+  //     {
+  //       title: "Colors and Imagery",
+  //       description: "Using colors and images effectively.",
+  //     },
+  //     {
+  //       title: "Exporting Banners",
+  //       description: "How to export and use your banners.",
+  //     },
+  //   ],
+  // },
   // Add more items similarly...
 ];
 

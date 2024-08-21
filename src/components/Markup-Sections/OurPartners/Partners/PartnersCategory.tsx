@@ -4,6 +4,8 @@ import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import PartnersData from "./PartnersData";
 import { useTranslations } from "next-intl";
 import CategoryCard from "../../../Common/Categories/CategoryCard";
+import GridList from "@/components/Logic-List/GridList/GridList";
+import PartnerHeader from "@/components/Common/PartnerHeader/PartnerHeader";
 
 function PartnersCategory() {
   // translation
@@ -21,7 +23,9 @@ function PartnersCategory() {
 
   return (
     <div className="container">
-      <SliderList
+      <PartnerHeader title="GREAT SUCCESS STORIES" />
+
+      <GridList
         records={records}
         renderItem={renderCategories}
       />

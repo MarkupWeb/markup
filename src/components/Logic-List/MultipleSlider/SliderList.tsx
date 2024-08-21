@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import DialogPopUp from "@/components/Common/Dialog-PopUp/PopUp";
 import NextArrow from "./SliderArrows/NextArrow";
 import PrevArrow from "./SliderArrows/PrevArrow";
 
