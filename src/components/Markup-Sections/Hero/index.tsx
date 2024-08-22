@@ -43,7 +43,7 @@ const Hero = () => {
           onClose={() => setOpen(false)}
         />
 
-        <ContactPopup isOpen={isOpens} onClose={() => setIsOpens(false)} />
+       
 
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -86,15 +86,15 @@ const Hero = () => {
 
                         <div className="flex items-center">
                           
-                          <button
+                          <Link href="https://wa.me/+201000936297" target="_blank"
                             className="mr-4 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-8 lg:py-4"
-                            onClick={() => setIsOpens(true)}
+                            
                           >
                             <span className="text-[12px] md:text[14px] lg:text-[12px]">{item.btnTitle1}</span>
                             <span className="scale-x transform text-[20px]">
                               <HiOutlinePhone />
                             </span>
-                          </button>
+                          </Link>
 
                           <button
                             onClick={() => setOpen(true)}
