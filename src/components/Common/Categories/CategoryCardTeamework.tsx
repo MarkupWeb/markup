@@ -7,25 +7,13 @@ import DialogPopUp from "@/components/Common/Dialog-PopUp/PopUp";
 function CategoryCardTeamework(itemData: TCategory) {
   const { id, heading, heading2, imgSrc} = itemData;
 
-  // popup ........
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedData, setSelectedData] = useState<any>(null);
-
-  const handleCardClick = (data: any) => {
-    setSelectedData(data);
-    setIsOpen(true);
-  };
+  
 
   return (
     <>
-      <DialogPopUp
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        data={selectedData}
-      />
+      
 
       <div
-        onClick={() => handleCardClick(itemData)}
         className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[250px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
         >
         <div className={`m-3 py-11 text-center `}>
