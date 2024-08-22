@@ -24,19 +24,22 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
   const listItems = data?.content || []; // Default to an empty array if data or data.list is undefined
 
   return (
-    <Dialog open={isOpen} onClose={onClose} className="relative z-[999999]">
+    <Dialog open={isOpen} onClose={onClose} className="relative z-[9999990]">
       {/* The backdrop, rendered as a fixed sibling to the panel container */}
-      <div className="fixed inset-0 bg-black/30 dark:bg-white/30" aria-hidden="true" />
+      <div
+        className="fixed inset-0 bg-black/30 dark:bg-white/30"
+        aria-hidden="true"
+      />
 
       {/* Full-screen scrollable container */}
       <div className="fixed inset-0 w-screen overflow-y-auto">
         {/* Container to center the panel */}
-        <div className="flex min-h-full items-center">
-          {/* The actual dialog panel */}
-          <Dialog.Panel className={`mx-auto max-w-md rounded bg-black   text-white px-3 py-4  ${local === "ar" ? "__rtl_lang  " : ""}`}>
-            <div className="pt-1 mx-4 flex justify-end">
+        <div className="flex min-h-full items-center justify-center p-4">
+          {/* The actual dialog panel  */}
+          <Dialog.Panel className="mx-auto max-w-sm rounded bg-white dark:bg-[#1A1F2B]">
+            <div className="bg-white dark:bg-[#1A1F2B] pt-2 mx-4 flex justify-end">
               <span
-                className="text-center bg-slate-800 shadow-2xl hover:bg-slate-900  cursor-pointer rounded-lg w-[25px] h-[25px]"
+                className="text-center cursor-pointer rounded-lg w-[30px] h-[30px] hover:text-red-600"
                 onClick={onClose}
               >
                 X
@@ -44,8 +47,8 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
             </div>
             {data && (
               <div>
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="bg-white rounded-full">
+                <div className="flex items-center gap-3 mb-5 px-4">
+                  <div className="bg-white rounded-full ">
                     <Image
                       src={data.imgSrc}
                       alt={data.heading}
@@ -54,12 +57,12 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                       className="m-auto inline-block"
                     />
                   </div>
-                  <h3 className="text-white dark:text-lightblack text-md font-semibold">
+                  <h3 className=" dark:text-lightblack text-md font-semibold">
                     {data.heading}
                   </h3>
                 </div>
 
-                <h4 className="text-lightblack pt-1 text-md  font-normal opacity-50">
+                <h4 className="text-lightblack  text-md  font-normal opacity-50 mx-3 my-2">
                   {data.heading2}
                 </h4>
                 
@@ -68,9 +71,9 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                 <div className="pt-2">
                   {listItems.length > 0 ? (
                     listItems.map((item, index) => (
-                      <div key={index} className="mb-2 bg-slate-800 shadow-2xl px-5 md:px-1 py-2 rounded-md">
-                        <h5 className="text-white text-sm ">{item.title}</h5>
-                        <p className="text-gray-400 text-[10px] md:text-[10px] py-1">
+                      <div key={index} className="mb-2 bg-orange-400 dark:bg-slate-800 shadow-2xl  md:px-1 py-2 rounded-md mx-2 px-2">
+                        <h5 className="text-white text-sm font-semibold ">{item.title}</h5>
+                        <p className="text-gray-200 text-[10px] md:text-[10px] py-1">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam.
                         </p>
                       </div>

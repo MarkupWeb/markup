@@ -9,7 +9,7 @@ const Baner = () => {
         <span className=" font-medium">YOUR PROJECT</span>
       </h1>
 
-      <Link href="/" className="  flex items-center justify-center">
+      <Link href="/"  className="  flex items-center justify-center" target="_blank">
         <button className="bg-none border-[1px] text-sm lg:text-md border-blue-500  text-white dark:text-blue-950 px-8 py-3 rounded-3xl hover:bg-blue-500 dark:hover:text-white">
           CONECT US
         </button>
