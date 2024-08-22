@@ -19,6 +19,7 @@ interface DialogProps {
   } | null;
 }
 
+
 const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
     const local = useLocale();
   const listItems = data?.content || []; // Default to an empty array if data or data.list is undefined
@@ -47,8 +48,8 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
             </div>
             {data && (
               <div>
-                <div className="flex items-center gap-3 mb-5 px-4">
-                  <div className="bg-white rounded-full ">
+                <div className="flex items-center gap-3 mb-5 px-4 ">
+                  <div className="bg-white rounded-full">
                     <Image
                       src={data.imgSrc}
                       alt={data.heading}
@@ -68,11 +69,11 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                 
 
                 {/* List of titles and descriptions */}
-                <div className="pt-2">
+                <div className="pt-2 pb-4">
                   {listItems.length > 0 ? (
                     listItems.map((item, index) => (
                       <div key={index} className="mb-2 bg-orange-400 dark:bg-slate-800 shadow-2xl  md:px-1 py-2 rounded-md mx-2 px-2">
-                        <h5 className="text-white text-sm font-semibold ">{item.title}</h5>
+                        <h5 className="text-white text-sm font-semibold text-wrap ">{item.title}</h5>
                         <p className="text-gray-200 text-[10px] md:text-[10px] py-1">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam.
                         </p>
