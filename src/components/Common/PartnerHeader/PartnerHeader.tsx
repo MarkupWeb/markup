@@ -11,7 +11,7 @@ const PartnerHeader = memo(({ children, title }: HeadingProps) => {
   return (
     <div className="mb-3 text-[26px] flex justify-center gap-3 py-3">
       <span className=" border-2 border-blue-400 rounded-lg"></span>
-      <h2 className='text-blue-950 dark:text-white text-md lg:text-xl'>{title}</h2>
+      <h2 className='text-blue-950 dark:text-white text-[1.1rem] md:text-[1.3rem]  lg:text-xl'>{title}</h2>
       {children && <div>{children}</div>}
     </div>
   );
