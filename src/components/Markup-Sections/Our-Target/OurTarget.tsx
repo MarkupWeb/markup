@@ -73,14 +73,11 @@ const OurTarget: React.FC = () => {
           <h2 className="text-3xl text-white font-semibold ">
            في السكشن ده هنتكلم عن انجازات  <span className="text-orange-600 font-semibold">مارك اب</span> 
           </h2>
-          <p className="text-sm text-gray-200">
-             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن
+          <p className="text-md text-gray-200">
+             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن محتوي السكشن يشمل الكلام عن الدول الموجوده في السكشن
              
           </p>
-          <p className="text-sm text-gray-200">
-             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن
-             
-          </p>
+          
 
         </div>
 
