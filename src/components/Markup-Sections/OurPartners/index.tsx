@@ -15,26 +15,13 @@ const OurPartners = () => {
               center
             />
   
-            <div className="pb-20 flex flex-col gap-10">
+            <div className="flex flex-col gap-8">
               <PartnersCategory />
               <PartnersCategory />
               <PartnersCategory />
-              
-              
-              
             </div>
 
-            <div className="bg-slate-800 flex flex-col justify-center py-20 gap-8 rounded-md">
-              <h1 className="text-center text-white text-[2.5rem] tracking-wide font-thin  ">
-              LET’S START <span className="text-orange-400 font-medium">YOUR PROJECT</span>
-              </h1>
-
-              <div className="  flex items-center justify-center">
-              <button className="bg-none border-[1px] border-blue-500  text-white px-8 py-3 rounded-3xl hover:bg-blue-500">CONECT US</button>
-
-              </div>
-
-            </div>
+            
           </div>
         </section>
       </>

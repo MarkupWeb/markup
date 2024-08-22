@@ -4,7 +4,7 @@ import SectionTitle from "../../Common/SectionTitle/SectionTitle";
 import { useLocale, useTranslations } from "next-intl";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import ServicesData from "./ServicesData";
-import CategoryCard from "@/components/Common/Categories/CategoryCard";
+import CategoryServices from "@/components/Common/Categories/CategoryServices";
 
 // CAROUSEL DATA
 
@@ -19,7 +19,7 @@ const OurServices = () => {
 
   const renderCategories = (itemData) => (
     <div className="" key={itemData}>
-      <CategoryCard {...itemData} />
+      <CategoryServices {...itemData} />
     </div>
   );
 

@@ -145,7 +145,7 @@ const Testimonials = () => {
   const local = useLocale();
 
   return (
-    <section className="bg-bg-color-dark dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 text-white">
+    <section className=" dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 dark:text-white">
       <div className="container">
         <div className=" text-center mb-10">
           <h1 className="text-[3rem] ">Testimonials</h1>
@@ -159,7 +159,7 @@ const Testimonials = () => {
           {testimonialData.map((item) => (
             <div key={item.id} className="">
               <div
-                className={`flex items-center  w-[230px]  h-[270px] lg:w-[290px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400  my-6 ${local === "ar" ? "__rtl_lang  " : ""}`}
+                className={`flex items-center  w-[230px] h-[200px]  md:h-[270px]  lg:w-[290px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400  my-6 ${local === "ar" ? "__rtl_lang  " : ""}`}
               >
                 <div className="m-3 py-16 text-center md:my-10">
                   <div className="relative group ">
@@ -169,10 +169,10 @@ const Testimonials = () => {
                         <div className="flex items-center space-x-4">
                           <Image
                             src={item.image}
-                            className="w-12 h-12 bg-center bg-cover border rounded-full"
+                            className=" bg-center bg-cover border rounded-full"
                             alt={item.name}
-                            width={12}
-                            height={12}
+                            width={50}
+                            height={50}
                           />
                           <div>
                             <h3 className="text-lg font-semibold text-white">

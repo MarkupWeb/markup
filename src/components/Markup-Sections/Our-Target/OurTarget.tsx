@@ -47,7 +47,7 @@ const OurTarget: React.FC = () => {
     <section id="atchievements" className="py-10 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Our Target"
+          title="Our Atchievments"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
