@@ -47,14 +47,13 @@ function PartnersFlags() {
           <div className=" ">
             <div className="text-center hover:-translate-y-2 hover:transition-transform cursor-pointer">
               <Image 
-                className="w-[100px]  "
+                className="w-[60px] md:w-[75px] lg:w-[90px]"
                 src={item.imgSrc}
                 alt={item.imgSrc}
                 width={0}
                 height={0}
               />
             </div>
-            
           </div>
           <h3 className="text-[11px] text-center md:text-[12] font-semibold ">{item.title}</h3>
         </div>
