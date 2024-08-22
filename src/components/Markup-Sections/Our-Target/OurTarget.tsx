@@ -69,12 +69,17 @@ const OurTarget: React.FC = () => {
         </div>
 
 
-        <div className="bg-slate-800 p-10 rounded-lg shadow-sm">
-          <h2 className="text-xl text-white fon ">
-            Lorem ipsum dolor sit amet consectetur <span className="text-orange-600 font-semibold">adipisicing elit</span> 
+        <div className="bg-slate-800 p-10 rounded-lg shadow-sm text-center">
+          <h2 className="text-3xl text-white font-semibold ">
+           في السكشن ده هنتكلم عن انجازات  <span className="text-orange-600 font-semibold">مارك اب</span> 
           </h2>
           <p className="text-sm text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At laborum doloribus quibusdam quos soluta ad?
+             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن
+             
+          </p>
+          <p className="text-sm text-gray-200">
+             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن
+             
           </p>
 
         </div>
