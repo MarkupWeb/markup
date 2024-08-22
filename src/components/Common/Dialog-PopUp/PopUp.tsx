@@ -69,7 +69,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                 
 
                 {/* List of titles and descriptions */}
-                <div className="pt-2 pb-4">
+                <div className="pt-2 pb-5">
                   {listItems.length > 0 ? (
                     listItems.map((item, index) => (
                       <div key={index} className="mb-2 bg-orange-400 dark:bg-slate-800 shadow-2xl  md:px-1 py-2 rounded-md mx-2 px-2">
