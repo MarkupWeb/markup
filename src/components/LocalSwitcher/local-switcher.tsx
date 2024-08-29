@@ -10,13 +10,13 @@ export default function LocaleSwitcher() {
   const currentLocale = useLocale();
 
   const toggleLocale = () => {
-    const nextLocale = currentLocale === 'en' ? 'ar' : 'en';
+    const nextLocale = currentLocale === 'ar' ? 'en' : 'ar';
     startTransition(() => {
       router.replace(`/${nextLocale}`);
     });
   };
 
-  const buttonLabel = currentLocale === 'en' ? 'AR' : 'EN';
+  const buttonLabel = currentLocale === 'ar' ? 'EN' : 'AR';
 
   return (
     <div className="flex items-center gap-2">
