@@ -49,7 +49,7 @@ function NewsUs() {
             {allCategories.map((category) => (
               <button
                 key={category}
-                className={`news_btn text-[12px] py-[1px] md:py-2.5 lg:py-4 px-4 ${activeButton === category ? "active" : ""}`}
+                className={`news_btn bg-slate-800  text-white shadow-xl text-[12px] py-[8px] sm:py-[10px] md:py-2.5 lg:py-4 px-4 ${activeButton === category ? "active" : ""}`}
                 onClick={() => filterByCategory(category)}
               >
                 {category}
@@ -72,7 +72,7 @@ function NewsUs() {
 
                 <div className="relative">
                   <span
-                    className="absolute text-[2rem] left-[40%] top-[35%] hover:text-blue-600 cursor-pointer bg-white/60 dark:bg-black/70 rounded-full p-2 z-10"
+                    className="absolute text-[2rem] left-[38%] sm:left-[40%] top-[29%] sm:top-[35%] hover:text-blue-600 cursor-pointer bg-white/50 dark:bg-black/70  rounded-full p-2 z-10"
                     onClick={() => setOpenVideoId(item.videoId)}
                   >
                     <MdOutlineSlowMotionVideo />
@@ -89,7 +89,7 @@ function NewsUs() {
 
                 <div className=" px-2 py-2">
                   <h1 className=" text-[0.8rem] mt-2 mb-1">{item.title}</h1>
-                  <p className=" mt-2 mb-2 text-[11px]">{item.subtitle}</p>
+                  <p className=" mt-1 mb-3 text-[11px] text-[#555]">{item.subtitle}</p>
 
                   <div className=" flex items-center justify-between">
                     <div className="iconLink flex items-center gap-2">
