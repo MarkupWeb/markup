@@ -10,8 +10,8 @@ const OurPartners = () => {
         <section id="partners" className="py-10 md:py-20 lg:py-28 ">
           <div className="container">
             <SectionTitle
-              title="Our Partners"
-              paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+              title="Friends We Shared Success With"
+              paragraph="Those who have shared with us every shred of success"
               center
             />
   

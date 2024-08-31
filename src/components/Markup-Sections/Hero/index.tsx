@@ -32,7 +32,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={`relative z-10 overflow-hidden  pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
+        className={`bg-orange-50 relative z-10 overflow-hidden  pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
       >
         <ModalVideo
           channel="youtube"
@@ -52,12 +52,12 @@ const Hero = () => {
                     ? heroContent.map((item) => (
                         <div className="" key={item.id}>
                           <h1
-                            className={`mb-5 overflow-hidden text-[1.1rem] font-bold leading-tight text-black dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
+                            className={`mb-5 overflow-hidden text-[1.1rem] font-bold leading-tight text-blue-900 dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
                               local === "ar" ? "" : ""
                             }  `}
                           >
                             {item.title}{" "}
-                            <span className="text-orange-400   ">
+                            <span className="text-[#F6AA02]   ">
                               {/* Style will be inherited from the parent element */}
                               <Typewriter
                                 words={
