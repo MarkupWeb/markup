@@ -20,6 +20,7 @@ interface DialogProps {
 }
 
 
+
 const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
     const local = useLocale();
   const listItems = data?.content || []; // Default to an empty array if data or data.list is undefined

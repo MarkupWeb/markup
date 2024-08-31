@@ -28,8 +28,8 @@ const OurServices = () => {
       <section id="services" className="py-10 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Our Services"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Strategies and plans "
+            paragraph="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
             center
           />
 

@@ -19,20 +19,22 @@ const menuData = (t: (key: string) => string): Menu[] => [
     newTab: false,
   },
 
-
   {
     id: 3,
+    title: t("services"),
+    path: "#services",
+    newTab: false,
+  },
+  
+
+
+  {
+    id: 4,
     title: t("features"),
     path: "#features",
     newTab: false,
   },
 
-  {
-    id: 4,
-    title: t("services"),
-    path: "#services",
-    newTab: false,
-  },
   
   {
     id: 5,

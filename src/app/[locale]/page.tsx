@@ -29,10 +29,10 @@ export default function Home() {
       <Hero />
       <OurPartners />
       <Baner />
+      <OurServices />
       <Features />
       <OurTarget />
       <NewsUs />
-      <OurServices />
       <Temework />
       <Testimonials />
       <Contact />
