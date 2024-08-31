@@ -42,9 +42,6 @@ function CategoryCard(itemData: TCategory) {
             <h3 className="text-sm  md:text-md lg:text-lg font-semibold">
               {heading}
             </h3>
-            <h4 className=" pt-1 text-sm font-normal opacity-50">
-              {heading2}
-            </h4>
           </div>
         </div>
       </div>
