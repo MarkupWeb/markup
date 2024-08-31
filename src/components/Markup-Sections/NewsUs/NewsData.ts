@@ -1,4 +1,4 @@
-import videoImg from "../../../../public/images/news/marketing.jpg";
+import videoImg from "../../../../public/images/news/Marketing.png";
 
 interface DataType {
   id?: number;
