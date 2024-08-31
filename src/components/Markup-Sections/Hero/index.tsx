@@ -14,7 +14,6 @@ import heroData from "./heroData";
 import Lottie from "lottie-react";
 import videoClick from "../../../../public/lotyFiles/videoClick.json";
 
-
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -52,7 +51,7 @@ const Hero = () => {
                     ? heroContent.map((item) => (
                         <div className="" key={item.id}>
                           <h1
-                            className={`mb-5 overflow-hidden text-[1.1rem] font-bold leading-tight text-blue-900 dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
+                            className={`mb-5 overflow-hidden text-[1rem] font-bold leading-tight text-blue-900 dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
                               local === "ar" ? "" : ""
                             }  `}
                           >
@@ -63,12 +62,7 @@ const Hero = () => {
                                 words={
                                   local === "ar"
                                     ? ["سهله", "ذكيه", "امنه"]
-                                    : [
-                                        "Effective",
-                                        "Comfortable",
-                                        "Fun",
-                                        "Unforgettable",
-                                      ]
+                                    : ["Effective", "Fun"]
                                 }
                                 loop={true}
                                 cursor
@@ -80,7 +74,7 @@ const Hero = () => {
                             </span>
                           </h1>
 
-                          <p className="mb-8 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-sm md:text-md">
+                          <p className="mb-8 text-[10px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text[12px] md:text-sm lg::text-md">
                             {item.description}
                           </p>
 
@@ -90,7 +84,7 @@ const Hero = () => {
                               target="_blank"
                               className="mr-4 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-8 lg:py-4"
                             >
-                              <span className="text-[12px] md:text[14px] lg:text-[12px]">
+                              <span className="text-[11px] sm:text-[12px] md:text[14px] ">
                                 {item.btnTitle1}
                               </span>
                               <span className="scale-x transform text-[20px]">
@@ -102,7 +96,7 @@ const Hero = () => {
                               onClick={() => setOpen(true)}
                               className="flex items-center justify-center  text-slate-800 dark:text-white"
                             >
-                              <span className="w-[70px] ">
+                              <span className="w-[60px] lg:w-[70px] ">
                                 <Lottie animationData={videoClick} />
                               </span>
 
