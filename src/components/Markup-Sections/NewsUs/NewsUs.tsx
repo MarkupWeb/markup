@@ -10,6 +10,7 @@ import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 import NewsData from "./NewsData";
 import { useTranslations } from "next-intl";
 import ModalVideo from "react-modal-video";
+import Link from "next/link";
 
 function NewsUs() {
   const [openVideoId, setOpenVideoId] = useState(null); // Track which video ID is open
@@ -19,17 +20,19 @@ function NewsUs() {
   const NewsContent = NewsData(t);
 
   // Extract unique categories from the NewsContent
-  const allCategories = Array.from(new Set(NewsContent.map((item) => item.category)));
+  const allCategories = Array.from(
+    new Set(NewsContent.map((item) => item.category)),
+  );
 
   // Set initial state to the first category's items
   const [activeButton, setActiveButton] = useState(allCategories[0]);
   const [filteredData, setFilteredData] = useState(
-    NewsContent.filter((item) => item.category === allCategories[0])
+    NewsContent.filter((item) => item.category === allCategories[0]),
   );
 
   const filterByCategory = (category) => {
     const newFilteredData = NewsContent.filter(
-      (item) => item.category === category
+      (item) => item.category === category,
     );
     setFilteredData(newFilteredData);
     setActiveButton(category);
@@ -43,6 +46,18 @@ function NewsUs() {
           paragraph="Hear from us and learn for free!"
           center
         />
+
+        <div className="flex items-center justify-between mb-5">
+          <span className=""></span>
+          <Link href="/blog" className="bg-slate-800 p-1 rounded-2xl px-3">
+            <div className="more flex items-center gap-1 cursor-pointer text-white hover:text-blue-500 transition-transform hover:translate-x-1 ">
+              <span className="text-[12px]">More</span>
+              <span className="">
+                <HiArrowSmallRight />
+              </span>
+            </div>
+          </Link>
+        </div>
 
         <div className="lg:flex lg:items-center gap-[3rem] lg:justify-start lg:gap-10">
           <div className="flex lg:flex-col gap-[10px] pb-5 ">
@@ -59,10 +74,7 @@ function NewsUs() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden">
             {filteredData.map((item) => (
-              <article
-                className="border-[1px] border-[#5d9dfc] "
-                key={item.id}
-              >
+              <article className="border-[1px] border-[#5d9dfc] " key={item.id}>
                 <ModalVideo
                   channel="youtube"
                   isOpen={openVideoId === item.videoId}
@@ -89,23 +101,17 @@ function NewsUs() {
 
                 <div className=" px-2 py-2">
                   <h1 className=" text-[0.8rem] mt-2 mb-1">{item.title}</h1>
-                  <p className=" mt-1 mb-3 text-[11px] text-[#555]">{item.subtitle}</p>
+                  <p className=" mt-1 mb-3 text-[11px] text-[#555]">
+                    {item.subtitle}
+                  </p>
 
                   <div className=" flex items-center justify-between">
-                    <div className="iconLink flex items-center gap-2">
-                      <span className="cursor-pointer">
-                        <BsLink45Deg />
-                      </span>
-                      <span className="cursor-pointer">
-                        <FaSquareFacebook />
-                      </span>
-                    </div>
-                    <div className="more flex items-center gap-1 cursor-pointer text-blue-500">
-                      <span className="text-[12px]">More</span>
-                      <span className="">
-                        <HiArrowSmallRight />
-                      </span>
-                    </div>
+                    <span className="cursor-pointer">
+                      <BsLink45Deg />
+                    </span>
+                    <span className="cursor-pointer">
+                      <FaSquareFacebook />
+                    </span>
                   </div>
                 </div>
               </article>

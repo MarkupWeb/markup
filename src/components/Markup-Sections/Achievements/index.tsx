@@ -30,7 +30,9 @@ const Achievements = () => {
                 </dd>
               </div>
 
-              <div className="flex flex-col px-2 py-6 text-center bg-orange-500 shadow-lg rounded-md">
+              
+
+              <div className="flex flex-col px-2 py-6 text-center bg-[#F6AA02] shadow-lg rounded-md">
                 <dt className="order-last text-lg font-medium text-gray-100 ">
                   Official Addons
                 </dt>
@@ -39,6 +41,8 @@ const Achievements = () => {
                   {/* Counter will start when inView is true */}
                 </dd>
               </div>
+
+              
             </div>
 
             {/* Second column */}
@@ -51,6 +55,10 @@ const Achievements = () => {
                 {/* Counter will start when inView is true */}
               </dd>
             </div>
+
+            
+
+
           </dl>
         </div>
       </div>
