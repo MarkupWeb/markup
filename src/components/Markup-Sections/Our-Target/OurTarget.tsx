@@ -58,7 +58,7 @@ const OurTarget: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           <Atchievements />
 
-          <div className="w-[300px] ">
+          <div className="hidden lg:block w-[300px] ">
             <Lottie animationData={countries} />
           </div>
 
@@ -85,7 +85,7 @@ const OurTarget: React.FC = () => {
 
 
 
-        <div className="flex justify-center items-center pt-10">
+        <div className="flex justify-center items-center pt-10 ">
           <PartnersFlags />
         </div>
 

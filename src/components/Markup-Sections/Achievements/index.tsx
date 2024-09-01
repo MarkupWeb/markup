@@ -19,7 +19,7 @@ const Achievements = () => {
             {/* First column */}
             <div className="flex flex-col gap-5">
               <div className="flex flex-col px-3 py-6 text-center bg-green-300 shadow-lg rounded-md">
-                <dt className="order-last text-lg font-medium text-gray-100 dark:text-gray-400">
+                <dt className="order-last text-lg font-medium text-gray-100 ">
                   Total Sales
                 </dt>
                 <dd className="text-4xl font-extrabold text-white">
@@ -31,7 +31,7 @@ const Achievements = () => {
               </div>
 
               <div className="flex flex-col px-2 py-6 text-center bg-orange-500 shadow-lg rounded-md">
-                <dt className="order-last text-lg font-medium text-gray-100 dark:text-gray-400">
+                <dt className="order-last text-lg font-medium text-gray-100 ">
                   Official Addons
                 </dt>
                 <dd className="text-4xl font-extrabold text-white">
@@ -43,7 +43,7 @@ const Achievements = () => {
 
             {/* Second column */}
             <div className="flex flex-col px-2 py-6 text-center bg-blue-400 shadow-lg rounded-md">
-              <dt className="order-last text-lg font-medium text-gray-100 dark:text-gray-400">
+              <dt className="order-last text-lg font-medium text-gray-100 ">
                 Customer Satisfaction
               </dt>
               <dd className="text-4xl font-extrabold text-white">
