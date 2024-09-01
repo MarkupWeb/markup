@@ -1,4 +1,16 @@
-import videoImg from "../../../../public/images/news/Marketing.png";
+import img01 from "../../../../public/images/news/01.png";
+import img02 from "../../../../public/images/news/02.png";
+import img03 from "../../../../public/images/news/03.png";
+import img04 from "../../../../public/images/news/04.png";
+import img05 from "../../../../public/images/news/05.png";
+import img06 from "../../../../public/images/news/06.png";
+import img07 from "../../../../public/images/news/07.png";
+import img08 from "../../../../public/images/news/08.png";
+import img09 from "../../../../public/images/news/09.png";
+import img10 from "../../../../public/images/news/10.png";
+import img11 from "../../../../public/images/news/11.png";
+import img12 from "../../../../public/images/news/12.png";
+import img13 from "../../../../public/images/news/13.png";
 
 interface DataType {
   id?: number;
@@ -14,7 +26,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Marketing",
     subtitle: "Most important tips in marketing",
     videoId: "hjnQfaml14s",
-    imgSrc: videoImg,
+    imgSrc: img01,
     category: "Marketing",
   },
 
@@ -23,7 +35,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Where should I post?",
     subtitle: "Most important tips in marketing",
     videoId: "VHPga8J-dUY",
-    imgSrc: videoImg,
+    imgSrc: img02,
     category: "Marketing",
   },
 
@@ -32,7 +44,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Is marketing useful for your brand?",
     subtitle: "Where should I post?",
     videoId: "KeMGSW0dUW8",
-    imgSrc: videoImg,
+    imgSrc: img03,
     category: "Marketing",
   },
   {
@@ -40,7 +52,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "What to do if your product isn’t selling?",
     subtitle: "Where should I post?",
     videoId: "5IV-hEPBjUA",
-    imgSrc: videoImg,
+    imgSrc: img04,
     category: "Marketing",
   },
   {
@@ -48,7 +60,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "10 Best free online marketing",
     subtitle: "Where should I post?",
     videoId: "LTNxHkYOMVQ",
-    imgSrc: videoImg,
+    imgSrc: img05,
     category: "Marketing",
   },
   {
@@ -56,7 +68,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Level up your follower number now for free",
     subtitle: "Where should I post?",
     videoId: "qA5DR-As4mk",
-    imgSrc: videoImg,
+    imgSrc: img06,
     category: "Learning",
   },
   {
@@ -64,7 +76,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Top 10 reasons why your ad is not working",
     subtitle: "Where should I post?",
     videoId: "pyDQ-sgdP8k",
-    imgSrc: videoImg,
+    imgSrc: img07,
     category: "Learning",
   },
   {
@@ -72,7 +84,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "What is the best method of marketing?",
     subtitle: "Where should I post?",
     videoId: "QQLJtC35U1c",
-    imgSrc: videoImg,
+    imgSrc: img08,
     category: "Learning",
   },
   {
@@ -80,7 +92,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "The best marketing tool in 2024",
     subtitle: "Where should I post?",
     videoId: "8nDqLAMR9kY",
-    imgSrc: videoImg,
+    imgSrc: img09,
     category: "Learning",
   },
   {
@@ -88,7 +100,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "The best sales funnel ever",
     subtitle: "Where should I post?",
     videoId: "PgooaHEExZg",
-    imgSrc: videoImg,
+    imgSrc: img10,
     category: "Sales",
   },
   {
@@ -96,7 +108,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Marketing vs sales",
     subtitle: "Where should I post?",
     videoId: "J7Hz2WpsPFI",
-    imgSrc: videoImg,
+    imgSrc: img11,
     category: "Sales",
   },
   {
@@ -104,7 +116,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "Is influencers marketing important?",
     subtitle: "Where should I post?",
     videoId: "fCAX4gCfiLA",
-    imgSrc: videoImg,
+    imgSrc: img12,
     category: "Sales",
   },
   {
@@ -112,7 +124,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     title: "A secret they won’t tell you for your ad",
     subtitle: "Where should I post?",
     videoId: "La6XCk6Dbhw",
-    imgSrc: videoImg,
+    imgSrc: img13,
     category: "Sales",
   },
 ];
