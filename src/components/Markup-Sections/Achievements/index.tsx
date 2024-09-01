@@ -24,7 +24,7 @@ const Achievements = () => {
                 </dt>
                 <dd className="text-4xl font-extrabold text-white">
                   {inView && (
-                    <CountUp end={4800} separator="," duration={10} />
+                    <CountUp end={400} separator="," duration={10} />
                   )}
                   {/* Counter will start when inView is true */}
                 </dd>
