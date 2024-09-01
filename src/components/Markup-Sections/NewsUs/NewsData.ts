@@ -1,16 +1,16 @@
-import img01 from "../../../../public/images/news/01.png";
-import img02 from "../../../../public/images/news/02.png";
-import img03 from "../../../../public/images/news/03.png";
-import img04 from "../../../../public/images/news/04.png";
-import img05 from "../../../../public/images/news/05.png";
-import img06 from "../../../../public/images/news/06.png";
-import img07 from "../../../../public/images/news/07.png";
-import img08 from "../../../../public/images/news/08.png";
-import img09 from "../../../../public/images/news/09.png";
-import img10 from "../../../../public/images/news/10.png";
-import img11 from "../../../../public/images/news/11.png";
-import img12 from "../../../../public/images/news/12.png";
-import img13 from "../../../../public/images/news/13.png";
+import img01 from "../../../../public/images/news/01.jpg";
+import img02 from "../../../../public/images/news/02.jpg";
+import img03 from "../../../../public/images/news/03.jpg";
+import img04 from "../../../../public/images/news/04.jpg";
+import img05 from "../../../../public/images/news/05.jpg";
+import img06 from "../../../../public/images/news/06.jpg";
+import img07 from "../../../../public/images/news/07.jpg";
+import img08 from "../../../../public/images/news/08.jpg";
+import img09 from "../../../../public/images/news/09.jpg";
+import img10 from "../../../../public/images/news/10.jpg";
+import img11 from "../../../../public/images/news/11.jpg";
+import img12 from "../../../../public/images/news/12.jpg";
+import img13 from "../../../../public/images/news/13.jpg";
 
 interface DataType {
   id?: number;
