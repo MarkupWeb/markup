@@ -10,10 +10,15 @@ import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 import NewsData from "./NewsData";
 import { useTranslations } from "next-intl";
 import ModalVideo from "react-modal-video";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 function NewsUs() {
   const [openVideoId, setOpenVideoId] = useState(null); // Track which video ID is open
+
+    
+
+
+  
 
   // Translations
   const t = useTranslations("NewsUs");
@@ -49,7 +54,7 @@ function NewsUs() {
 
         <div className="flex items-center justify-between mb-5">
           <span className=""></span>
-          <Link href="/blog" className="bg-slate-800 p-1 rounded-2xl px-3">
+          <Link href={`/about`}  className="bg-slate-800 p-1 rounded-2xl px-3">
             <div className="more flex items-center gap-1 cursor-pointer text-white hover:text-blue-500 transition-transform hover:translate-x-1 ">
               <span className="text-[12px]">More</span>
               <span className="">

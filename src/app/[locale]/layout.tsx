@@ -1,32 +1,36 @@
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../../styles/index.css";
 import { Inter } from "next/font/google";
-import dynamic from "next/dynamic";
+
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { ReactNode } from "react";
+import Header from "@/components/Common/Header";
+import { Footer } from "flowbite-react";
+import ScrollToTop from "@/components/Common/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Dynamically import the ClientWrapper component
-const ClientWrapper = dynamic(() => import("./ClientWrapper"), { ssr: false });
+type Props = {
+  children: ReactNode;
+  params: { locale: string };
+};
 
-interface RootLayoutProps {
-  children: React.ReactNode;
-  params: {
-    locale: string;
-  };
-}
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
-}: Readonly<RootLayoutProps>) {
-  const dir = locale === "ar" ? "rtl" : "ltr";
+}: Props) {
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <ClientWrapper locale={locale} dir={dir}>
-          {children}
-        </ClientWrapper>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <ScrollToTop />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

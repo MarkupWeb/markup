@@ -8,7 +8,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 1,
     title: t("home"),
-    path: "#",
+    path: "/",
     newTab: false,
   },
 

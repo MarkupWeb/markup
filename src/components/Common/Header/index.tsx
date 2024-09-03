@@ -9,8 +9,8 @@ import menuData from "./menuData";
 import lightLogo from "../../../../public/images/logo/light-logo.png";
 import darklogo from "../../../../public/images/logo/dark-logo.png";
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "../../LocalSwitcher/local-switcher";
 import { useLocale } from "next-intl";
+import LocaleSwitcher from "@/LocalSwitcher/local-switcher";
 
 const Header = () => {
   // Navbar toggle
@@ -183,7 +183,7 @@ const Header = () => {
             </div>
             <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div className="flex items-center gap-3">
-                  <LocalSwitcher />
+                  <LocaleSwitcher />
                   <ThemeToggler />
                 </div>
               </div>
