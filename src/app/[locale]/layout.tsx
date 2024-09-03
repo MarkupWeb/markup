@@ -8,6 +8,7 @@ import { ReactNode } from "react";
 import Header from "@/components/Common/Header";
 import { Footer } from "flowbite-react";
 import ScrollToTop from "@/components/Common/ScrollToTop";
+import { ProvidersTheme } from "./Providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,12 +26,19 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+
+        <ProvidersTheme>
+        
+        
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>
           <Footer />
           <ScrollToTop />
         </NextIntlClientProvider>
+
+        </ProvidersTheme>
+        
       </body>
     </html>
   );
