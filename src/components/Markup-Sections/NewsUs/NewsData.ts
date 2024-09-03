@@ -69,7 +69,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     subtitle: "Where should I post?",
     videoId: "qA5DR-As4mk",
     imgSrc: img06,
-    category: "Learning",
+    category: "Business",
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     subtitle: "Where should I post?",
     videoId: "pyDQ-sgdP8k",
     imgSrc: img07,
-    category: "Learning",
+    category: "Business",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     subtitle: "Where should I post?",
     videoId: "QQLJtC35U1c",
     imgSrc: img08,
-    category: "Learning",
+    category: "Business",
   },
   {
     id: 9,
@@ -93,7 +93,7 @@ const NewsData = (t: (key: string) => string): DataType[] => [
     subtitle: "Where should I post?",
     videoId: "8nDqLAMR9kY",
     imgSrc: img09,
-    category: "Learning",
+    category: "Business",
   },
   {
     id: 10,
