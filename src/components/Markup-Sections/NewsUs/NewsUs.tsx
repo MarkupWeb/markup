@@ -54,7 +54,7 @@ function NewsUs() {
 
         <div className="flex items-center justify-between mb-5">
           <span className=""></span>
-          <Link href="/about"  className="bg-slate-800 p-1 rounded-2xl px-3">
+          <Link href="/blogs"  className="bg-slate-800 p-1 rounded-2xl px-3">
             <div className="more flex items-center gap-1 cursor-pointer text-white hover:text-blue-500 transition-transform hover:translate-x-1 ">
               <span className="text-[12px]">More</span>
               <span className="">

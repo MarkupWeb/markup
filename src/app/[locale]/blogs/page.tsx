@@ -1,27 +1,28 @@
 import Baner from '@/components/Markup-Sections/Baner/Baner'
 import BlogsHero from '@/components/Markup-Sections/BlogsHero'
-import { Metadata } from 'next'
+import NewsUs from '@/components/Markup-Sections/NewsUs/NewsUs';
+import { Metadata } from 'next';
 import React from 'react'
 
 
 export const metadata: Metadata = {
-    title: "Markup-about",
+    title: "Markup-Blogs",
     description: "marketing and business solutions",
     icons: {
       icon: "../icons/icon-markup.png",
     },
     // other metadata
   };
+  
 
-function page() {
+function Blogs() {
   return (
     <div>
         <BlogsHero />
-         <Baner />
-      
-      
+        
+        <Baner />
     </div>
   )
 }
 
-export default page
+export default Blogs

@@ -26,19 +26,14 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-
         <ProvidersTheme>
-        
-        
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <ScrollToTop />
-        </NextIntlClientProvider>
-
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <ScrollToTop />
+          </NextIntlClientProvider>
         </ProvidersTheme>
-        
       </body>
     </html>
   );
