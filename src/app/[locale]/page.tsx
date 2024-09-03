@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 
 import Temework from "@/components/Markup-Sections/Temework/Temework";
 import Testimonials from "@/components/Markup-Sections/Testimonials";
@@ -13,10 +12,20 @@ import Contact from "@/components/Markup-Sections/Contact";
 import OurPartners from "@/components/Markup-Sections/OurPartners";
 import OurTarget from "@/components/Markup-Sections/Our-Target/OurTarget";
 import Baner from "@/components/Markup-Sections/Baner/Baner";
+import { useLocale } from "next-intl";
+
+
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+const local = useLocale();
+
+
+
+
 
 export const metadata: Metadata = {
-  title: "Markup",
-  description: "marketing and business solutions",
+  title: `${local === "en" ? "Markup" : "Markup"}`,
+  description: `${local === "en" ? "marketing and business solutions" : "نحن متخصصون في دفع النمو وتعظيم عائد الاستثمار للشركات من خلال استراتيجيات التسويق الرقمي المتطورة. يتفوق فريق الخبراء لدينا في تحسين محركات البحث (SEO) والدفع لكل نقرة (PPC) وتسويق المحتوى وإدارة وسائل التواصل الاجتماعي لضمان تحقيق أهداف عملك."}`,
   icons: {
     icon: "/icons/icon-markup.png",
   },
@@ -25,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <OurPartners />
       <Baner />
@@ -36,6 +45,6 @@ export default function Home() {
       <Temework />
       <Testimonials />
       <Contact />
-    </>
+    </main>
   );
 }

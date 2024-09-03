@@ -71,11 +71,10 @@ const OurTarget: React.FC = () => {
 
         <div className="bg-slate-800 p-10 rounded-lg shadow-sm text-center">
           <h2 className="text-3xl text-white font-semibold ">
-           في السكشن ده هنتكلم عن انجازات  <span className="text-[#F6AA02] font-semibold">مارك اب</span> 
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit <span className="text-[#F6AA02] font-semibold">MarkUp</span> 
           </h2>
           <p className="text-md text-gray-200">
-             عن عدد العملاء عدد المبيعات اوي اي شيئ في بالك عن الموضوعي , وطبعا محتاج هنا تيتل ودسكريبشن محتوي السكشن يشمل الكلام عن الدول الموجوده في السكشن
-             
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fuga atque perspiciatis neque, autem voluptas fugit blanditiis nulla nesciunt ea. 
           </p>
           
 
