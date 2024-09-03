@@ -1,4 +1,12 @@
 {
+
+  "HomeMeta": {
+    "title": "Markup",
+    "description": "Marketing and business solutions",
+    "icon": "/icons/icon-markup.png"
+  },
+
+  
   "Header": {
     "logo": "App Landing",
     "downbtn": "DOWNLOAD"
