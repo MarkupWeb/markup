@@ -1,3 +1,4 @@
+
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../../styles/index.css";
 import { Inter } from "next/font/google";
@@ -31,8 +32,8 @@ export default async function RootLayout({
             <Header />
             <main>{children}</main>
             
-            <ScrollToTop />
             <Footer />
+            <ScrollToTop />
           </NextIntlClientProvider>
         </ProvidersTheme>
       </body>
