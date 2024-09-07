@@ -8,7 +8,7 @@ import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import Header from "@/components/Common/Header";
 import ScrollToTop from "@/components/Common/ScrollToTop";
-import { ProvidersTheme } from "./Providers/ThemeProvider";
+import { ProvidersTheme } from "../Providers/ThemeProvider";
 import Footer from "@/components/Common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
