@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
   const { locale } = params;
 
   return {
-    title: locale === 'ar' ? "Markup التسويق والأعمال" : "Markup - Blogs",
+    title: locale === 'ar' ? "Markup-التسويق والأعمال" : "Markup-Blogs",
     description: locale === 'ar' ? "Markup تقدم حلول تسويق وأعمال مبتكرة للشركات." : "Markup provides innovative marketing and business solutions for companies.",
     icons: {
       icon: "../icons/icon-markup.png",
