@@ -11,6 +11,9 @@ import NewsData from "./NewsData";
 import { useTranslations } from "next-intl";
 import ModalVideo from "react-modal-video";
 import { Link } from "@/navigation";
+import { HiChevronRight } from "react-icons/hi2";
+import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
+
 
 function NewsUs() {
   const [openVideoId, setOpenVideoId] = useState(null); // Track which video ID is open
@@ -52,17 +55,12 @@ function NewsUs() {
           center
         />
 
-        <div className="flex items-center justify-between mb-5">
-          <span className=""></span>
-          <Link href="/blogs"  className="bg-slate-800 p-1 rounded-2xl px-3">
-            <div className="more flex items-center gap-1 cursor-pointer text-white hover:text-blue-500 transition-transform hover:translate-x-1 ">
-              <span className="text-[12px]">More</span>
-              <span className="">
-                <HiArrowSmallRight />
-              </span>
-            </div>
-          </Link>
+        <div className="pb-5">
+        <HeadCategory title="Learning with Us" btnTitle="More" pathText="/blogs" />
+
         </div>
+
+        
 
         <div className="lg:flex lg:items-center gap-[3rem] lg:justify-start lg:gap-10">
           <div className="flex lg:flex-col gap-[10px] pb-5 ">

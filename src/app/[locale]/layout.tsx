@@ -33,7 +33,6 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <Header />
             <main dir={dir}>{children}</main>
-            
             <Footer />
             <ScrollToTop />
           </NextIntlClientProvider>
