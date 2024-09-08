@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
 
   return {
     title: locale === 'ar' ? "Markup-التسويق والأعمال" : "Markup-Blogs",
-    description: locale === 'ar' ? "Markup تقدم حلول تسويق وأعمال مبتكرة للشركات." : "Markup provides innovative marketing and business solutions for companies.",
+    description: locale === 'ar' ? "تقدم حلول تسويق وأعمال المبتكرة للشركات" : "Markup provides innovative marketing and business solutions for companies.",
     icons: {
       icon: "../icons/icon-markup.png",
     },

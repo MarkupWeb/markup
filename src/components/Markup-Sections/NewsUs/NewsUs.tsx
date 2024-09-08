@@ -97,7 +97,6 @@ function NewsUs() {
                   <Image
                     src={item.imgSrc}
                     alt="thumnial"
-                    layout="responsive"
                     width={1200}
                     height={600}
                     priority

@@ -1,10 +1,4 @@
 {
-
-  
-  
-
-
-
   "Header": {
     "logo": "تحميل",
     "downbtn": "تحميل"
@@ -33,6 +27,8 @@
   },
 
   "Partners": {},
+  "NewsUs": {},
   "Services": {},
+  
   "Teamework": {}
 }
