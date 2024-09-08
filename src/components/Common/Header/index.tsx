@@ -10,7 +10,7 @@ import lightLogo from "../../../../public/images/logo/light-logo.png";
 import darklogo from "../../../../public/images/logo/dark-logo.png";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import LocaleSwitcher from "@/LocalSwitcher/local-switcher";
+import LocaleSwitcher from "@/components/LocalSwitcher/local-switcher";
 
 const Header = () => {
   // Navbar toggle
