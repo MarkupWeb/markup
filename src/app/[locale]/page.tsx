@@ -10,37 +10,31 @@ import NewsUs from "@/components/Markup-Sections/NewsUs/NewsUs";
 import Temework from "@/components/Markup-Sections/Temework/Temework";
 import Testimonials from "@/components/Markup-Sections/Testimonials";
 import Contact from "@/components/Markup-Sections/Contact";
+import SeoMeta from "@/components/SEO-Meta/SEOMeta";
 
 // Define metadata function
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const { locale } = params;
 
-  return {
-    title: locale === 'ar' ? "Markup-حلول التسويق والأعمال" : "Markup-Marketing and Business Solutions",
-    description: locale === 'ar' ? "Markup تقدم حلول تسويق وأعمال مبتكرة للشركات." : "Markup provides innovative marketing and business solutions for companies.",
-    icons: {
-      icon: "/icons/icon-markup.png",
-    },
-    openGraph: {
-      title: locale === 'ar' ? "Markup" : "Markup",
-      description: locale === 'ar' ? "حلول التسويق والأعمال" : "Marketing and business solutions",
-      url: locale === 'ar' ? "https://www.markup.vip/ar" : "https://www.markup.vip/en",
-      siteName: "Markup",
-    },
-    alternates: {
-      canonical: locale === 'ar' ? "https://www.markup.vip/ar" : "https://www.markup.vip/en",
-      languages: {
-        'en': 'https://www.markup.vip/en',
-        'ar': 'https://www.markup.vip/ar',
-      },
-    },
-  };
-}
+  
 
 export default function HomePage() {
+
+  const t = useTranslations('Home'); // Assuming translations are loaded under 'About'
+
+  // Define metadata for the page, using translation keys for title/description
+  const pageTitle = t('pageTitle'); // Example: "About Us" or "معلومات عنا"
+  const pageDescription = t('pageDescription'); 
+
+
   
   return (
     <>
+    <SeoMeta
+        title={pageTitle}
+        description={pageDescription}
+        meta_title={pageTitle} // Optional, if you want the same meta title
+        canonical="https://example.com/about"
+        noindex={false} // Change this based on your needs
+      />
       <Hero  />
       <OurPartners />
       <Baner />

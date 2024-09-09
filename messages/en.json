@@ -1,4 +1,12 @@
 {
+  "Home": {
+    "pageTitle": "About Us",
+  "pageDescription": "Learn more about us and our mission."
+
+  },
+
+
+
   "Header": {
     "logo": "App Landing",
     "downbtn": "DOWNLOAD"

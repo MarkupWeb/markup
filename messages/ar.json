@@ -1,4 +1,11 @@
 {
+
+  "Home": {
+    
+      "pageTitle": "معلومات عنا",
+      "pageDescription": "تعرف علينا وعلى مهمتنا."
+  },
+
   "Header": {
     "logo": "تحميل",
     "downbtn": "تحميل"
