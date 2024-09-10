@@ -41,10 +41,10 @@ const Header = () => {
 
   return (
     <header
-      className={`header left-0 top-0 z-40 flex w-full items-center py-1 ${
+      className={`header left-0 top-0 z-40 flex w-full items-center  ${
         sticky
-          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-          : "absolute bg-transparent shadow-sm dark:shadow-md"
+          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999]  bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          : "absolute bg-transparent shadow-sm dark:shadow-md py-2"
       }`}
     >
       <div className="container">
