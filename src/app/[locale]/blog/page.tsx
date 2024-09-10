@@ -12,24 +12,24 @@ export const generateMetadata = ({ params: { locale } }: BlogsProps): Metadata =
   // Define English and Arabic metadata
   const metadata = {
     en: {
-      
+
       title: 'Blogs - English',
-      description: 'Explore the latest blogs in English',
+      description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
       twitter: {
         card: 'summary_large_image',
         site: '@yoursite',
         title: 'Blogs - English',
-        description: 'Explore the latest blogs in English',
+        description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
       },
     },
     ar: {
-      title: 'المدونات - العربية',
-      description: 'استكشف أحدث المدونات باللغة العربية',
+      title: 'المدونات',
+      description: 'تعلم معنا الكثير عن التسويق ,المبيعات ,الاعلانات المدفوعه, حمالات التسويق',
       twitter: {
         card: 'summary_large_image',
         site: '@yoursite',
         title: 'المدونات - العربية',
-        description: 'استكشف أحدث المدونات باللغة العربية',
+        description: 'تعلم معنا الكثير عن التسويق ,المبيعات ,الاعلانات المدفوعه, حمالات التسويق',
       },
     },
   };

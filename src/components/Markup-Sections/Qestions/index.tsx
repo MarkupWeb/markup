@@ -2,12 +2,12 @@
 import Lottie from "lottie-react";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle";
 import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import questionImg from "../../../../public/lotyFiles/question3.json";
 
 import Image from "next/image";
+import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
 
 interface faqdata {
   heading: string;
@@ -41,19 +41,26 @@ const faqdata: faqdata[] = [
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-10 md:py-20 lg:py-28">
+      <section id="features" className="py-10 md:py-20 lg:py-28 bg-[#C4DAD2] dark:bg-gray-dark">
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Questions Always Looking For"
+            paragraph="Most important and related FQA’s  that might cross your mind"
             center
           />
+
+          <div className="mb-7 px-3">
+          <HeadCategory title="Questions Always Looking For" btnTitle="More" pathText="/questions" />
+
+          </div>
+
+          
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="">
               {faqdata.map((items, i) => (
                 <div
-                  className="border-[1px]  border-gray-400 hover:border-blue-600  mx-auto mb-5 w-full max-w-5xl rounded-2xl px-6 py-2 md:py-4  shadow-md transition-colors"
+                  className="border-[1px] bg-white dark:bg-slate-800  border-orange-400 hover:border-blue-600  mx-auto mb-5 w-full max-w-5xl rounded-2xl px-6 py-2 md:py-4  shadow-md transition-colors"
                   key={i}
                 >
                   <Disclosure>
