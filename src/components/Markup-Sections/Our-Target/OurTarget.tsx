@@ -53,7 +53,7 @@ const OurTarget: React.FC = () => {
 
         <div className=" px-8 py-2">
 
-        <div className=" rounded-lg shadow-sm text-center flex items-center justify-between lg:px-10">
+        <div className=" rounded-lg shadow-sm text-center flex items-center justify-between lg:px-12">
           <div className="w-[500px]">
             <h2 className="text-2xl text-slate-800 dark:text-white font-semibold mb-3 ">
               <span className="text-[#F6AA02] font-semibold">About MarkUp</span>
