@@ -56,7 +56,7 @@ function NewsUs() {
         />
 
         <div className="pb-5">
-        <HeadCategory title="Learning with Us" btnTitle="More" pathText="/blogs" />
+        <HeadCategory title="Learning with Us" btnTitle="More" pathText="/blog" />
 
         </div>
 

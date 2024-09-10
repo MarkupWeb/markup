@@ -10,6 +10,9 @@ import Header from "@/components/Common/Header";
 import ScrollToTop from "@/components/Common/ScrollToTop";
 import { ProvidersTheme } from "../Providers/ThemeProvider";
 import Footer from "@/components/Common/Footer";
+import { Metadata } from "next";
+
+import icon from "../../../public/icons/icon-markup.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +20,25 @@ type Props = {
   children: ReactNode;
   params: { locale: string };
 };
+
+
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://markup.vip"),
+  keywords: ["markup agency","markup marketing", "markup business", "markup business solutions" , "markup restaurant marketing"],
+  title: {
+    default: "markup",
+    template: "%s | markup"
+  },
+
+  openGraph: {
+    description: "Markup agancy, Marketing for Restaurants and Business Solutions, Marketing Plans,Media Buyer"
+  },
+  icons: {
+    icon: "/icons/icon-markup.png",
+  },
+}
+
 
 export default async function RootLayout({
   children,
