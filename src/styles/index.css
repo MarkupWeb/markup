@@ -37,9 +37,6 @@ html[dir='ltr'] {
     @apply inline-flex;
   }
 
-  .sticky .header-logo {
-    @apply py-5 lg:py-2;
-  }
 
   .sticky .menu-scroll.active {
     @apply opacity-70;

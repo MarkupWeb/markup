@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     openGraph: {
       title: locale === 'ar' ? "Markup" : "Markup",
       description: locale === 'ar' ? "حلول التسويق والأعمال" : "Marketing and business solutions",
-      url: locale === 'ar' ? "https://www.markup.vip/ar" : "https://www.markup.vip/en",
+      url: "https://www.markup.vip",
       siteName: "Markup",
     },
     alternates: {
