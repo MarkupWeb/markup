@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -63,13 +63,19 @@ const Header = () => {
           </div>
 
           {/* Nav component - controlled by navbarOpen */}
-          <Nav navbarOpen={navbarOpen} navbarToggleHandler={navbarToggleHandler} />
+          <Nav
+            navbarOpen={navbarOpen}
+            navbarToggleHandler={navbarToggleHandler}
+          />
 
           {/* Menu toggler & Locale Switch */}
           <div className="flex items-center gap-2">
-            <ThemeToggler />
             <LocaleSwitcher />
-            <HiBars3 onClick={navbarToggleHandler} className="text-[33px] cursor-pointer lg:hidden" />
+            <ThemeToggler />
+            <HiBars3
+              onClick={navbarToggleHandler}
+              className="text-[33px] cursor-pointer lg:hidden"
+            />
           </div>
         </div>
       </div>
