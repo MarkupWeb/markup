@@ -41,13 +41,13 @@ const countriesFlags: IData[] = [
 
 function PartnersFlags() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 ">
+    <div className="grid grid-cols-4 lg:grid-cols-4 gap-2 my-2 md:mt-5 ">
       {countriesFlags.map((item, i) => (
-        <div key={i} className=" flex justify-center items-center flex-col gap-4 px-10 py-3 hover:bg-orange-400 hover:text-white  rounded-lg">
-          <div className=" ">
-            <div className="text-center hover:-translate-y-2 hover:transition-transform cursor-pointer">
+        <div key={i} className=" flex justify-center items-center flex-col gap-2 px-18 py-1 bg-[#FEF9D9]  shadow-md  rounded-lg">
+          <div className="">
+            <div className="text-center hover:transition-transform cursor-pointer">
               <Image 
-                className="w-[50px] md:w-[60px] lg:w-[70px]"
+                className="w-[25px] sm:w-[30px] md:w-[30px] lg:w-[30px]"
                 src={item.imgSrc}
                 alt={item.imgSrc}
                 width={0}
@@ -55,7 +55,7 @@ function PartnersFlags() {
               />
             </div>
           </div>
-          <h3 className="text-[11px] text-center md:text-[12] font-semibold ">{item.title}</h3>
+          <h3 className=" text-[8px] md:text-[9px] text-center text-slate-900  font-semibold ">{item.title}</h3>
         </div>
       ))}
     </div>

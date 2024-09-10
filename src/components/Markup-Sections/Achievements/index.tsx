@@ -15,14 +15,15 @@ const Achievements = () => {
     <div ref={ref} className="pb-10">
       <div className="mx-auto max-w-screen-xl sm:px-6 md:py-0">
         <div className="mt-8 sm:mt-12">
-          <dl className="grid grid-cols-1 gap-9 sm:grid-cols-2 content-center items-center sm:divide-x sm:divide-gray-100 dark:sm:divide-gray-800">
+          <dl className="grid grid-cols-2 gap-9 sm:grid-cols-2 lg:grid-cols-4 content-center items-center sm:divide-x sm:divide-gray-100 dark:sm:divide-gray-800">
             {/* First column */}
-            <div className="flex flex-col gap-5">
-              <div className="flex flex-col px-3 py-6 text-center bg-green-300 shadow-lg rounded-md">
-                <dt className="order-last text-lg font-medium text-gray-100 ">
-                  Total Sales
+            
+              <div className="flex flex-col px-1 py-4  text-center bg-green-400 shadow-lg rounded-md">
+                <dt className="order-last text-md font-medium text-gray-100 ">
+                Paid Campaigns
+
                 </dt>
-                <dd className="text-4xl font-extrabold text-white">
+                <dd className="text-2xl font-extrabold text-white">+ 
                   {inView && (
                     <CountUp end={400} separator="," duration={10} />
                   )}
@@ -32,30 +33,42 @@ const Achievements = () => {
 
               
 
-              <div className="flex flex-col px-2 py-6 text-center bg-[#F6AA02] shadow-lg rounded-md">
-                <dt className="order-last text-lg font-medium text-gray-100 ">
-                  Official Addons
+              <div className="flex flex-col px-1 py-4 text-center bg-orange-400 shadow-lg rounded-md">
+                <dt className="order-last text-md font-medium text-gray-100 ">
+                Designs and Videos
                 </dt>
-                <dd className="text-4xl font-extrabold text-white">
+                <dd className="text-xl font-extrabold text-white">+ 
                   {inView && <CountUp end={24} duration={8} />}
                   {/* Counter will start when inView is true */}
                 </dd>
               </div>
 
+
+              <div className="flex flex-col px-1 py-4 text-center bg-blue-500 shadow-lg rounded-md">
+                <dt className="order-last text-md font-medium text-gray-100 ">
+                  Official Addons
+                </dt>
+                <dd className="text-2xl font-extrabold text-white">+ 
+                  {inView && <CountUp end={24} duration={8} />}
+                  {/* Counter will start when inView is true */}
+                </dd>
+              </div>
+
+              <div className="flex flex-col px-1 py-4 text-center bg-[#d5c537] shadow-lg rounded-md">
+                <dt className="order-last text-md font-medium text-gray-100 ">
+                  Our Success Partners
+                </dt>
+                <dd className="text-2xl font-extrabold text-white">+ 
+                  {inView && <CountUp end={70} duration={8} />}
+                  {/* Counter will start when inView is true */}
+                </dd>
+              </div>
+
               
-            </div>
+            
 
             {/* Second column */}
-            <div className="flex flex-col px-2 py-6 text-center bg-blue-400 shadow-lg rounded-md">
-              <dt className="order-last text-lg font-medium text-gray-100 ">
-                Customer Satisfaction
-              </dt>
-              <dd className="text-4xl font-extrabold text-white">
-                {inView && <CountUp end={95} suffix="%" duration={7} />}
-                {/* Counter will start when inView is true */}
-              </dd>
-            </div>
-
+            
             
 
 

@@ -5,7 +5,7 @@ import SectionTitle from "@/components/Common/SectionTitle/SectionTitle";
 import PartnersFlags from "./Partners-Flags/PartnersFlags";
 import Atchievements from "../Achievements";
 import Lottie from "lottie-react";
-import countries from "../../../../public/lotyFiles/countries.json"
+import countries from "../../../../public/lotyFiles/countries.json";
 
 // Define the type for each achievement item
 type Achievement = {
@@ -44,51 +44,42 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 const OurTarget: React.FC = () => {
   return (
-    <section id="atchievements" className="py-10 md:py-20 lg:py-28">
+    <section id="atchievements" className=" py-10 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Our Atchievments"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
 
-        <div className="flex flex-row justify-center">
+        <div className=" px-8 py-2">
 
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-          <Atchievements />
+        <div className=" rounded-lg shadow-sm text-center flex items-center justify-between">
+          <div className="w-[500px]">
+            <h2 className="text-2xl text-slate-800 dark:text-white font-semibold mb-3 ">
+              <span className="text-[#F6AA02] font-semibold">About MarkUp</span>
+              <div className="">Lorem ipsum dolor, sit </div>
+            </h2>
+            <p className="text-sm text-gray-600">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              fuga atque perspiciatis neque, autem voluptas fugit blanditiis
+              nulla nesciunt ea.
+            </p>
+            <div className="flex justify-center items-center mt-2">
+          <PartnersFlags />
+        </div>
+          </div>
 
           <div className="hidden lg:block w-[300px] ">
             <Lottie animationData={countries} />
           </div>
-
-
         </div>
 
-
+        <div className=" ">
+          <Atchievements />
         </div>
 
-
-        <div className="bg-slate-800 p-10 rounded-lg shadow-sm text-center">
-          <h2 className="text-3xl text-white font-semibold ">
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit <span className="text-[#F6AA02] font-semibold">MarkUp</span> 
-          </h2>
-          <p className="text-md text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fuga atque perspiciatis neque, autem voluptas fugit blanditiis nulla nesciunt ea. 
-          </p>
-          
-
+       
         </div>
-
-        
-
-
-
-        <div className="flex justify-center items-center pt-10 ">
-          <PartnersFlags />
-        </div>
-
-        
       </div>
     </section>
   );
