@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import PartnersDataOne from "./PartnersOneData";
 import { useLocale, useTranslations } from "next-intl";
 import CategoryCard from "../../../../Common/Categories/CategoryCard";
@@ -25,7 +24,7 @@ function PartnersCategoryOne() {
 
   return (
     <div className="container">
-      <PartnerHeader titleEn="Friends We Left Good Impact For Them" titleAr="الأصدقاءالذين تركنا لهم تأثيرًا جيدًا"  />
+      <PartnerHeader titleEn="Friends We Left Good Impact For Them" titleAr="الأصدقاء الذين تركنا لهم تأثيرًا جيدًا"  />
 
       <GridList records={records} renderItem={renderCategories} />
 
