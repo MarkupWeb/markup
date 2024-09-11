@@ -23,7 +23,7 @@ function PartnersCategory() {
 
   return (
     <div className="container">
-      <PartnerHeader title="GREAT SUCCESS STORIES" />
+     
 
       <GridList
         records={records}
