@@ -50,23 +50,25 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
               </span>
             </div>
             {data && (
-              <div dir={dir}>
-                <div className="flex items-center gap-3 mb-5 px-4 ">
-                  <div className="bg-white rounded-full">
+              <div dir={dir} className="">
+                <div className="flex items-center gap-5  px-4 mb-4">
+                  <div className=" w-[70px] md:w-[80px] lg:w-[100px] rounded-full">
                     <Image
                       src={data.imgSrc}
                       alt={data.heading}
-                      width={60}
-                      height={60}
+                      width={0}
+                      height={0}
                       className="m-auto inline-block"
                     />
                   </div>
+                  <span className=" h-8 border-[2px] border-blue-500  rounded-lg"></span>
                   <h3 className=" dark:text-lightblack text-md font-semibold">
                     {data.heading}
                   </h3>
                 </div>
 
-                <h4 className="text-lightblack  text-md  font-normal opacity-50 mx-3 my-2">
+                <h4 className="text-lightblack flex items-center gap-3  text-sm  font-normal  mx-3 mb-3">
+                <span className=" h-8 border-[2px] border-[#F6AA02]  rounded-lg"></span>
                   {data.heading2}
                 </h4>
                 
