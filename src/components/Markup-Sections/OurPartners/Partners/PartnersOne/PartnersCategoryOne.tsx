@@ -25,7 +25,7 @@ function PartnersCategoryOne() {
 
   return (
     <div className="container">
-      <PartnerHeader title={local === "en" ? "Friends We Left Good Impact For Them" : "الأصدقاءالذي تركنا لهم تأثيرًا جيدًا"} />
+      <PartnerHeader titleEn="Friends We Left Good Impact For Them" titleAr="الأصدقاءالذين تركنا لهم تأثيرًا جيدًا"  />
 
       <GridList records={records} renderItem={renderCategories} />
 

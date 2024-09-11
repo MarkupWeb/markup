@@ -45,7 +45,7 @@ export default async function RootLayout({
   params: { locale },
 }: Props) {
   const messages = await getMessages();
-  const dir = locale === "ar" ? "rtl" : "ltr";
+  const dir = locale === "ar" ? "rtl " : "ltr";
 
 
   return (
@@ -54,7 +54,7 @@ export default async function RootLayout({
         <ProvidersTheme>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <main dir={dir}>{children}</main>
+            <main className={`${locale === "ar" ? "__rtl_lang " : ""}`} dir={dir}>{children}</main>
             <Footer />
             <ScrollToTop />
           </NextIntlClientProvider>
