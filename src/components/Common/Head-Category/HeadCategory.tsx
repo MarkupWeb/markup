@@ -1,6 +1,7 @@
 import { Link } from "@/navigation";
 import "./headCategory.css";
 import { HiChevronRight } from "react-icons/hi2";
+import { useLocale } from "next-intl";
 
 interface SubTitlesProps {
   title: string;
@@ -13,6 +14,12 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
   btnTitle,
   pathText,
 }) => {
+
+  const locale = useLocale();
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
+
+
   return (
     <div className="flex items-center justify-between pt-4">
       <div className="flex items-center gap-2">
@@ -24,9 +31,9 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
           href={pathText}
           aria-label={btnTitle}
         >
-          <div className="group flex items-center gap-1 bg-slate-800  hover:bg-[#F6AA02] text-[12px] px-2 py-1 rounded-lg shadow-lg text-white transition-all duration-300">
+          <div dir={dir} className={`group flex items-center gap-1 bg-slate-800  hover:bg-[#F6AA02] text-[12px] px-2 py-1 rounded-lg shadow-lg text-white transition-all duration-300`}>
             {btnTitle}
-            <HiChevronRight className="transition-transform duration-300 group-hover:translate-x-1" />
+            <HiChevronRight  className="transition-transform duration-300 group-hover:translate-x-1" />
           </div>
         </Link>
       )}

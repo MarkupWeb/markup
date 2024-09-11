@@ -8,6 +8,7 @@
     "logo": "App Landing",
     "downbtn": "DOWNLOAD"
   },
+
   "Menu": {
     "home": "Home",
     "features": "AboutUs",
@@ -20,11 +21,91 @@
 
   "Hero": {
     "title": "Marketing Journey with us is",
-    "description": "We are a talented, creative, and professional marketing agency. we specialize in driving growth and maximizing ROI for businesses through cutting-edge digital marketing strategies. Our team of experts excels in SEO, PPC, content marketing, and social media management to guarantee achieving your business goals.",
+    "description": "We are a talented, creative, and professional marketing agency. We specialize in driving growth and maximizing ROI for businesses through cutting-edge digital marketing strategies. Our team of experts excels in SEO, PPC, content marketing, and social media management to guarantee achieving your business goals.",
     "btnTitle1": "Call Us Now",
     "btnTitle2": "About Us"
   },
-  "Partners": {},
+
+  "Partners": {
+    "title": "Marketing Journey with us is",
+    "description": "We are a talented, creative, and professional marketing agency. We specialize in driving growth and maximizing ROI for businesses through cutting-edge digital marketing stra"
+  },
+
+  "PartnersOne": {
+    "one": {
+      "heading": "Ebn Misr",
+      "heading2": "popular restaurants that are known for diversity and severing different kinds of food in affordable prices",
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    },
+
+    "two": {
+      "heading": "Salta3on",
+      "heading2": "see restaurant that affords different kinds of sea food and different dishes ",
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    },
+
+    "three": {
+      "heading": "Bahia",
+      "heading2": "Grill restaurants that are specialized in authentic Egyptian cuisine",
+
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    },
+
+    "four": {
+      "heading": "Nos Dasta",
+      "heading2": "fast food restaurants that are specialized in Hawawshi and shawarma and are known for food inventions",
+
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    },
+
+
+    "five": {
+      "heading": "Elnegma Elnabolsya",
+      "heading2": "fast food restaurants that are specialized in Hawawshi and shawarma and are known for food inventions",
+
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    }
+
+
+
+
+  },
+
   "NewsUs": {},
   "Services": {},
   "Teamework": {}

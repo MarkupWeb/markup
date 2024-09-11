@@ -22,8 +22,10 @@ interface DialogProps {
 
 
 const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
-    const local = useLocale();
+    const locale = useLocale();
   const listItems = data?.content || []; // Default to an empty array if data or data.list is undefined
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-[9999990]">
@@ -48,7 +50,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
               </span>
             </div>
             {data && (
-              <div>
+              <div dir={dir}>
                 <div className="flex items-center gap-3 mb-5 px-4 ">
                   <div className="bg-white rounded-full">
                     <Image
@@ -73,10 +75,10 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                 <div className="pt-2 pb-5">
                   {listItems.length > 0 ? (
                     listItems.map((item, index) => (
-                      <div key={index} className="mb-3 bg-slate-800 dark:bg-slate-800 shadow-2xl  md:px-1 py-2 rounded-md mx-2 px-5">
+                      <div key={index} className="mb-3 bg-slate-800 dark:bg-slate-800 shadow-2xl  md:px-3 py-2 rounded-md mx-2 px-5">
                         <h5 className="text-white text-[12px] font-semibold text-wrap ">{item.title}</h5>
                         <p className="text-gray-200 text-[10px] md:text-[10px] py-1">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ullam.
+                        {item.description}
                         </p>
                       </div>
                     ))

@@ -4,6 +4,7 @@ import PopularPartners from './PopularPartners/PopluarPartners';
 import PartnersCategory from './Partners/PartnersCategory';
 import PopularPartnerRTL from './PopularPartners/PopularPartnerRTL';
 import Popluar from './PopularPartners';
+import PartnersCategoryOne from './Partners/PartnersOne/PartnersCategoryOne';
 const OurPartners = () => {
     return (
       <>
@@ -16,9 +17,9 @@ const OurPartners = () => {
             />
   
             <div className="flex flex-col gap-8">
-              <PartnersCategory />
-              <PartnersCategory />
-              <PartnersCategory />
+              <PartnersCategoryOne />
+              <PartnersCategoryOne />
+              
             </div>
 
             
