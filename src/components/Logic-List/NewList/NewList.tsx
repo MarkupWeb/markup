@@ -4,8 +4,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { HiChevronRight, HiChevronLeft } from "react-icons/hi2";
 
-import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi";
+
 
 type SliderListProps<T> = {
   records?: T[];
@@ -105,18 +106,18 @@ const NewList = <T extends HasId>({
         <div
           ref={prevRef}
           className={`p-2 lg:p-3 rounded-full  ${
-            isAtBeginning ? "bg-black/70 text-white" : "bg-green-400 text-black"
+            isAtBeginning ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
           } cursor-pointer shadow-sm absolute -left-4`}
         >
-          <HiOutlineArrowNarrowLeft />
+          <HiChevronLeft />
         </div>
         <div
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
-            isAtEnd ? "bg-black/70 text-white" : "bg-green-400 text-black"
+            isAtEnd ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
           } cursor-pointer shadow-sm absolute -right-4`}
         >
-          <HiOutlineArrowNarrowRight />
+          <HiChevronRight />
         </div>
       </div>
     </div>

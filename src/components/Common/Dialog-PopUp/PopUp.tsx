@@ -58,12 +58,12 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
             {data ? (
               <div dir={dir} className={`${locale === "ar" ? "__rtl_lang " : ""}`}>
                 <div className="flex items-center gap-5 px-4 mb-4">
-                  <div className="w-[70px] md:w-[80px] lg:w-[100px] rounded-full">
+                  <div className="w-[70px] md:w-[80px] lg:w-[100px] dark:p-2 dark:bg-white rounded-full">
                     <Image
                       src={data.imgSrc}
                       alt={data.heading}
-                      width={100}
-                      height={100}
+                      width={0}
+                      height={0}
                       className="object-cover"
                       priority
                     />
