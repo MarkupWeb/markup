@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import SliderList from "@/components/Logic-List/MultipleSlider/SliderList";
 import ServicesData from "./ServicesData";
 import CategoryServices from "@/components/Common/Categories/CategoryServices";
+import NewList from "@/components/Logic-List/NewList/NewList";
 
 // CAROUSEL DATA
 
@@ -33,9 +34,10 @@ const OurServices = () => {
             center
           />
 
-          <SliderList
+          <NewList
             records={records}
             renderItem={renderCategories}
+            emptyMessage="There are no categories"
           />
         </div>
       </section>
