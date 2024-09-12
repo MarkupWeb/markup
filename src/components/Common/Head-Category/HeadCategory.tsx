@@ -33,7 +33,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
         >
           <div dir={dir} className={`group flex items-center gap-1 bg-slate-800  hover:bg-[#F6AA02] text-[12px] px-2 py-1 rounded-lg shadow-lg text-white transition-all duration-300`}>
             {btnTitle}
-            <HiChevronRight  className="transition-transform duration-300 group-hover:translate-x-1" />
+            <HiChevronRight  className={`transition-transform duration-300 group-hover:translate-x-1 ${locale === "ar" ? "group-hover:-translate-x-1 rotate-180 " : ""}`} />
           </div>
         </Link>
       )}
@@ -42,3 +42,5 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
 };
 
 export default HeadCategory;
+
+
