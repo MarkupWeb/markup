@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: 'https://markup.vip/about',
+      url: 'https://markup.vip/contact',
       lastModified: new Date(),
       alternates: {
         languages: {
