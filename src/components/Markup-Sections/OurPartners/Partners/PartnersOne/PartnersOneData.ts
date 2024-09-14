@@ -163,6 +163,8 @@ const PartnersOneData = (t: (key: string) => string): DataType[] => [
     ],
   },
 
+  
+
 
 
   

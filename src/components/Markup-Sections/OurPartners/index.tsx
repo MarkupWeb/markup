@@ -5,6 +5,7 @@ import PartnersCategory from './Partners/PartnersCategory';
 import PopularPartnerRTL from './PopularPartners/PopularPartnerRTL';
 import Popluar from './PopularPartners';
 import PartnersCategoryOne from './Partners/PartnersOne/PartnersCategoryOne';
+import HeadCategory from '@/components/Common/Head-Category/HeadCategory';
 const OurPartners = () => {
     return (
       <>
@@ -15,6 +16,7 @@ const OurPartners = () => {
               paragraph="Those who have shared with us every shred of success"
               center
             />
+            <HeadCategory title='Show there are brands' btnTitle='More' pathText='/allBrands'  />
   
             <div className="flex flex-col gap-8">
               <PartnersCategoryOne />

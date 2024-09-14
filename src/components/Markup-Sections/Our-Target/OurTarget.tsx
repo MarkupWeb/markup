@@ -48,6 +48,7 @@ const OurTarget: React.FC = () => {
       <div className="container">
         <SectionTitle
           title="Our Atchievments"
+          paragraph="Those who have shared with us every shred of success"
           center
         />
 

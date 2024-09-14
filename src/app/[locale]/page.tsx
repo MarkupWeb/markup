@@ -27,7 +27,7 @@ export default function HomePage() {
       <NewsUs />
       <Temework />
       <Testimonials />
-      <Contact />
+      
     </>
   );
 }
