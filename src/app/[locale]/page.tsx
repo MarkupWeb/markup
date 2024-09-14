@@ -13,6 +13,22 @@ import Contact from "@/components/Markup-Sections/Contact";
 
 
 
+export const metadata: Metadata = {
+  metadataBase: new URL("https://markup.vip"),
+  keywords: ["markup agency","markup marketing", "markup business", "markup business solutions" , "markup restaurant marketing"],
+  title: {
+    default: "markup",
+    template: "%s | markup"
+  },
+
+  openGraph: {
+    description: "Markup agancy, Marketing for Restaurants and Business Solutions, Marketing Plans,Media Buyer"
+  },
+  icons: {
+    icon: "/icons/icon-markup.png",
+  },
+}
+
 
 
 export default function HomePage() {
