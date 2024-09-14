@@ -53,7 +53,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 7,
     title: t("contact"),
-    path: "#contact",
+    path: "/contact",
     newTab: false,
   },
 
