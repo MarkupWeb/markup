@@ -13,22 +13,39 @@ import Contact from "@/components/Markup-Sections/Contact";
 
 
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://markup.vip"),
-  keywords: ["markup agency","markup marketing", "markup business", "markup business solutions" , "markup restaurant marketing"],
-  title: {
-    default: "markup",
-    template: "%s | markup"
-  },
-
-  openGraph: {
-    description: "Markup agancy, Marketing for Restaurants and Business Solutions, Marketing Plans,Media Buyer"
-  },
-  icons: {
-    icon: "/icons/icon-markup.png",
-  },
+interface BlogsProps {
+  params: { locale: string };
 }
 
+export const generateMetadata = ({ params: { locale } }: BlogsProps): Metadata => {
+  // Define English and Arabic metadata
+  const metadata = {
+    en: {
+
+      title: 'Home - English',
+      description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
+      twitter: {
+        card: 'summary_large_image',
+        site: 'markup.vip/en',
+        title: 'Blogs - English',
+        description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
+      },
+    },
+    ar: {
+      title: 'الرئسيه - العربية',
+      description: "التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات",
+      twitter: {
+        card: 'summary_large_image',
+        site: 'markup.vip/ar',
+        title: 'الرئسيه - العربية',
+        description: "التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات",
+      },
+    },
+  };
+
+  // Return metadata based on the locale
+  return locale === 'ar' ? metadata.ar : metadata.en;
+};
 
 
 export default function HomePage() {
