@@ -73,7 +73,7 @@ const NewList = <T extends HasId>({
           },
 
           900: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 14,
           },
 
