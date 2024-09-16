@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    description: "Markup agancy, Marketing for Restaurants and Business Solutions, Marketing Plans,Media Buyer"
+    description: "Markup agency, Marketing for Restaurants and Business Solutions,Marketing Plans,Media Buyer"
   },
   icons: {
     icon: "/icons/icon-markup.png",
