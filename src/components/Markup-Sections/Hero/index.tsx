@@ -115,7 +115,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+          
+          <div className={`absolute  top-0 z-[-1] opacity-30 lg:opacity-100 ${local === "ar" ? " right-0 " : "left-0"} `}>
           <svg
             width="450"
             height="556"
