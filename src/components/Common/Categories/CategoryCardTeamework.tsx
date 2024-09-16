@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { TCategory } from "../../../types/CategoryType";
 import Image from "next/image";
 import DialogPopUp from "@/components/Common/Dialog-PopUp/PopUp";
-
+import IMG from '../../../../public/images/Teamework/img.jpg'
 function CategoryCardTeamework(itemData: TCategory) {
   const { id, heading, heading2, imgSrc} = itemData;
 
@@ -14,20 +14,20 @@ function CategoryCardTeamework(itemData: TCategory) {
       
 
       <div
-        className={`flex items-center justify-center  w-[230px]  h-[280px] lg:w-[250px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
+        className={`flex items-center justify-center  w-[160px]  h-[190px] sm:w-[175px]  sm:h-[195px]  md:w-[190px]  md:h-[220px]   lg:w-[250px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
         >
-        <div className={`m-3 py-11 text-center `}>
+        <div className={`m-3 py-11 text-center w-[100px]`}>
           <div className="relative ">
             <Image
-              src={imgSrc}
+              src={IMG}
               alt="user-image"
-              width={170}
+              width={0}
               height={0}
-              className="m-auto inline-block "
+              className="m-auto inline-block rounded-lg mt-2"
             />
           </div>
           <div className="">
-            <h3 className="text-lightblack text-2xl font-semibold">
+            <h3 className="text-lightblack text-md md:text-lg lg:text-xl  font-semibold pt-2">
               {heading}
             </h3>
             <h4 className="text-lightblack pt-2 text-lg font-normal opacity-50">

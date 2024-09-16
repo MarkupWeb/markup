@@ -52,15 +52,15 @@ const NewList = <T extends HasId>({
         spaceBetween={10}
         breakpoints={{
           340: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           440: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           540: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           640: {
@@ -71,8 +71,14 @@ const NewList = <T extends HasId>({
             slidesPerView: 3,
             spaceBetween: 14,
           },
-          1024: {
+
+          900: {
             slidesPerView: 4,
+            spaceBetween: 14,
+          },
+
+          1024: {
+            slidesPerView: 5,
             spaceBetween: 14,
           },
         }}
@@ -105,9 +111,9 @@ const NewList = <T extends HasId>({
       >
         <div
           ref={prevRef}
-          className={`p-2 lg:p-3 rounded-full  ${
+          className={`p-2  lg:p-3 rounded-full  ${
             isAtBeginning ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
-          } cursor-pointer shadow-sm absolute -left-4`}
+          } cursor-pointer shadow-sm absolute -left-1 lg:-left-4`}
         >
           <HiChevronLeft />
         </div>
@@ -115,7 +121,7 @@ const NewList = <T extends HasId>({
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
             isAtEnd ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
-          } cursor-pointer shadow-sm absolute -right-4`}
+          } cursor-pointer shadow-sm absolute right-1  lg:-right-4`}
         >
           <HiChevronRight />
         </div>

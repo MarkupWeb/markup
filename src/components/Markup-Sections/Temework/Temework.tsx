@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import TeameworData from "./TeameworkData";
 import Image from "next/image";
 import CategoryCardTeamework from "@/components/Common/Categories/CategoryCardTeamework";
+import NewList from "@/components/Logic-List/NewList/NewList";
 
 
 // CAROUSEL DATA
@@ -34,9 +35,9 @@ const Temework = () => {
             center
           />
           <div className="">
-            <SliderList
+            <NewList
               records={records}
-              renderItem={renderCategories}
+              renderItem={renderCategories} emptyMessage={"There is no category"}              
               
             />
           </div>
