@@ -8,6 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 
 import DealImg from "../../../../public/images/hero/banner1-2.png";
+import DealImg2 from "../../../../public/lotyFiles/hero.json";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { useLocale, useTranslations } from "next-intl";
 import heroData from "./heroData";
@@ -41,10 +42,10 @@ const Hero = () => {
         />
 
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+          <div className="">
+            <div className="">
               <div
-                className={`grid grid-cols-1 gap-8 xl:grid-cols-2 ${local === "ar" ? "__rtl_lang" : ""}`}
+                className={`grid grid-cols-1 xl:grid-cols-2 lg:gap-[8rem]  items-center  ${local === "ar" ? "__rtl_lang" : ""}`}
               >
                 <div className="">
                   {heroContent.length >= 1
@@ -108,12 +109,8 @@ const Hero = () => {
                     : "ther is no content data "}
                 </div>
 
-                <div className="px-10">
-                  <Image
-                    src={DealImg}
-                    alt="deal-image"
-                    className=" bg-tramsparent w-auto dark:bg-transparent"
-                  />
+                <div className="px-10 pb-10 w-[30rem]">
+                 <Lottie animationData={DealImg2} />
                 </div>
               </div>
             </div>
