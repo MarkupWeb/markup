@@ -48,7 +48,7 @@ function Nav({ navbarOpen, navbarToggleHandler }) {
       }`}
     >
       <ul
-        className={`block lg:flex lg:text-center lg:items-center lg:justify-center font-[400] lg:gap-8 ${
+        className={`block lg:flex lg:text-center lg:items-center lg:justify-center font-[400] lg:gap-10 ${
           locale === "ar" ? "__rtl_lang font-[500]" : ""
         }`}
       >

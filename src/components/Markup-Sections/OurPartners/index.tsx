@@ -16,7 +16,7 @@ const OurPartners = () => {
               paragraph="Those who have shared with us every shred of success"
               center
             />
-            <HeadCategory title='Show there are brands' btnTitle='More' pathText='/brands'  />
+            <HeadCategory title='Show there are brands' btnTitle='More' pathText='/partners'  />
   
             <div className="flex flex-col gap-8">
               <PartnersCategoryOne />

@@ -62,7 +62,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
       {
         id: 1,
         title: t("partners"),
-        path: "/brands",
+        path: "/partners",
         newTab: false,
       },
       {
