@@ -81,14 +81,15 @@ module.exports = {
       },
 
       animation: {
-        'rotate-right': 'rotateRight 3s ease-in-out infinite',  // Rotate right for non-Arabic locales
-        'rotate-left': 'rotateLeft 3s ease-in-out infinite',    // Rotate left for Arabic locale
+        'rotate-right': 'rotateRight 8s ease-in-out infinite',  // Rotate right for non-Arabic locales
+        'rotate-left': 'rotateLeft 8s ease-in-out infinite',    // Rotate left for Arabic locale
       },
       keyframes: {
         rotateRight: {
-          '0%': { transform: 'translateX(0) rotate(90deg)', opacity: '1' },        // No rotation or movement at start
-          '50%': { transform: 'translateX(30px) rotate(90deg)', opacity: '0.5' },
-          '60%': { transform: 'translateX(30px) rotate(140deg)', opacity: '0.5' }, // Move right with 90deg rotation and reduce opacity
+          '0%': { transform: 'translateY(0) rotate(190deg)', opacity: '1',  },        // No rotation or movement at start
+          '50%': { transform: 'translateY(50px) rotate(190deg)', opacity: '0.5' },
+          '50%': { transform: 'translateY(50px) rotate(190deg)', opacity: '0.5' },
+          '80%': { transform: 'translateX(80px) rotate(90deg)', opacity: '0.5' }, // Move right with 90deg rotation and reduce opacity
           '100%': { transform: 'translateX(0) rotate(90deg)', opacity: '1' },      // Return to start
         },
         rotateLeft: {
