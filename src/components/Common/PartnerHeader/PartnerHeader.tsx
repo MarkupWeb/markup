@@ -14,11 +14,14 @@ const PartnerHeader = memo(({ children, titleEn, titleAr }: HeadingProps) => {
   const locale = useLocale();
   const title = locale === 'ar' ? titleAr : titleEn;
 
+  // Determine which animation to use based on the locale
+  const animationClass = locale === 'ar' ? 'animate-rotate-left' : 'animate-rotate-right';
+
   return (
     <div className="mb-3 text-[26px] flex items-center justify-center gap-3 py-3">
       <div className="flex items-center justify-center w-[30px] md:w-[35px] lg:w-[40px] cursor-pointer">
         <Image
-          className="w-[60px] md:w-[80px] lg:w-[50px] animate-spin-slow animate-color-change"
+          className={`w-[60px] md:w-[80px] lg:w-[50px] ${animationClass}`}
           src={head_icon}
           alt="head-icon"
           width={40}

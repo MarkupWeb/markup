@@ -36,16 +36,7 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
-      animation: {
-        'spin-slow': 'spin 6s linear infinite',
-        'color-change': 'colorChange 8s ease-in-out infinite',
-      },
-      keyframes: {
-        colorChange: {
-          '0%, 100%': { filter: 'invert(26%) sepia(85%) saturate(7496%) hue-rotate(350deg) brightness(96%) contrast(124%)' }, // Red color
-          '50%': { filter: 'invert(60%) sepia(100%) saturate(4000%) hue-rotate(0deg) brightness(105%) contrast(90%)' }, // Alternate color
-        },
-      },
+      
       colors: {
         current: "currentColor",
         transparent: "transparent",
@@ -88,6 +79,25 @@ module.exports = {
       dropShadow: {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
       },
+
+      animation: {
+        'rotate-right': 'rotateRight 3s ease-in-out infinite',  // Rotate right for non-Arabic locales
+        'rotate-left': 'rotateLeft 3s ease-in-out infinite',    // Rotate left for Arabic locale
+      },
+      keyframes: {
+        rotateRight: {
+          '0%': { transform: 'translateX(0) rotate(90deg)', opacity: '1' },        // No rotation or movement at start
+          '50%': { transform: 'translateX(30px) rotate(90deg)', opacity: '0.5' },
+          '60%': { transform: 'translateX(30px) rotate(140deg)', opacity: '0.5' }, // Move right with 90deg rotation and reduce opacity
+          '100%': { transform: 'translateX(0) rotate(90deg)', opacity: '1' },      // Return to start
+        },
+        rotateLeft: {
+          '0%': { transform: 'translateX(0) rotate(0deg)', opacity: '1' },        // No rotation or movement at start
+          '50%': { transform: 'translateX(-30px) rotate(-90deg)', opacity: '0.5' }, // Move left with -90deg rotation and reduce opacity
+          '100%': { transform: 'translateX(0) rotate(0deg)', opacity: '1' },      // Return to start
+        },
+      },
+  
     },
   },
   plugins: [],
