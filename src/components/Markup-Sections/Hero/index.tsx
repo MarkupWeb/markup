@@ -32,7 +32,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className={` relative z-10 overflow-hidden  pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
+        className={`bg-[#F5F5F5] relative z-10 overflow-hidden  pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
       >
         <ModalVideo
           channel="youtube"
@@ -109,7 +109,7 @@ const Hero = () => {
                     : "ther is no content data "}
                 </div>
 
-                <div className="px-10 pb-10 w-[30rem]">
+                <div className="px-10 pb-10 w-[20rem] md:w-[30rem]">
                  <Lottie animationData={DealImg2} />
                 </div>
               </div>
