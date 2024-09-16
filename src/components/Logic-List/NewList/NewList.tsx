@@ -73,7 +73,7 @@ const NewList = <T extends HasId>({
           },
 
           900: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 14,
           },
 
@@ -81,6 +81,8 @@ const NewList = <T extends HasId>({
             slidesPerView: 5,
             spaceBetween: 14,
           },
+
+          
         }}
         navigation={{
           prevEl: prevRef.current,
