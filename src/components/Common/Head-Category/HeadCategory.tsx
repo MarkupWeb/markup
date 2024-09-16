@@ -4,7 +4,7 @@ import { HiChevronRight } from "react-icons/hi2";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 
-import head_icon from "../../../../public/icons/head_icon.png";
+import head_icon from "../../../../public/icons/head_icon.svg";
 
 interface SubTitlesProps {
   title: string;

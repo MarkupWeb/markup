@@ -9,7 +9,7 @@ import HeadCategory from '@/components/Common/Head-Category/HeadCategory';
 const OurPartners = () => {
     return (
       <>
-        <section id="partners" className="py-10 md:py-20 lg:py-28 ">
+        <section id="partners" className="bg-[#F5F5F5] dark:bg-black py-10 md:py-20 lg:py-28 ">
           <div className="container">
             <SectionTitle
               title="Friends We Shared Success With"

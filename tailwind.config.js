@@ -36,6 +36,16 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+        'color-change': 'colorChange 8s ease-in-out infinite',
+      },
+      keyframes: {
+        colorChange: {
+          '0%, 100%': { filter: 'invert(26%) sepia(85%) saturate(7496%) hue-rotate(350deg) brightness(96%) contrast(124%)' }, // Red color
+          '50%': { filter: 'invert(60%) sepia(100%) saturate(4000%) hue-rotate(0deg) brightness(105%) contrast(90%)' }, // Alternate color
+        },
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
@@ -59,6 +69,7 @@ module.exports = {
           light: "#F0F2F9",
         },
       },
+      
 
       boxShadow: {
         signUp: "0px 5px 10px rgba(4, 10, 34, 0.2)",
