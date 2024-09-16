@@ -23,7 +23,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
   return (
     <div className="flex items-center justify-between pt-4">
       <div className="flex items-center ">
-        <div className=" flex items-center justify-center   w-[70px] md:w-[90] lg:w-[40px]  cursor-pointer">
+        <div className=" flex items-center justify-center   w-[30px] md:w-[35px] lg:w-[40px]  cursor-pointer">
           <Image
             className="w-[60px] md:w-[80px] lg:w-[50px]"
             src={head_icon}
@@ -32,7 +32,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
             height={0}
           />
         </div>
-        <h2 className="text-[#013D90]  dark:text-white sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold">
+        <h2 className="text-[#013D90]  dark:text-white text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold">
           {title}
         </h2>
       </div>
