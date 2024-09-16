@@ -13,10 +13,15 @@
     "home": "Home",
     "features": "AboutUs",
     "services": "Services",
-    "partners": "Partners",
+    
     "news": "NewsUs",
     "temework": "Temework",
-    "contact": "ContactUs"
+    "pages": "Pages",
+    "contact": "ContactUs",
+    "blogs": "Blogs",
+    "partners": "Partners",
+    "questions": "Questions"
+
   },
 
   "Hero": {
