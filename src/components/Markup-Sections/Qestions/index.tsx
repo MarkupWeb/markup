@@ -41,7 +41,7 @@ const faqdata: faqdata[] = [
 const Features = () => {
   return (
     <>
-      <section id="features" className="py-10 md:py-20 lg:py-28 bg-[#C4DAD2] dark:bg-gray-dark">
+      <section id="features" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5]  dark:bg-gray-dark">
         <div className="container">
           <SectionTitle
             title="Questions Always Looking For"

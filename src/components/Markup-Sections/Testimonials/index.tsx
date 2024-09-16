@@ -145,7 +145,7 @@ const Testimonials = () => {
   const local = useLocale();
 
   return (
-    <section className=" dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 dark:text-white">
+    <section className=" dar:bg-gray-light relative z-10 py-16 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-black">
       <div className="container">
         <div className=" text-center mb-10">
           <h1 className="text-[3rem] ">Testimonials</h1>

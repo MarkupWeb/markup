@@ -22,8 +22,8 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
 
   return (
     <div className="flex items-center justify-between pt-4">
-      <div className="flex items-center ">
-        <div className=" flex items-center justify-center   w-[30px] md:w-[35px] lg:w-[40px]  cursor-pointer">
+      <div className="flex items-center gap-2">
+        <div className=" flex items-center justify-center   w-[20px] md:w-[25px] lg:w-[30px]  cursor-pointer">
           <Image
             className="w-[60px] md:w-[80px] lg:w-[50px]"
             src={head_icon}
