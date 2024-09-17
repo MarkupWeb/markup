@@ -70,7 +70,7 @@ const OurTarget: React.FC = () => {
         </div>
           </div>
 
-          <div className="  w-[300px] ">
+          <div className="hidden lg:block w-[300px] ">
             <Lottie animationData={countries} />
           </div>
         </div>
