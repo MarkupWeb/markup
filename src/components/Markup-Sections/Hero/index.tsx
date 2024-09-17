@@ -63,8 +63,8 @@ const Hero = () => {
                             }  `}
                           >
                             {item.title}{" "}
-                            <span className="text-[#F6AA02]   ">
-                              {/* Style will be inherited from the parent element */}
+                            <span className="text-[#F6AA02] ">
+
                               <Typewriter
                                 words={
                                   local === "ar"
@@ -89,12 +89,12 @@ const Hero = () => {
                             <Link
                               href="https://wa.me/+201000936297"
                               target="_blank"
-                              className="mr-4 flex   items-center gap-4  rounded-3xl border-2 border-orange-400    px-6 py-2.5 font-semibold text-black hover:bg-orange-400 hover:text-white dark:text-white lg:px-8 lg:py-4"
+                              className="mr-4 flex   items-center gap-4  rounded-3xl border-2 border-orangeMain shadow-lg group transition-all duration-300    px-6 py-2.5 font-semibold text-black hover:bg-orangeMain hover:text-white dark:text-white lg:px-8 lg:py-4"
                             >
                               <span className="text-[11px] sm:text-[12px] md:text[14px] ">
                                 {item.btnTitle1}
                               </span>
-                              <span className="scale-x transform text-[20px]">
+                              <span className="scale-x transform text-[20px] ">
                                 <HiOutlinePhone />
                               </span>
                             </Link>
@@ -116,7 +116,7 @@ const Hero = () => {
                 </div>
 
                 <div className="px-10 pb-10 w-[20rem] md:w-[30rem]">
-                 <Lottie animationData={DealImg2} />
+                 <Lottie animationData={DealImg2}  />
                 </div>
               </div>
             </div>

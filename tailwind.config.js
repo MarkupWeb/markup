@@ -41,6 +41,9 @@ module.exports = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
+        orangeMain: "#F2A103",
+        blueMain: "#10428B",
+
         black: "#121723",
         dark: "#1D2430",
         primary: "#4A6CF7",
@@ -80,24 +83,7 @@ module.exports = {
         three: "0px 5px 15px rgba(6, 8, 15, 0.05)",
       },
 
-      animation: {
-        'rotate-right': 'rotateRight 8s ease-in-out infinite',  // Rotate right for non-Arabic locales
-        'rotate-left': 'rotateLeft 8s ease-in-out infinite',    // Rotate left for Arabic locale
-      },
-      keyframes: {
-        rotateRight: {
-          '0%': { transform: 'translateY(0) rotate(190deg)', opacity: '1',  },        // No rotation or movement at start
-          '50%': { transform: 'translateY(50px) rotate(190deg)', opacity: '0.5' },
-          '50%': { transform: 'translateY(50px) rotate(190deg)', opacity: '0.5' },
-          '80%': { transform: 'translateX(80px) rotate(90deg)', opacity: '0.5' }, // Move right with 90deg rotation and reduce opacity
-          '100%': { transform: 'translateX(0) rotate(90deg)', opacity: '1' },      // Return to start
-        },
-        rotateLeft: {
-          '0%': { transform: 'translateX(0) rotate(0deg)', opacity: '1' },        // No rotation or movement at start
-          '50%': { transform: 'translateX(-30px) rotate(-90deg)', opacity: '0.5' }, // Move left with -90deg rotation and reduce opacity
-          '100%': { transform: 'translateX(0) rotate(0deg)', opacity: '1' },      // Return to start
-        },
-      },
+     
   
     },
   },
