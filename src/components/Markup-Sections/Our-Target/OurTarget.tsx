@@ -44,7 +44,7 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 
 const OurTarget: React.FC = () => {
   return (
-    <section id="atchievements" className=" py-10 md:py-20 lg:py-28">
+    <section id="atchievements" className="py-10 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Our Atchievments"
@@ -52,7 +52,7 @@ const OurTarget: React.FC = () => {
           center
         />
 
-        <div className=" px-8 py-2">
+        <div className="px-8 lg:py-2">
 
         <div className=" rounded-lg shadow-sm text-center flex items-center justify-between lg:px-20">
           <div className="w-[500px]">

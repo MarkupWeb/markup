@@ -15,9 +15,6 @@ import Img08 from "../../../../../../public/images/Partnars_Logos/06-bonoh.png";
 // import Img11 from "../../../../../public/images/Partnars_Logos/11-chicken-planet.png";
 // import Img12 from "../../../../../public/images/Partnars_Logos/12-chicken-fila.png";
 
-
-
-
 interface ContentItem {
   title: string;
   description: string;
@@ -43,21 +40,20 @@ const PartnersOneData = (t: (key: string) => string): DataType[] => [
     content: [
       {
         title: t("P1.Q1"),
-        description: t("one.A1"),
+        description: t("P1.A1"),
       },
       {
         title: t("P1.Q2"),
-        description: t("one.A2"),
+        description: t("P1.A2"),
       },
       {
         title: t("P1.Q3"),
-        description: t("one.A3"),
+        description: t("P1.A3"),
       },
       {
         title: t("P1.Q4"),
-        description: t("one.A4"),
+        description: t("P1.A4"),
       },
-      
     ],
   },
   {
@@ -125,11 +121,11 @@ const PartnersOneData = (t: (key: string) => string): DataType[] => [
       },
       {
         title: t("P4.Q3"),
-        description: t("four.A3"),
+        description: t("P4.A3"),
       },
       {
         title: t("P4.Q4"),
-        description: t("four.A4"),
+        description: t("P4.A4"),
       },
     ],
   },
@@ -159,7 +155,6 @@ const PartnersOneData = (t: (key: string) => string): DataType[] => [
     ],
   },
 
-
   {
     id: 6,
     heading: t("P6.heading"),
@@ -187,59 +182,54 @@ const PartnersOneData = (t: (key: string) => string): DataType[] => [
 
   {
     id: 7,
-    heading: t("five.heading"),
-    heading2: t("five.heading2"),
+    heading: t("P6.heading"),
+    heading2: t("P6.heading2"),
     imgSrc: Img07,
     content: [
       {
-        title: t("five.Q1"),
-        description: t("five.A1"),
+        title: t("P6.Q1"),
+        description: t("P6.A1"),
       },
       {
-        title: t("five.Q2"),
-        description: t("five.A2"),
+        title: t("P6.Q2"),
+        description: t("P6.A2"),
       },
       {
-        title: t("five.Q3"),
-        description: t("five.A3"),
+        title: t("P6.Q3"),
+        description: t("P6.A3"),
       },
       {
-        title: t("five.Q4"),
-        description: t("five.A4"),
+        title: t("P6.Q4"),
+        description: t("P6.A4"),
       },
     ],
   },
 
   {
     id: 8,
-    heading: t("five.heading"),
-    heading2: t("five.heading2"),
+    heading: t("P6.heading"),
+    heading2: t("P6.heading2"),
     imgSrc: Img08,
     content: [
       {
-        title: t("five.Q1"),
-        description: t("five.A1"),
+        title: t("P6.Q1"),
+        description: t("P6.A1"),
       },
       {
-        title: t("five.Q2"),
-        description: t("five.A2"),
+        title: t("P6.Q2"),
+        description: t("P6.A2"),
       },
       {
-        title: t("five.Q3"),
-        description: t("five.A3"),
+        title: t("P6.Q3"),
+        description: t("P6.A3"),
       },
       {
-        title: t("five.Q4"),
-        description: t("five.A4"),
+        title: t("P6.Q4"),
+        description: t("P6.A4"),
       },
     ],
   },
 
-  
-
-
-
-  
   // Add more items similarly...
 ];
 
