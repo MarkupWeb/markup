@@ -1,40 +1,39 @@
-import type { MetadataRoute } from 'next'
- 
+import type { MetadataRoute } from 'next';
+
 export default function sitemap(): MetadataRoute.Sitemap {
 
-    const baseUrl = "https://markup.vip"
+    const baseUrl = "https://markup.vip";
 
-
-  return [
-    {
-      url: 'https://markup.vip',
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: 'https://markup.vip/en',
-          ar: 'https://markup.vip/ar',
+    return [
+        {
+            url: `${baseUrl}`,
+            lastModified: new Date(),
+            alternates: {
+                languages: {
+                    en: `${baseUrl}/en`,
+                    ar: `${baseUrl}/ar`,
+                },
+            },
         },
-      },
-    },
-    {
-      url: 'https://markup.vip/contact',
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: 'https://markup.vip/en/about',
-          ar: 'https://markup.vip/ar/about',
+        {
+            url: `${baseUrl}/contact`,
+            lastModified: new Date(),
+            alternates: {
+                languages: {
+                    en: `${baseUrl}/en/contact`,
+                    ar: `${baseUrl}/ar/contact`,
+                },
+            },
         },
-      },
-    },
-    {
-      url: 'https://acme.com/blog',
-      lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: 'https://markup.vip/en/blog',
-          ar: 'https://markup.vip/ar/blog',
+        {
+            url: `${baseUrl}/blog`,
+            lastModified: new Date(),
+            alternates: {
+                languages: {
+                    en: `${baseUrl}/en/blog`,
+                    ar: `${baseUrl}/ar/blog`,
+                },
+            },
         },
-      },
-    },
-  ]
+    ];
 }
