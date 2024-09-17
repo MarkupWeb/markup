@@ -37,7 +37,7 @@
   },
 
   "PartnersOne": {
-    "one": {
+    "P1": {
       "heading": "Ebn Misr",
       "heading2": "popular restaurants that are known for diversity and severing different kinds of food in affordable prices",
       "Q1": "Question To Implmanteation for This brand Get All",
@@ -50,7 +50,7 @@
       "A4": "Answer for main questions to implmentation for this and you must get content for this"
     },
 
-    "two": {
+    "P2": {
       "heading": "Salta3on",
       "heading2": "see restaurant that affords different kinds of sea food and different dishes ",
       "Q1": "Question To Implmanteation for This brand Get All",
@@ -63,7 +63,7 @@
       "A4": "Answer for main questions to implmentation for this and you must get content for this"
     },
 
-    "three": {
+    "P3": {
       "heading": "Bahia",
       "heading2": "Grill restaurants that are specialized in authentic Egyptian cuisine",
 
@@ -77,7 +77,7 @@
       "A4": "Answer for main questions to implmentation for this and you must get content for this"
     },
 
-    "four": {
+    "P4": {
       "heading": "Nos Dasta",
       "heading2": "fast food restaurants that are specialized in Hawawshi and shawarma and are known for food inventions",
 
@@ -92,7 +92,7 @@
     },
 
 
-    "five": {
+    "P5": {
       "heading": "Elnegma Elnabolsya",
       "heading2": "fast food restaurants that are specialized in Hawawshi and shawarma and are known for food inventions",
 
@@ -104,7 +104,25 @@
       "A3": "Answer for main questions to implmentation for this and you must get content for this",
       "Q4": "Question To Implmanteation for This brand Get All",
       "A4": "Answer for main questions to implmentation for this and you must get content for this"
+    },
+
+
+    "P6": {
+      "heading": "Mashakik",
+      "heading2": "fast food restaurants that are specialized in Hawawshi and shawarma and are known for food inventions",
+
+      "Q1": "Question To Implmanteation for This brand Get All",
+      "A1": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q2": "Question To Implmanteation for This brand Get All",
+      "A2": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q3": "Question To Implmanteation for This brand Get All",
+      "A3": "Answer for main questions to implmentation for this and you must get content for this",
+      "Q4": "Question To Implmanteation for This brand Get All",
+      "A4": "Answer for main questions to implmentation for this and you must get content for this"
     }
+
+
+
 
 
 

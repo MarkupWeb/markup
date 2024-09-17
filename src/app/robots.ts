@@ -1,18 +1,14 @@
-import type { MetadataRoute } from 'next'
-
-
+import type { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = "https://markup.vip"
-
-
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://markup.vip";
 
     return {
       rules: {
         userAgent: '*',
         allow: ['/', '/blog'],
-        disallow: [],
+        disallow: ['/admin', '/login'], // Example of restricted paths
       },
       sitemap: `${baseUrl}/sitemap.xml`,
-    }
-  }
+    };
+}

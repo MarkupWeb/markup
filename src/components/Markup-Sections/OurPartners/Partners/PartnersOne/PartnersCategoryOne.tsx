@@ -28,7 +28,6 @@ function PartnersCategoryOne() {
 
       <GridList records={records} renderItem={renderCategories} />
 
-      <GridList records={records} renderItem={renderCategories} />
     </div>
   );
 }

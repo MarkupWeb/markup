@@ -40,7 +40,7 @@ function CategoryServices(itemData: TCategory) {
             />
           </div>
           <div className="">
-            <h3 className="text-lightblack text-2xl font-semibold">
+            <h3 className="text-lightblack text-md md:text-lg lg:text-xl  font-semibold pt-2">
               {heading}
             </h3>
 

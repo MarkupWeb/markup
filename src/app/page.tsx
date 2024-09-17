@@ -12,6 +12,8 @@ export default function RootPage() {
   } else if (acceptLanguage?.includes('en')) {
     redirect('/en');
   }
+
+  
   
   // If no language match or you want to show a default home page, return a component
   return (
