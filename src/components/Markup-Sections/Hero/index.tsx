@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
+import obasty from "../../../../public/images/partners/obasity_icon.png";
 
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
@@ -43,9 +44,17 @@ const Hero = () => {
           onClose={() => setOpen(false)}
         />
 
+        <div className={`absolute  top-13 z-[-1] ${local === 'ar' ? 'left-0' : 'right-0'}`}>
+          <Image
+            src={obasty}
+            alt="user-image"
+            width={0}
+            height={0}
+            className="m-auto inline-block w-[100px] md:w-[300px] text-blue-500"
+          />
+        </div>
+
         <Vonders />
-
-
 
         <div className="container">
           <div className="">
@@ -64,7 +73,6 @@ const Hero = () => {
                           >
                             {item.title}{" "}
                             <span className="text-[#F6AA02] ">
-
                               <Typewriter
                                 words={
                                   local === "ar"
@@ -116,13 +124,11 @@ const Hero = () => {
                 </div>
 
                 <div className="px-10 pb-10 w-[20rem] md:w-[30rem]">
-                 <Lottie animationData={DealImg2}  />
+                  <Lottie animationData={DealImg2} />
                 </div>
               </div>
             </div>
           </div>
-          
-          
         </div>
       </section>
     </>
