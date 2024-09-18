@@ -7,7 +7,7 @@ import Popluar from "./PopularPartners";
 import PartnersCategoryOne from "./Partners/PartnersOne/PartnersCategoryOne";
 import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
 
-import obasty from "../../../../public/Patterns/patern-3.png";
+import obasty from "../../../../public/Patterns/patern-1.png";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
