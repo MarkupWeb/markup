@@ -31,7 +31,7 @@ function CategoryTestimonials(itemData: TCategory) {
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block w-[100px] text-blue-500"
+              className="m-auto inline-block w-[64px] sm:w-[80px] md:w-[80px] lg:w-[100px] text-blue-500"
             />
           </div>
 

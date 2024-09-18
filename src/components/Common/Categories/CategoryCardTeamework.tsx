@@ -12,7 +12,7 @@ function CategoryCardTeamework(itemData: TCategory) {
   return (
     <>
       <div
-        className={`flex items-center justify-center  w-[160px]  h-[190px] sm:w-[175px]  sm:h-[195px]  md:w-[190px]  md:h-[230px]   lg:w-[250px] lg:h-[265px]  mx-auto grayscale hover:grayscale-0  shadow-xl  my-5   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-[#F5F5F5]  dark:hover:bg-white hover:text-black     duration-300 hover:shadow-xl dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
+        className={`flex items-center justify-center  w-[160px]  h-[190px] sm:w-[175px]  sm:h-[195px]  md:w-[190px]  md:h-[230px]   lg:w-[250px] lg:h-[265px]  mx-auto grayscale hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-slate-800 hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark `}
         >
         <div className={`m-3 py-11 text-center w-[100px] sm:w-[120px] md:w-[140px] lg:w-[150px] `}>
           <div className="relative ">
