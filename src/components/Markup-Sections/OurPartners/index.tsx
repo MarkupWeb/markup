@@ -26,18 +26,6 @@ const OurPartners = () => {
             center
           />
 
-          <div
-            className={`absolute   z-[-1] ${local === "ar" ? "left-0" : "right-0"}`}
-          >
-            <Image
-              src={obasty}
-              alt="user-image"
-              width={0}
-              height={0}
-              className="m-auto inline-block w-full text-blue-500"
-            />
-          </div>
-
           <HeadCategory
             title="Show there are brands"
             btnTitle="More"
