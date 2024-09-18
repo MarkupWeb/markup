@@ -13,6 +13,7 @@ import ModalVideo from "react-modal-video";
 import { Link } from "@/navigation";
 import { HiChevronRight } from "react-icons/hi2";
 import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
+import Vonders from "../Hero/vonder";
 
 
 function NewsUs() {
@@ -47,13 +48,15 @@ function NewsUs() {
   };
 
   return (
-    <section id="news" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-gray-900">
+    <section id="news" className="relative z-10 py-10 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-gray-900">
       <div className="container">
         <SectionTitle
           title="MarkUP’s Community"
           paragraph="Hear from us and learn for free!"
           center
         />
+
+        <Vonders />
 
         <div className="pb-5">
         <HeadCategory title="Learning with Us" btnTitle="More" pathText="/blog" />

@@ -44,7 +44,7 @@ const Hero = () => {
           onClose={() => setOpen(false)}
         />
 
-        <div className={`absolute  top-13 z-[-1] ${local === 'ar' ? 'left-0' : 'right-0'}`}>
+        <div className={`absolute  top-14 z-[-1] ${local === 'ar' ? 'left-0' : 'right-0'}`}>
           <Image
             src={obasty}
             alt="user-image"
