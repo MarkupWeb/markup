@@ -28,10 +28,10 @@ const Temework = () => {
         id="temework"
         className="md:py-15 lg:py-20 py-5  dark:bg-transparent"
       >
-        <div className="container">
+        <div className="container flex flex-col gap-5">
           <SectionTitle
-            title="Our creative team"
-            paragraph="MarkUP family"
+            title="Our Creative Team"
+            paragraph="MarkUP Family"
             center
           />
           <div className="">
@@ -40,6 +40,16 @@ const Temework = () => {
               renderItem={renderCategories} emptyMessage={"There is no category"}              
               
             />
+            
+          </div>
+
+          <div className="">
+            <NewList
+              records={records}
+              renderItem={renderCategories} emptyMessage={"There is no category"}              
+              
+            />
+            
           </div>
         </div>
       </section>

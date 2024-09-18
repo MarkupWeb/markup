@@ -28,7 +28,7 @@ const OurServices = () => {
 
   return (
     <>
-      <section id="services" className="relative py-10 md:py-20 lg:py-28 z-10 ">
+      <section id="services" className="relative py-10 md:py-20 lg:py-28 z-10 bg-[#F5F5F5] dark:bg-black">
         <div className="container">
           <SectionTitle
             title="Our Testimonials "
