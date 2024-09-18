@@ -58,7 +58,7 @@ function CategoryTestimonials(itemData: TCategory) {
 
         <span className="text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px] text-orangeMain  font-semibold">,,</span>
 
-        <div className="pl-4 text-[10px] sm:text-[12px] md:text-[13px] lg:text-[14px]">
+        <div className="pl-4 text-[10px] sm:text-[12px] md:text-[13px] lg:text-[14px] font-semibold">
           
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum
           maiores molestiae, possimus at corrupti.
