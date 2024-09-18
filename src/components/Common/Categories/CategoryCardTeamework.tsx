@@ -21,7 +21,7 @@ function CategoryCardTeamework(itemData: TCategory) {
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block rounded-lg mt-2"
+              className="m-auto inline-block rounded-lg mt-2 hover:text-filter-dark filter-light hover:filter-dark"
             />
           </div>
           <div className="">

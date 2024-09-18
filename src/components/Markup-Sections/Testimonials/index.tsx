@@ -7,7 +7,7 @@ import TestimonialsData from "./TestimonialsData";
 import CategoryServices from "@/components/Common/Categories/CategoryServices";
 import NewList from "@/components/Logic-List/NewList/NewList";
 import Image from "next/image";
-import obasty from "../../../../public/images/partners/obasity_icon.png";
+import patternImg from "../../../../public/images/partners/obasity_icon.png";
 import Vonders from "../Hero/vonder";
 import CategoryTestimonials from "@/components/Common/Categories/CatgegoryTestimonials";
 
@@ -40,11 +40,11 @@ const OurServices = () => {
             className={`absolute  top-14 z-[-1] ${local === "ar" ? "left-0" : "right-0"}`}
           >
             <Image
-              src={obasty}
+              src={patternImg}
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block w-[100px] md:w-[300px] text-blue-500"
+              className="m-auto inline-block w-[100px] md:w-[300px] "
             />
           </div>
 

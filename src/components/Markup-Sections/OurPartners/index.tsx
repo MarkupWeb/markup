@@ -23,9 +23,6 @@ const OurPartners = () => {
               center
             />
 
-            
-
-
             <HeadCategory title='Show there are brands' btnTitle='More' pathText='/partners'  />
   
             <div className="flex flex-col gap-8">
