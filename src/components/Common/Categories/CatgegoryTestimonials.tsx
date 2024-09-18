@@ -22,7 +22,7 @@ function CategoryTestimonials(itemData: TCategory) {
   return (
     <>
       <div
-        className={`flex  flex-col  px-2   w-[160px]  h-[190px] sm:w-[175px]  sm:h-[195px]  md:w-[190px]  md:h-[230px]   lg:w-[250px] lg:h-[265px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-[#F5F5F5] hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark `}
+        className={`flex  flex-col  px-2   w-[160px]  h-[190px] sm:w-[175px]  sm:h-[195px]  md:w-[190px]  md:h-[230px]   lg:w-[250px] lg:h-[265px]  mx-auto  hover:grayscale-0  shadow-xl   rounded-3xl    cursor-pointer text-gray-400   bg-black hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark `}
       >
         <div className={`flex relative z-[10] items-center gap-3`}>
           <div className={`absolute  top-14 z-[-1] `}>
