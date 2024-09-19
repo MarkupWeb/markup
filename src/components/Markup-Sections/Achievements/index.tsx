@@ -48,7 +48,7 @@ const Achievements = () => {
   });
 
   return (
-    <div ref={ref} className="pb-10 bg-gray-100 dark:bg-gray-900">
+    <div ref={ref} className="pb-10 bg-gray-100 dark:bg-gray-900" >
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 md:py-0">
         <div className="mt-8 sm:mt-12">
           <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-9">

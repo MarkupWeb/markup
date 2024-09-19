@@ -1,4 +1,5 @@
 "use client";
+import { useLocale } from 'next-intl';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 
@@ -18,10 +19,11 @@ interface ContactProps {
 
 const Contact = ({ data }: ContactProps) => {
   const { theme } = useTheme();
+  const locale = useLocale();
   
 
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
+    <section id="contact" className={`overflow-hidden py-16 md:py-20 lg:py-28 ${locale === "ar" ? "__rtl_lang " : ""}`}>
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -57,8 +59,8 @@ const Contact = ({ data }: ContactProps) => {
                   </div>
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
-                      <label
-                        htmlFor="phone"
+                    <label
+                        htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
                         Your Phone
@@ -72,7 +74,12 @@ const Contact = ({ data }: ContactProps) => {
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
+                    
+
+                    
                   </div>
+
+                  
                   
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
