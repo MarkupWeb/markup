@@ -9,20 +9,13 @@ import patternImg from "../../../../public/images/partners/obasity_icon.png";
 function CategoryTestimonials(itemData: TCategory) {
   const { id, heading, heading2, imgSrc } = itemData;
 
-  // popup ........
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedData, setSelectedData] = useState<TCategory | null>(null);
-
-  const handleCardClick = (data: TCategory) => {
-    setSelectedData(data);
-    setIsOpen(true);
-  };
+ 
 
   return (
     <>
       <div
-        onClick={() => handleCardClick(itemData)}
-        className={`flex flex-col px-2 w-[160px] h-[190px] sm:w-[175px] sm:h-[195px] md:w-[190px] md:h-[230px] lg:w-[250px] lg:h-[265px] mx-auto hover:grayscale-0 shadow-xl rounded-3xl cursor-pointer text-gray-400 bg-black hover:bg-white dark:hover:bg-white hover:text-black duration-300 hover:shadow-one dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark`}
+        
+        className={`flex flex-col px-2 w-[160px] h-[190px] sm:w-[175px] sm:h-[195px] md:w-[190px] md:h-[230px] lg:w-[250px] lg:h-[265px] mx-auto hover:grayscale-0 shadow-xl group transition-all  rounded-3xl cursor-pointer text-gray-400 bg-black hover:bg-white dark:hover:bg-white hover:text-black duration-300 hover:shadow-one dark:bg-dark dark:shadow-2xl my-6 dark:hover:shadow-gray-dark`}
       >
         <div className={`flex relative z-[10] items-center gap-3`}>
           <div className={`absolute top-14 z-[-1]`}>
@@ -33,7 +26,7 @@ function CategoryTestimonials(itemData: TCategory) {
             />
           </div>
 
-          <div className="w-[45px] md:w-[50px] lg:w-[63px] rounded-full bg-white border-[4px] border-blueMain/25 dark:border-orangeMain/25 mt-2">
+          <div className="w-[45px] md:w-[50px] lg:w-[63px] rounded-full bg-white border-[4px] border-orangeMain/25 mt-2">
             <Image
               src={IMG}
               alt="user-image"

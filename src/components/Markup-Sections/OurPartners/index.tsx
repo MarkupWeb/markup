@@ -28,9 +28,7 @@ const OurPartners = () => {
             <div className="flex flex-col gap-8">
               <PartnersCategoryOne />
               <PartnersCategoryOne />
-              
             </div>
-
             
           </div>
         </section>

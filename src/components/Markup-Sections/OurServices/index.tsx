@@ -35,6 +35,8 @@ const OurServices = () => {
             center
           />
 
+          
+
           <NewList
             records={records}
             renderItem={renderCategories}
