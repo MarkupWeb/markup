@@ -4,7 +4,43 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
+// Define TypeScript interfaces for better type checking (optional)
+interface Achievement {
+  title: string;
+  count: number;
+  color: string;
+  duration?: number;
+}
+
 const Achievements = () => {
+  // Dynamic data for achievements
+  const achievements: Achievement[] = [
+    {
+      title: "Paid Campaigns",
+      count: 400,
+      color: "bg-blueMain",
+      duration: 10,
+    },
+    {
+      title: "Designs and Videos",
+      count: 24,
+      color: "bg-orangeMain",
+      duration: 8,
+    },
+    {
+      title: "Official Addons",
+      count: 24,
+      color: "bg-[#5555]",
+      duration: 8,
+    },
+    {
+      title: "Our Success Partners",
+      count: 70,
+      color: "bg-blueMain",
+      duration: 8,
+    },
+  ];
+
   // useInView hook to check if the section is in the viewport
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger only once
@@ -12,66 +48,27 @@ const Achievements = () => {
   });
 
   return (
-    <div ref={ref} className="pb-10">
-      <div className="mx-auto max-w-screen-xl sm:px-6 md:py-0">
+    <div ref={ref} className="pb-10 bg-gray-100 dark:bg-gray-900">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 md:py-0">
         <div className="mt-8 sm:mt-12">
-          <dl className="grid grid-cols-2 gap-9 sm:grid-cols-2 lg:grid-cols-4 content-center items-center sm:divide-x sm:divide-gray-100 dark:sm:divide-gray-800">
-            {/* First column */}
+          <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-9">
             
-              <div className="flex flex-col px-1 py-4  text-center bg-green-400 shadow-lg rounded-md">
-                <dt className="order-last text-md font-medium text-gray-100 ">
-                Paid Campaigns
-
-                </dt>
-                <dd className="text-2xl font-extrabold text-white">+ 
-                  {inView && (
-                    <CountUp end={400} separator="," duration={10} />
+            {achievements.map((achievement, index) => (
+              <div
+                key={index}
+                className={`flex flex-col items-center p-6 text-center shadow-lg rounded-md ${achievement.color}`}
+              >
+                <dd className="mt-2 text-3xl font-extrabold text-white">
+                  +{inView && (
+                    <CountUp end={achievement.count} duration={achievement.duration || 8} />
                   )}
-                  {/* Counter will start when inView is true */}
                 </dd>
-              </div>
-
-              
-
-              <div className="flex flex-col px-1 py-4 text-center bg-orange-400 shadow-lg rounded-md">
-                <dt className="order-last text-md font-medium text-gray-100 ">
-                Designs and Videos
+                <dt className="text-lg font-medium text-gray-100">
+                  {achievement.title}
                 </dt>
-                <dd className="text-xl font-extrabold text-white">+ 
-                  {inView && <CountUp end={24} duration={8} />}
-                  {/* Counter will start when inView is true */}
-                </dd>
+                
               </div>
-
-
-              <div className="flex flex-col px-1 py-4 text-center bg-blue-500 shadow-lg rounded-md">
-                <dt className="order-last text-md font-medium text-gray-100 ">
-                  Official Addons
-                </dt>
-                <dd className="text-2xl font-extrabold text-white">+ 
-                  {inView && <CountUp end={24} duration={8} />}
-                  {/* Counter will start when inView is true */}
-                </dd>
-              </div>
-
-              <div className="flex flex-col px-1 py-4 text-center bg-[#d5c537] shadow-lg rounded-md">
-                <dt className="order-last text-md font-medium text-gray-100 ">
-                  Our Success Partners
-                </dt>
-                <dd className="text-2xl font-extrabold text-white">+ 
-                  {inView && <CountUp end={70} duration={8} />}
-                  {/* Counter will start when inView is true */}
-                </dd>
-              </div>
-
-              
-            
-
-            {/* Second column */}
-            
-            
-
-
+            ))}
           </dl>
         </div>
       </div>

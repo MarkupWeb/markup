@@ -10,7 +10,7 @@ import OurTarget from "@/components/Markup-Sections/Our-Target/OurTarget";
 import NewsUs from "@/components/Markup-Sections/NewsUs/NewsUs";
 import Temework from "@/components/Markup-Sections/Temework/Temework";
 import Testimonials from "@/components/Markup-Sections/Testimonials";
-import Contact from "@/components/Markup-Sections/Contact";
+import Contact from '@/components/Markup-Sections/Contact/Contact';
 
 interface BlogsProps {
   params: { locale: string };
@@ -80,6 +80,7 @@ export default function HomePage() {
       <NewsUs />
       <Temework />
       <Testimonials />
+      <Contact />
       
     </>
   );
