@@ -1,5 +1,6 @@
+import Head from 'next/head';
 import { Metadata } from "next";
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import Hero from "@/components/Markup-Sections/Hero";
 import OurPartners from "@/components/Markup-Sections/OurPartners";
 import Baner from "@/components/Markup-Sections/Baner/Baner";
@@ -11,17 +12,26 @@ import Temework from "@/components/Markup-Sections/Temework/Temework";
 import Testimonials from "@/components/Markup-Sections/Testimonials";
 import Contact from "@/components/Markup-Sections/Contact";
 
-
-
 interface BlogsProps {
   params: { locale: string };
 }
 
-export const generateMetadata = ({ params: { locale } }: BlogsProps): Metadata => {
-  // Define English and Arabic metadata
+// Define Metadata Type
+type MetadataType = {
+  title: string;
+  description: string;
+  twitter: {
+    card: string;
+    site: string;
+    title: string;
+    description: string;
+  };
+};
+
+// Metadata Generator for SEO
+export const generateMetadata = ({ params: { locale } }: BlogsProps): MetadataType => {
   const metadata = {
     en: {
-
       title: 'Home - English',
       description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
       twitter: {
@@ -43,14 +53,24 @@ export const generateMetadata = ({ params: { locale } }: BlogsProps): Metadata =
     },
   };
 
-  // Return metadata based on the locale
   return locale === 'ar' ? metadata.ar : metadata.en;
 };
 
-
 export default function HomePage() {
+  const locale = useLocale();
+  const metadata = generateMetadata({ params: { locale } });
+
   return (
     <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        {/* Twitter Card Metadata */}
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:site" content={metadata.twitter.site} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+      </Head>
       <Hero />
       <OurPartners />
       <Baner />
@@ -60,7 +80,7 @@ export default function HomePage() {
       <NewsUs />
       <Temework />
       <Testimonials />
-      
+      <Contact />
     </>
   );
 }
