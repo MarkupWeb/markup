@@ -39,6 +39,7 @@ const Achievements = () => {
       color: "bg-blueMain",
       duration: 8,
     },
+    
   ];
 
   // useInView hook to check if the section is in the viewport
@@ -49,21 +50,21 @@ const Achievements = () => {
 
   return (
     <div ref={ref} className="pb-10 bg-gray-100 dark:bg-gray-900" >
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 md:py-0">
+      <div className="">
         <div className="mt-8 sm:mt-12">
-          <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-9">
+          <dl className="grid grid-cols-2  md:grid-cols-4 gap-6 sm:gap-9">
             
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center p-6 text-center shadow-lg rounded-md ${achievement.color}`}
+                className={`flex flex-col items-center p-2 sm:p-4 md:p-6 lg:p-8 text-center shadow-lg rounded-md ${achievement.color}`}
               >
-                <dd className="mt-2 text-3xl font-extrabold text-white">
+                <dd className="mt-2 text-lg lg:text-3xl font-extrabold text-white">
                   +{inView && (
                     <CountUp end={achievement.count} duration={achievement.duration || 8} />
                   )}
                 </dd>
-                <dt className="text-lg font-medium text-gray-100">
+                <dt className="text-md lg:text-lg font-medium text-gray-100">
                   {achievement.title}
                 </dt>
                 

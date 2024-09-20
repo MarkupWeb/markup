@@ -1,5 +1,8 @@
 import { useLocale } from "next-intl";
+import Image from "next/image";
 import React, { memo } from "react";
+import head_icon from "../../../../public/icons/head_icon.svg";
+
 
 type HeadingProps = {
   children?: React.ReactNode;
@@ -16,9 +19,17 @@ const PartnerHeader = memo(({ children, titleEn, titleAr }: HeadingProps) => {
 
   return (
     <div className="mb-3 text-[26px] flex justify-center gap-3 py-3">
-      <span className=" border-2 border-blue-500 dark:border-[#F6AA02] rounded-lg"></span>
+      <div className=" flex items-center justify-center   w-[15px] md:w-[20px] lg:w-[25px]  cursor-pointer">
+          <Image
+            className="w-[60px] md:w-[80px] lg:w-[50px]zz"
+            src={head_icon}
+            alt={"head-icon"}
+            width={0}
+            height={0}
+          />
+        </div>
       <h2
-        className={`text-blue-950 dark:text-white text-[0.6rem] md:text-[0.9rem] lg:text-xl ${locale === "ar" ? "__rtl_lang font-semibold" : ""}`}
+        className={`text-blue-950 dark:text-white text-[0.6rem] md:text-[0.9rem] lg:text-md ${locale === "ar" ? "__rtl_lang font-semibold" : ""}`}
       >
         {title}
       </h2>

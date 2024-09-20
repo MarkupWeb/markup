@@ -76,7 +76,7 @@ const Hero = () => {
                               <Typewriter
                                 words={
                                   local === "ar"
-                                    ? ["سهله", "ذكيه", "امنه"]
+                                    ? ["تحدي", "مثابره", "تخطيط", "تحقيق"]
                                     : ["Effective", "Fun"]
                                 }
                                 loop={true}
@@ -99,7 +99,7 @@ const Hero = () => {
                               target="_blank"
                               className="mr-4 flex   items-center gap-4  rounded-3xl border-2 border-orangeMain shadow-lg group transition-all duration-300    px-6 py-2.5 font-semibold text-black hover:bg-orangeMain hover:text-white dark:text-white lg:px-8 lg:py-4"
                             >
-                              <span className="text-[11px] sm:text-[12px] md:text[14px] ">
+                              <span className="text-[8px] sm:text-[12px] md:text[14px] ">
                                 {item.btnTitle1}
                               </span>
                               <span className="scale-x transform text-[20px] ">
@@ -111,11 +111,16 @@ const Hero = () => {
                               onClick={() => setOpen(true)}
                               className="flex items-center justify-center  text-slate-800 dark:text-white"
                             >
-                              <span className="w-[60px] lg:w-[70px] ">
+                              <span className="w-[60px] lg:w-[70px]  ">
                                 <Lottie animationData={videoClick} />
                               </span>
 
+                              <span className="text-[12px] sm:text-[14px] md:text[16px] lg:text-[17px]">
                               {item.btnTitle2}
+
+                              </span>
+
+                              
                             </button>
                           </div>
                         </div>

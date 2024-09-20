@@ -71,12 +71,15 @@ export default function HomePage() {
         <meta name="twitter:title" content={metadata.twitter.title} />
         <meta name="twitter:description" content={metadata.twitter.description} />
       </Head>
+
+
       <Hero />
+      <OurTarget />
       <OurPartners />
       <Baner />
       <OurServices />
       <Features />
-      <OurTarget />
+      
       <NewsUs />
       <Temework />
       <Testimonials />

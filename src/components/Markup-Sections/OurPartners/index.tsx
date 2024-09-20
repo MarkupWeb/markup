@@ -9,6 +9,7 @@ import HeadCategory from '@/components/Common/Head-Category/HeadCategory';
 
 import obasty from "../../../../public/images/partners/obasity_icon.png"
 import Image from 'next/image';
+import PartnersCategoryTwo from './Partners/PartnersTwo/PartnersCategoryTwo';
 
 
 
@@ -18,16 +19,19 @@ const OurPartners = () => {
         <section id="partners" className="bg-[#F5F5F5] dark:bg-black py-10 md:py-20 lg:py-28 ">
           <div className="container ">
             <SectionTitle
-              title="Friends We Shared Success With"
-              paragraph="Those who have shared with us every shred of success"
+              titleEn="Friends We Shared Success With"
+              titleAr="الأصدقاء الذين شاركنا معهم النجاح"
+
+              paragraphEn="We have been sharing our vision; together, we pave the way to success and Effective excellence and focus on the future."
+              paragraphAr="شاركنا رؤيتنا معًا لرسم طرق النجاح والتميز الفعال والتركيز علي المستقبل."
               center
             />
 
-            <HeadCategory title='Show there are brands' btnTitle='More' pathText='/partners'  />
+            <HeadCategory  btnTitle='More' pathText='/partners'  />
   
             <div className="flex flex-col gap-8">
               <PartnersCategoryOne />
-              <PartnersCategoryOne />
+              <PartnersCategoryTwo/>
             </div>
             
           </div>

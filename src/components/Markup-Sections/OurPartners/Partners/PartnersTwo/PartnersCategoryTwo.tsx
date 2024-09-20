@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
-import PartnersDataOne from "./PartnersOneData";
+import PartnersTwoData from "./PartnersTwoData";
 import { useLocale, useTranslations } from "next-intl";
 import CategoryCard from "../../../../Common/Categories/CategoryCard";
 import GridList from "@/components/Logic-List/GridList/GridList";
 import PartnerHeader from "@/components/Common/PartnerHeader/PartnerHeader";
 
-function PartnersCategoryOne() {
+function PartnersCategoryTwo() {
   // translation
 
   const t = useTranslations("PartnersOne");
-  const PartnersContent = PartnersDataOne(t);
+  const PartnersContent = PartnersTwoData(t);
   const local = useLocale();
 
 
@@ -24,7 +24,7 @@ function PartnersCategoryOne() {
 
   return (
     <div className="container">
-      <PartnerHeader titleEn="From Plates to Profits: Captivating Marketing for RestaurantS" titleAr="من الأطباق إلى النتائج و الأرباح: تسويق جذاب لجميع المطاعم" />
+      <PartnerHeader titleEn="Together We Shine: Excellence in Various Marketing Fields" titleAr="معًا نتألق: بالتفوق في مجالات التسويق المختلفة" />
 
       <GridList records={records} renderItem={renderCategories} />
 
@@ -32,4 +32,4 @@ function PartnersCategoryOne() {
   );
 }
 
-export default PartnersCategoryOne;
+export default PartnersCategoryTwo;
