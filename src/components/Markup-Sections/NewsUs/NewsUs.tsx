@@ -50,8 +50,10 @@ function NewsUs() {
     <section id="news" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-gray-900">
       <div className="container">
         <SectionTitle
-          title="MarkUP’s Community"
-          paragraph="Hear from us and learn for free!"
+          titleEn="MarkUP’s Community"
+          titleAr="مجتمع MarkUP"
+          paragraphEn="Hear from us and learn for free!"
+          paragraphAr="اسمع منا وتعلم مجانًا!"
           center
         />
 

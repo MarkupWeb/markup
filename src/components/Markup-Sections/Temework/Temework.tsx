@@ -30,8 +30,10 @@ const Temework = () => {
       >
         <div className="container flex flex-col gap-5">
           <SectionTitle
-            title="Our Creative Team"
-            paragraph="MarkUP Family"
+            titleEn="Our Creative Team"
+            titleAr="فريقنا الإبداعي"
+            paragraphEn="MarkUP Family"
+            paragraphAr="عائله ماركب"
             center
           />
           <div className="">

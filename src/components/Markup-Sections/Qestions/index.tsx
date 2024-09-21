@@ -44,8 +44,10 @@ const Features = () => {
       <section id="features" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5]  dark:bg-gray-dark">
         <div className="container">
           <SectionTitle
-            title="Questions Always Looking For"
-            paragraph="Most important and related FQA’s  that might cross your mind"
+            titleEn="Questions Always Looking For"
+            titleAr="الاسئله التلي تبحث عنها دائما"
+            paragraphEn="Most important and related FQA’s  that might cross your mind"
+            paragraphAr="الأهم والأكثر صلة من FQA التي قد تخطر ببالك"
             center
           />
 

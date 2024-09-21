@@ -30,8 +30,10 @@ const OurServices = () => {
         <div className="container">
           
           <SectionTitle
-            title="Strategies and plans "
-            paragraph="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
+            titleEn="Strategies and plans "
+            titleAr="Strategies and plans "
+            paragraphEn="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
+            paragraphAr=""
             center
           />
 
