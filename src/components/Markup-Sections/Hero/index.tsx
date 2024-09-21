@@ -89,7 +89,7 @@ const Hero = () => {
                             </span>
                           </h1>
 
-                          <p className="mb-8 text-[10px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text[12px] md:text-sm lg::text-md">
+                          <p className="mb-8 text-[12px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text[14px] md:text-sm lg::text-md">
                             {item.description}
                           </p>
 
