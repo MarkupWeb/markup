@@ -24,19 +24,19 @@ const Achievements = () => {
     {
       title: "Designs and Videos",
       count: 24,
-      color: "bg-orangeMain",
+      color: "bg-green-300",
       duration: 8,
     },
     {
       title: "Official Addons",
       count: 24,
-      color: "bg-[#5555]",
+      color: "bg-orangeMain",
       duration: 8,
     },
     {
       title: "Our Success Partners",
       count: 70,
-      color: "bg-blueMain",
+      color: "bg-red-600",
       duration: 8,
     },
     
@@ -57,7 +57,7 @@ const Achievements = () => {
             {achievements.map((achievement, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center p-2 sm:p-4 md:p-6 lg:p-8 text-center shadow-lg rounded-md ${achievement.color}`}
+                className={`flex flex-col items-center p-2 sm:p-4 md:p-6  text-center shadow-lg rounded-md ${achievement.color}`}
               >
                 <dd className="mt-2 text-lg lg:text-3xl font-extrabold text-white">
                   +{inView && (

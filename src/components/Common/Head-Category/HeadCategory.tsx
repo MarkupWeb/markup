@@ -37,7 +37,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
         </div>
           
     
-        <h2 className="text-[#013D90]  dark:text-white text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] font-semibold">
+        <h2 className="text-blueMain  dark:text-white text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px] ">
           {title}
         </h2>
       </div>
