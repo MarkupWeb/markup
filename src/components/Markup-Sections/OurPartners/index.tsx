@@ -27,6 +27,8 @@ const OurPartners = () => {
               center
             />
 
+            
+
             <HeadCategory title='All Partners'  btnTitle='More' pathText='/partners'  />
   
             <div className="flex flex-col gap-8">

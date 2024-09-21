@@ -23,7 +23,7 @@ function PartnersCategoryTwo() {
   );
 
   return (
-    <div className="container">
+    <div className="container pt-8">
       <PartnerHeader titleEn="Together We Shine: Excellence in Various Marketing Fields" titleAr="معًا نتألق: بالتفوق في مجالات التسويق المختلفة" />
 
       <GridList records={records} renderItem={renderCategories} />

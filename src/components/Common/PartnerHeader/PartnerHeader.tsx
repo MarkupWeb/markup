@@ -29,7 +29,7 @@ const PartnerHeader = memo(({ children, titleEn, titleAr }: HeadingProps) => {
           />
         </div>
       <h2
-        className={`text-blue-950 dark:text-white text-[0.6rem] md:text-[0.9rem] lg:text-md ${locale === "ar" ? "__rtl_lang font-semibold" : ""}`}
+        className={`text-blue-950 dark:text-white text-[0.6rem] sm:text-[0.8rem] md:text-[1rem] lg:text-lg ${locale === "ar" ? "__rtl_lang font-semibold" : ""}`}
       >
         {title}
       </h2>

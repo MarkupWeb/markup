@@ -23,7 +23,7 @@ function PartnersCategoryOne() {
   );
 
   return (
-    <div className="container">
+    <div className="container pt-10">
       <PartnerHeader titleEn="From Plates to Profits: Captivating Marketing for RestaurantS" titleAr="من الأطباق إلى النتائج و الأرباح: تسويق جذاب لجميع المطاعم" />
 
       <GridList records={records} renderItem={renderCategories} />

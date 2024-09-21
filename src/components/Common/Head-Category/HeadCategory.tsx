@@ -23,7 +23,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <div className="container flex items-center justify-between pt-4">
+    <div className="flex items-center justify-between pt-4">
       <div className="flex items-center gap-2">
         
       <div className=" flex items-center justify-center   w-[20px] md:w-[25px] lg:w-[30px]  cursor-pointer">

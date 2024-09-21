@@ -75,8 +75,11 @@ export default function HomePage() {
 
       <Hero />
       <OurTarget />
+
       <OurPartners />
       <Baner />
+
+      
       <OurServices />
       <Features />
       

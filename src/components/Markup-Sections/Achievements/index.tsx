@@ -24,7 +24,7 @@ const Achievements = () => {
     {
       title: "Designs and Videos",
       count: 24,
-      color: "bg-green-300",
+      color: "bg-green-400",
       duration: 8,
     },
     {
@@ -49,7 +49,7 @@ const Achievements = () => {
   });
 
   return (
-    <div ref={ref} className="pb-10 bg-gray-100 dark:bg-gray-900" >
+    <div ref={ref} className="pb-10" >
       <div className="">
         <div className="mt-8 sm:mt-12">
           <dl className="grid grid-cols-2  md:grid-cols-4 gap-6 sm:gap-9">
