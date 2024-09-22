@@ -27,7 +27,7 @@ export default function WhatsUpLink() {
       {isVisible && (
         <div
           aria-label="WhatsApp Link"
-          className="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-md bg-slate-800 dark:bg-white text-green-500  shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp group"
+          className="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-slate-800 dark:bg-white text-green-500  shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp group"
         >
           <span className="text-[2rem]">
             <FaWhatsapp />
