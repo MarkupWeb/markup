@@ -51,7 +51,7 @@ const Baner = () => {
 
 
         <Link
-          href="https://wa.me/+201000936297"
+          href="https://wa.me/+201015882008"
           className=" flex items-center justify-center"
           target="_blank"
         >

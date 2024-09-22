@@ -26,7 +26,7 @@ const socialLinks: socialLinks[] = [
   },
 
   {
-    link: "https://wa.me/+201555319484",
+    link: "https://wa.me/+201015882008",
     width: 14,
     iconLink: <FaWhatsapp />,
   },
