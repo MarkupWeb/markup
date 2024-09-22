@@ -1,12 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { HiChevronRight, HiChevronLeft } from "react-icons/hi2";
-
-
 
 type SliderListProps<T> = {
   records?: T[];
@@ -16,7 +14,7 @@ type SliderListProps<T> = {
 
 type HasId = { id: number };
 
-const NewList = <T extends HasId>({
+const OneListSlider = <T extends HasId>({
   records = [],
   renderItem,
   emptyMessage,
@@ -47,43 +45,12 @@ const NewList = <T extends HasId>({
       onMouseLeave={() => setIsHovered(false)}
     >
       <Swiper
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
+        spaceBetween={30}
         slidesPerView={1}
-        spaceBetween={10}
-        breakpoints={{
-          340: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          440: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          540: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 14,
-          },
-
-          900: {
-            slidesPerView: 4,
-            spaceBetween: 14,
-          },
-
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 14,
-          },
-
-          
-        }}
+        pagination={false} 
+        speed={800} 
+        className="w-full h-full"
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
@@ -97,23 +64,21 @@ const NewList = <T extends HasId>({
           ))
         ) : (
           <SwiperSlide>
-            <div>
-              thre is now category
-            </div>
+            <div>{emptyMessage}</div>
           </SwiperSlide>
         )}
       </Swiper>
 
       <div
-        className={` md:block w-full absolute top-[40%] z-10 px-4  ${
+        className={`md:block w-full absolute top-[40%] z-10 px-4 ${
           isHovered
-            ? "opacity-100 transition-opacity duration-300 ease-in-out"
-            : "opacity-70 transition-opacity duration-300 ease-in-out"
+            ? "opacity-100 transition-opacity duration-700 ease-in-out"
+            : "opacity-70 transition-opacity duration-700 ease-in-out"
         }`}
       >
         <div
           ref={prevRef}
-          className={`p-2  lg:p-3 rounded-full  ${
+          className={`p-2 lg:p-3 rounded-full ${
             isAtBeginning ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
           } cursor-pointer shadow-sm absolute -left-1 lg:-left-4`}
         >
@@ -123,7 +88,7 @@ const NewList = <T extends HasId>({
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
             isAtEnd ? "bg-black/70 text-white" : "bg-[#F6AA02] text-black"
-          } cursor-pointer shadow-sm absolute right-1  lg:-right-4`}
+          } cursor-pointer shadow-sm absolute right-1 lg:-right-4`}
         >
           <HiChevronRight />
         </div>
@@ -132,4 +97,4 @@ const NewList = <T extends HasId>({
   );
 };
 
-export default NewList;
+export default OneListSlider;

@@ -10,6 +10,7 @@ import Image from "next/image";
 import patternImg from "../../../../public/images/partners/obasity_icon.png";
 import Vonders from "../Hero/vonder";
 import CategoryTestimonials from "@/components/Common/Categories/CatgegoryTestimonials";
+import OneListSlider from "@/components/Logic-List/NewList/OneListSlider";
 
 // CAROUSEL DATA
 
@@ -50,12 +51,12 @@ const OurServices = () => {
             />
           </div>
 
-          <NewList
+          <OneListSlider
             records={records}
             renderItem={renderCategories}
             emptyMessage="There is no category"
           />
-          <NewList
+          <OneListSlider
             records={records}
             renderItem={renderCategories}
             emptyMessage="There is no category"

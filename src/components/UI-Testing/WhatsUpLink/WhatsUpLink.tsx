@@ -31,17 +31,15 @@ export default function WhatsUpLink() {
         <Link href={"https://wa.me/+201015882008"}  target="_blank">
         <div
           aria-label="WhatsApp Link"
-          className="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-slate-800 dark:bg-white text-green-500  shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp group"
+          className="relative flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-green-500 dark:bg-white text-white  shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp group"
         >
           <span className="text-[2rem]">
             <FaWhatsapp />
           </span>
 
           {/* Improved Hover Message */}
-          <span className="absolute left-full ml-4 top-1/2 transform -translate-y-1/2 opacity-0 bg-orangeMain text-white text-sm px-4 py-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:ml-6 whitespace-nowrap">
-          {locale === "en" ? "Call Us Now" : "تواصل معنا الان"}
-          
-            
+          <span className="absolute  left-full ml-4 top-1/2 transform -translate-y-1/2 opacity-0 lg:opacity-100 bg-orangeMain text-white text-[14px] px-4 py-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:ml-6 whitespace-nowrap">
+          {locale === "en" ? "Call Us Now" : "تواصل معنا الان"}      
             <span className="absolute top-1/2 left-[-8px] transform -translate-y-1/2 border-r-[10px] border-orangeMain border-y-[8px] border-y-transparent"></span>
           </span>
         </div>
