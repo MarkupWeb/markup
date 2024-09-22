@@ -3,13 +3,13 @@ import React from "react";
 
 const Baner = () => {
   return (
-    <div className="bg-slate-800 dark:bg-white  py-10 lg:py-20 gap-8  shadow-xl text-center">
+    <div className="bg-white dark:bg-slate-900 shadow-md  py-10 lg:py-20 gap-8   text-center">
       <div className="container">
-        <p className="pb-3 text-sm font-semibold text-white dark:text-dark">
+        <p className="pb-3 text-sm font-semibold ">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.{" "}
           <span className="text-orange-400">Molestiae, sit.</span>
         </p>
-        <h1 className=" text-center text-white dark:text-blue-950 text-[1.4rem] lg:text-[2.5rem] tracking-wide font-thin mb-5 ">
+        <h1 className=" text-center text-[1.4rem] lg:text-[2.5rem] tracking-wide font-thin mb-5 ">
           LET’S START <span className=" font-medium">YOUR PROJECT</span>
         </h1>
 

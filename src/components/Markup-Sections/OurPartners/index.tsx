@@ -16,7 +16,7 @@ import PartnersCategoryTwo from './Partners/PartnersTwo/PartnersCategoryTwo';
 const OurPartners = () => {
     return (
       <>
-        <section id="partners" className="bg-[#F5F5F5] dark:bg-black py-10 md:py-20 lg:py-28 ">
+        <section id="partners" className="bg-[#F5F5F5] dark:bg-slate-800/95 py-10 md:py-20 lg:py-28 ">
           <div className="container ">
             <SectionTitle
               titleEn="Friends We Shared Success With"

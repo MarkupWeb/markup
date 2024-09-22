@@ -31,9 +31,9 @@ const OurServices = () => {
           
           <SectionTitle
             titleEn="Strategies and plans "
-            titleAr="Strategies and plans "
+            titleAr="الاسترتجيات و التخطيط"
             paragraphEn="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
-            paragraphAr=""
+            paragraphAr="استرتجيات التسويق الوصول الي نجحات كبيره في العمل"
             center
           />
 
