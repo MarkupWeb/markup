@@ -29,7 +29,7 @@ const OurPartners = () => {
 
             
 
-            <HeadCategory title='All Partners'  btnTitle='More' pathText='/partners'  />
+            <HeadCategory title_en='All Partners' title_ar='جميع شركائنا' btnTitle_en='More' btnTitle_ar='المزيد' pathText='/partners'  />
   
             <div className="flex flex-col gap-8">
               <PartnersCategoryOne />

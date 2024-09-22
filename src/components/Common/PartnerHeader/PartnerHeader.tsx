@@ -21,7 +21,7 @@ const PartnerHeader = memo(({ children, titleEn, titleAr }: HeadingProps) => {
     <div className="mb-3 text-[26px] flex justify-center gap-3 py-3">
       <div className=" flex items-center justify-center   w-[15px] md:w-[20px] lg:w-[25px]  cursor-pointer">
           <Image
-            className="w-[60px] md:w-[80px] lg:w-[50px]zz"
+            className="w-[60px] md:w-[80px] lg:w-[50px]"
             src={head_icon}
             alt={"head-icon"}
             width={0}

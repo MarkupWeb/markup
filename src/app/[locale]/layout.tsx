@@ -9,6 +9,7 @@ import ScrollToTop from "@/components/Common/ScrollToTop";
 import { ProvidersTheme } from "../Providers/ThemeProvider";
 import Footer from "@/components/Common/Footer";
 import { Metadata } from "next";
+import WhatsUpLink from "@/components/UI-Testing/WhatsUpLink/WhatsUpLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,6 +56,7 @@ export default async function RootLayout({
               {children}
             </main>
             <Footer />
+            <WhatsUpLink />
             <ScrollToTop />
           </NextIntlClientProvider>
         </ProvidersTheme>

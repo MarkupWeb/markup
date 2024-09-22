@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://markup.vip" || "https://markupagency.net";
+  const baseUrl = "https://markup.vip";
 
   return [
     {

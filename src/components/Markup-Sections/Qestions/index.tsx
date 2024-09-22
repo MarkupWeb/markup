@@ -52,7 +52,7 @@ const Features = () => {
           />
 
           <div className="mb-7 px-3">
-          <HeadCategory title="Questions Always Looking For" btnTitle="More" pathText="/questions" />
+          <HeadCategory title_en='All Questionsers' title_ar='جميع الاسئله' btnTitle_en='More' btnTitle_ar='المزيد' pathText='/questions'  />
 
           </div>
 

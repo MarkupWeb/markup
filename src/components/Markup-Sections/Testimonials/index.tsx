@@ -31,10 +31,10 @@ const OurServices = () => {
       <section id="services" className="relative py-10 md:py-20 lg:py-28 z-10 bg-[#F5F5F5] dark:bg-slate-900">
         <div className="container">
           <SectionTitle
-            titleEn="Our Testimonials "
-            titleAr="اراء العملاء عن MarkUP"
-            paragraphEn="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
-            paragraphAr="Our marketing strategies are designed to drive success for your business through a comprehensive and customized approach and we put them into action plans that are achieving your goals"
+            titleEn="What Our Clients Are Saying"
+            titleAr="ماذا يقول عملاؤنا"
+            paragraphEn="Lots Of Experiences, Stories, Influence And Successes"
+            paragraphAr="تجارب و قصص وتاثير ونجحات كثيره"
             center
           />
 
