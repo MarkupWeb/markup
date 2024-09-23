@@ -37,7 +37,7 @@ function Services({ params }) {
   const { locale } = params;
 
   return (
-    <section id="services" className="py-16 bg-gray-100">
+    <section id="services" className="py-16 pt-[120px] bg-gray-100 ">
       <div className="container">
         <h1 className="text-3xl font-bold mb-6">{locale === 'ar' ? 'خدماتنا' : 'Our Services'}</h1>
         <p className="mb-4">
