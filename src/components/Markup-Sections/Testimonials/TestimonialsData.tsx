@@ -1,103 +1,80 @@
-import img01 from "../../../../public/images/about/imgOne.svg"
-import img02 from "../../../../public/images/about/imgTwo.svg"
-import img03 from "../../../../public/images/about/imgThree.svg"
+import img01 from "../../../../public/images/about/imgOne.svg";
+import img02 from "../../../../public/images/about/imgTwo.svg";
+import img03 from "../../../../public/images/about/imgThree.svg";
 
-
-
-
-interface DataType {
+interface TestimonialDataType {
   id?: number;
-  heading: string;
-  heading2: string;
+  clientName: string;
+  feedback: string;
   imgSrc: string;
-  name: string;
-  students: number;
-  classes: number;
-  price: number;
+  designation: string;
+  company: string;
   rating: number;
 }
 
-const TestimonialsData = (t: (key: string) => string): DataType[] => [
+const TestimonialsData = (t: (key: string) => string): TestimonialDataType[] => [
   {
     id: 1,
-    heading: "Full stack modern",
-    heading2: "javascript",
-    name: "Colt stelle",
+    clientName: "John Doe",
+    feedback: "This service exceeded our expectations. The team was professional, and the results were outstanding!",
     imgSrc: img01,
-    students: 150,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    designation: "CEO",
+    company: "Tech Innovators Inc.",
+    rating: 5.0,
   },
   {
     id: 2,
-    heading: "Design system",
-    heading2: "with React programme",
-    name: "Colt stelle",
+    clientName: "Jane Smith",
+    feedback: "We saw a significant improvement in our workflow after implementing their solutions. Highly recommended.",
     imgSrc: img02,
-    students: 130,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    designation: "CTO",
+    company: "NextGen Solutions",
+    rating: 4.8,
   },
   {
     id: 3,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
+    clientName: "Michael Brown",
+    feedback: "Amazing experience! The team understood our needs and delivered beyond what we expected.",
     imgSrc: img03,
-    students: 120,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    designation: "Head of Marketing",
+    company: "Creative Minds Co.",
+    rating: 4.9,
   },
-
   {
     id: 4,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
-    imgSrc: img03,
-    students: 120,
-    classes: 12,
-    price: 20,
+    clientName: "Emily Davis",
+    feedback: "Their attention to detail and commitment to delivering quality work is impressive. We’ll definitely be working with them again.",
+    imgSrc: img02,
+    designation: "Project Manager",
+    company: "Bright Futures Ltd.",
     rating: 4.7,
   },
-
   {
     id: 5,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
+    clientName: "Chris Wilson",
+    feedback: "Professional and reliable. The team was responsive and made sure everything ran smoothly.",
     imgSrc: img03,
-    students: 120,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    designation: "Operations Manager",
+    company: "Efficient Logistics",
+    rating: 4.8,
   },
-
   {
     id: 6,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
-    imgSrc: img02,
-    students: 120,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    clientName: "Laura Johnson",
+    feedback: "We were impressed with the quality and timeliness of the project delivery. Highly recommended for anyone looking for great results.",
+    imgSrc: img01,
+    designation: "Director",
+    company: "Global Ventures",
+    rating: 5.0,
   },
-
   {
     id: 7,
-    heading: "Design banner",
-    heading2: "with Figma",
-    name: "Colt stelle",
-    imgSrc: img03,
-    students: 120,
-    classes: 12,
-    price: 20,
-    rating: 4.7,
+    clientName: "Daniel Thompson",
+    feedback: "They provided top-notch service and went above and beyond to meet our expectations.",
+    imgSrc: img02,
+    designation: "Founder",
+    company: "Tech Pioneers",
+    rating: 4.9,
   },
 ];
 

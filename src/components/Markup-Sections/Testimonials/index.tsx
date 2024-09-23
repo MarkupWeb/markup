@@ -56,11 +56,7 @@ const OurServices = () => {
             renderItem={renderCategories}
             emptyMessage="There is no category"
           />
-          <OneListSlider
-            records={records}
-            renderItem={renderCategories}
-            emptyMessage="There is no category"
-          />
+          
         </div>
       </section>
     </>
