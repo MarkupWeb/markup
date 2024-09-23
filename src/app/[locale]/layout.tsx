@@ -36,7 +36,7 @@ const metadataContent = {
     canonical: "https://markup.vip/en",
   },
   ar: {
-    title: "مارك أب - وكالة التسويق",
+    title: "Markup - وكالة التسويق",
     description: "التسويق للمطاعم والحلول التجارية ، وشراء وسائل الإعلام وخطط التسويق.",
     keywords: [
       "وكالة مارك أب",
