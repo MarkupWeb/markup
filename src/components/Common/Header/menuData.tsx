@@ -15,7 +15,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 1,
     title: t("partners"),
-    path: "#partners",
+    path: "/partners",
     newTab: false,
   },
 
@@ -24,7 +24,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 3,
     title: t("services"),
-    path: "#services",
+    path: "/services",
     newTab: false,
   },
   
@@ -33,7 +33,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 4,
     title: t("features"),
-    path: "#features",
+    path: "/questions",
     newTab: false,
   },
 
@@ -41,14 +41,14 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 5,
     title: t("news"),
-    path: "#news",
+    path: "/blog",
     newTab: false,
   },
 
 {
     id: 6,
     title: t("temework"),
-    path: "#temework",
+    path: "/temework",
     newTab: false,
   },
 
