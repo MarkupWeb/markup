@@ -6,6 +6,7 @@ export type TypeTestimonial = {
   clientName: string;
   feedback: string;
   imgSrc: string;
+  companyImg: string; // New field
   designation: string;
   company: string;
   rating: number;
