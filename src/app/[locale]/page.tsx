@@ -25,7 +25,16 @@ type MetadataType = {
     site: string;
     title: string;
     description: string;
+    image?: string;
   };
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    type: string;
+    image?: string;
+  };
+  canonical: string;
 };
 
 // Metadata Generator for SEO
@@ -36,58 +45,99 @@ export const generateMetadata = ({ params: { locale } }: BlogsProps): MetadataTy
       description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
       twitter: {
         card: 'summary_large_image',
-        site: 'markup.vip/en',
-        title: 'Blogs - English',
-        description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
+        site: '@markup_vip',
+        title: 'Home - English',
+        description: 'Learn with us about marketing, sales, and advertising.',
+        image: '/path-to-image.jpg', // Optional: Add Twitter card image
       },
+      openGraph: {
+        title: 'Home - English',
+        description: 'Learn with us a lot about marketing, sales, and paid advertising.',
+        url: 'https://markup.vip/en',
+        type: 'website',
+        image: '/path-to-image.jpg', // Optional: Add OpenGraph image
+      },
+      canonical: 'https://markup.vip/en',
     },
     ar: {
       title: 'الرئسيه - العربية',
       description: "التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات",
       twitter: {
         card: 'summary_large_image',
-        site: 'markup.vip/ar',
+        site: '@markup_vip',
         title: 'الرئسيه - العربية',
         description: "التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات",
+        image: '/path-to-image-ar.jpg', // Optional: Add Twitter card image
       },
+      openGraph: {
+        title: 'الرئسيه - العربية',
+        description: "التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات",
+        url: 'https://markup.vip/ar',
+        type: 'website',
+        image: '/path-to-image-ar.jpg', // Optional: Add OpenGraph image
+      },
+      canonical: 'https://markup.vip/ar',
     },
   };
 
+  // Fallback to English if locale is not available
   return locale === 'ar' ? metadata.ar : metadata.en;
 };
 
 export default function HomePage() {
-  const locale = useLocale();
+  const locale = useLocale() as 'en' | 'ar';
   const metadata = generateMetadata({ params: { locale } });
 
   return (
     <>
       <Head>
+        {/* SEO Tags */}
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link rel="canonical" href={metadata.canonical} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        {metadata.openGraph.image && <meta property="og:image" content={metadata.openGraph.image} />}
+
         {/* Twitter Card Metadata */}
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:site" content={metadata.twitter.site} />
         <meta name="twitter:title" content={metadata.twitter.title} />
         <meta name="twitter:description" content={metadata.twitter.description} />
-      </Head>
+        {metadata.twitter.image && <meta name="twitter:image" content={metadata.twitter.image} />}
 
+        {/* Hreflang Tags for Language */}
+        <link rel="alternate" href="https://markup.vip/en" hrefLang="en" />
+        <link rel="alternate" href="https://markup.vip/ar" hrefLang="ar" />
+        <link rel="alternate" href="https://markup.vip" hrefLang="x-default" />
+        
+        {/* Structured Data (JSON-LD) for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": metadata.title,
+            "description": metadata.description,
+            "url": metadata.canonical,
+            "inLanguage": locale,
+          })}
+        </script>
+      </Head>
 
       <Hero />
       <OurTarget />
-
       <OurPartners />
       <Baner />
-
-      
       <OurServices />
       <Features />
-      
       <NewsUs />
       <Temework />
       <Testimonials />
       <Contact />
-      
     </>
   );
 }
