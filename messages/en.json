@@ -11,10 +11,10 @@
 
   "Menu": {
     "home": "Home",
-    "features": "AboutUs",
+    "features": "Questions",
     "services": "Services",
     
-    "news": "NewsUs",
+    "news": "Blogs",
     "temework": "Temework",
     "pages": "Pages",
     "contact": "ContactUs",

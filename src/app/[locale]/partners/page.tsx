@@ -1,60 +1,85 @@
-import BlogsHero from '@/components/Markup-Sections/BlogsHero'
 import { Metadata } from 'next';
-import React from 'react'
-
-
+import React from 'react';
 
 interface BlogsProps {
   params: { locale: string };
 }
 
 export const generateMetadata = ({ params: { locale } }: BlogsProps): Metadata => {
-  // Define English and Arabic metadata
   const metadata = {
     en: {
-
-      title: 'Partners - English',
-      description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
+      title: 'Our Partners - Marketing Solutions',
+      description: 'Discover our partners who empower us with exceptional marketing solutions. Learn how we collaborate for success.',
+      keywords: 'partners, marketing, sales, advertising, business solutions',
       twitter: {
         card: 'summary_large_image',
         site: '@yoursite',
-        title: 'Partners - English',
-        description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
+        title: 'Our Partners - Marketing Solutions',
+        description: 'Explore our trusted partners in marketing.',
+      },
+      openGraph: {
+        title: 'Our Partners - Marketing Solutions',
+        description: 'Discover our partners who empower us with exceptional marketing solutions.',
+        url: 'https://markup.vip/our-clients/en',
+        type: 'website',
+        image: '/path-to-your-image.jpg', // Add an image for OpenGraph
       },
     },
     ar: {
-      title: 'شركائنا',
-      description: 'تعلم معنا الكثير عن التسويق ,المبيعات ,الاعلانات المدفوعه, حمالات التسويق',
+      title: 'شركائنا - حلول التسويق',
+      description: 'اكتشف شركائنا الذين يساعدوننا في تقديم حلول تسويقية مميزة.',
+      keywords: 'شركاء، تسويق، مبيعات، إعلانات، حلول الأعمال',
       twitter: {
         card: 'summary_large_image',
         site: '@yoursite',
-        title: 'شركائنا - العربية',
-        description: 'تعلم معنا الكثير عن التسويق ,المبيعات ,الاعلانات المدفوعه, حمالات التسويق',
+        title: 'شركائنا - حلول التسويق',
+        description: 'اكتشف شركائنا في التسويق.',
+      },
+      openGraph: {
+        title: 'شركائنا - حلول التسويق',
+        description: 'اكتشف شركائنا الذين يساعدوننا في تقديم حلول تسويقية مميزة.',
+        url: 'https://markup.vip/our-clients/ar',
+        type: 'website',
+        image: '/path-to-your-image-ar.jpg', // Add an image for OpenGraph
       },
     },
   };
 
-  // Return metadata based on the locale
   return locale === 'ar' ? metadata.ar : metadata.en;
 };
 
+function OurClients({ params }: BlogsProps) {
+  const { locale } = params;
 
-function page() {
   return (
     <section
-        id="home"
-        className={` relative z-10 overflow-hidden  pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] `}
-      >
+      id="our-clients"
+      className="relative z-10 overflow-hidden pb-16 pt-[120px] dark:bg-gray-dark"
+    >
+      <div className="container">
+        <h1 className="text-2xl font-bold mb-4">{locale === 'ar' ? 'شركاؤنا' : 'Our Partners'}</h1>
+        <p className="text-lg">
+          {locale === 'ar'
+            ? 'اكتشف شركائنا الذين يساعدوننا في تقديم حلول تسويقية مميزة.'
+            : 'Discover our trusted partners who empower us with exceptional marketing solutions.'}
+        </p>
 
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              Welcome In  Page
-            </div>
-          </div>
+        {/* Clients List */}
+        <div className="mt-8">
+          <h2 className="text-xl font-semibold mb-4">
+            {locale === 'ar' ? 'شركاؤنا' : 'Our Partners'}
+          </h2>
+          <ul className="list-disc list-inside">
+            <li>Partner 1</li>
+            <li>Partner 2</li>
+            <li>Partner 3</li>
+            <li>Partner 4</li>
+            <li>Partner 5</li>
+          </ul>
         </div>
-      </section>
-  )
+      </div>
+    </section>
+  );
 }
 
-export default page
+export default OurClients;

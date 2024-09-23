@@ -48,7 +48,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
 {
     id: 6,
     title: t("temework"),
-    path: "/temework",
+    path: "/teamwork",
     newTab: false,
   },
 
