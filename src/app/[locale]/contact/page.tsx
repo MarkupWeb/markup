@@ -72,6 +72,12 @@ function ContactPage({ params }) {
                 <input type="text" id="name" className="mt-1 block w-full p-2 border border-gray-300 rounded" required />
               </div>
               <div className="mb-4">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                  {locale === 'ar' ? 'موبيل' : 'Phone'}
+                </label>
+                <input type="text" id="name" className="mt-1 block w-full p-2 border border-gray-300 rounded" required />
+              </div>
+              <div className="mb-4">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   {locale === 'ar' ? 'البريد الإلكتروني' : 'Email'}
                 </label>
