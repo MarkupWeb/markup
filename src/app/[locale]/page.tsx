@@ -52,7 +52,7 @@ export const generateMetadata = ({ params: { locale } }: BlogsProps): MetadataTy
 
   const metadata = {
     en: {
-      title: 'Home - English',
+      title: 'Markup - Marketing Agency',
       description: 'Learn with us a lot about marketing, sales, paid advertising, and marketing campaigns.',
       openGraph: {
         ...baseMetadata.openGraph,
@@ -68,7 +68,7 @@ export const generateMetadata = ({ params: { locale } }: BlogsProps): MetadataTy
       canonical: 'https://markup.vip/en',
     },
     ar: {
-      title: 'الرئسيه - العربية',
+      title: "Markup - Marketing Agency",
       description: 'التسويق للمطاعم ,حملات الاعلانات المدفوعه,زياده المبيعات للمنتجات',
       openGraph: {
         ...baseMetadata.openGraph,
