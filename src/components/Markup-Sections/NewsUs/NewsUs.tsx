@@ -77,9 +77,9 @@ function NewsUs() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden ">
             {filteredData.map((item) => (
-              <article className="border-[1px] border-[#5d9dfc] " key={item.id}>
+              <article className="border-[1px] border-[#5d9dfc] shadow-xl  " key={item.id}>
                 <ModalVideo
                   channel="youtube"
                   isOpen={openVideoId === item.videoId}

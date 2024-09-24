@@ -47,7 +47,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
         <Link href={pathText} aria-label={btnTitle}>
           <div
             dir={dir}
-            className="group flex items-center gap-1 bg-slate-800 hover:bg-[#F6AA02] text-[12px] px-2 py-1 rounded-lg shadow-lg text-white transition-all duration-300"
+            className="group flex items-center gap-1 bg-slate-800 dark:bg-blueMain hover:bg-[#F6AA02] dark:hover:bg-[#F6AA02] text-[12px] px-2 py-1 rounded-lg shadow-lg text-white transition-all duration-300"
           >
             {btnTitle} {/* Dynamic button title based on locale */}
             <HiChevronRight

@@ -79,7 +79,7 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className={`  flex flex-col relative z-10 items-center p-2 sm:p-4 md:p-6 text-center shadow-xl  rounded-lg bg-white dark:bg-dark`}
+              className={`  flex flex-col relative z-10 items-center p-2 sm:p-4 md:p-6 text-center shadow-xl  rounded-lg bg-white dark:bg-slate-800`}
               aria-label={` ${
                 locale === 'en'
                   ? achievement.title_en

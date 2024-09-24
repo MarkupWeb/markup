@@ -24,7 +24,7 @@ const Baner = () => {
   const local = useLocale();
 
   return (
-    <div className="bg-white relative z-10 dark:bg-slate-900 shadow-md  py-10 lg:py-20 gap-8   text-center">
+    <div className="bg-white relative z-10 dark:bg-slate-800  shadow-md  py-10 lg:py-20 gap-8   text-center">
       <div className="container">
       <div className={`absolute  top-14 z-[-1] ${local === 'ar' ? 'left-0' : 'right-0'}`}>
           <Image

@@ -16,7 +16,7 @@ const OurTarget: React.FC = () => {
   const OurTargetContent = OurTargetData(t);
 
   return (
-    <section id="atchievements" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-slate-800">
+    <section id="atchievements" className="py-10 md:py-20 lg:py-28 bg-[#F5F5F5] dark:bg-slate-900">
       <div className="container">
         <SectionTitle
           titleEn="Vision to Reality"

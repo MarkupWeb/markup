@@ -26,7 +26,7 @@ const Temework = () => {
     <>
       <section
         id="temework"
-        className="md:py-15 lg:py-20 py-5  dark:bg-transparent"
+        className="md:py-15 lg:py-20 py-5   bg-[#F5F5F5] dark:bg-slate-900"
       >
         <div className="container flex flex-col gap-5">
           <SectionTitle
