@@ -77,9 +77,9 @@ function NewsUs() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden ">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden py-4 px-5 ">
             {filteredData.map((item) => (
-              <article className="border-[1px] border-[#5d9dfc] shadow-xl bg-white dark:bg-transparent  " key={item.id}>
+              <article className="border-[1px] border-[#5d9dfc]  dark:bg-transparent shadow-lg bg-white  dark:shadow-slate-700 " key={item.id}>
                 <ModalVideo
                   channel="youtube"
                   isOpen={openVideoId === item.videoId}
