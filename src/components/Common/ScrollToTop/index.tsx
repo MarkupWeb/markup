@@ -4,12 +4,11 @@ import { useEffect, useState } from "react";
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Custom smooth scroll to top using requestAnimationFrame for better performance
+  // Smooth scroll using requestAnimationFrame for better performance
   const scrollToTop = () => {
     const scrollStep = () => {
-      const distance = window.scrollY;
-      if (distance > 0) {
-        window.scrollBy(0, -distance / 10); // Adjust 10 to control speed
+      if (window.scrollY > 0) {
+        window.scrollBy(0, -window.scrollY / 10); // Adjust this factor to control speed
         requestAnimationFrame(scrollStep);
       }
     };
@@ -17,16 +16,26 @@ export default function ScrollToTop() {
   };
 
   useEffect(() => {
+    // Debouncing scroll event for better performance
+    let timeoutId: NodeJS.Timeout;
+
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
+      timeoutId = setTimeout(() => {
+        setIsVisible(window.pageYOffset > 300);
+      }, 100); // Adjust the debounce delay if needed
     };
 
     window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      window.removeEventListener("scroll", toggleVisibility);
+    };
   }, []);
 
   return (
@@ -34,10 +43,10 @@ export default function ScrollToTop() {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          onKeyPress={(e) => e.key === 'Enter' && scrollToTop()} // Keyboard accessibility
-          tabIndex={0}
-          aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-blueMain dark:bg-orangeMain text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-lg"
+          aria-label="Scroll to top"
+          tabIndex={0} // Make the button accessible via keyboard
+          role="button" // Define the role for accessibility
+          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-blueMain dark:bg-orangeMain text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-lg focus:outline-none"
         >
           <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
         </div>
