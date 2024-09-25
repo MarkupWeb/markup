@@ -12,10 +12,10 @@ function OtherBrandsCard(itemData: TCategory) {
   return (
     <>
       <div
-        className={`hover:grayscale-0 cursor-pointer text-gray-400 mx-5 bg-white shadow-blue-300 shadow-lg dark:shadow-blue-500 rounded-md duration-300 hover:shadow-one   `}
+        className={`hover:grayscale-0 cursor-pointer text-gray-400 mx-5 bg-white shadow-blue-300 shadow-lg dark:shadow-blue-400 rounded-md duration-300 hover:shadow-one`}
       >
         <div className={` my-4 `}>
-          <div className=" flex items-center justify-center sm:w-[100px] md:w-[120px] md:h-[90px] rounded-full ">
+          <div className=" flex items-center justify-center w-[60px] sm:w-[80px] md:w-[100px] lg:md:w-[120px] md:h-[90px] rounded-full ">
             <Image
               src={imgSrc}
               alt="user-image"

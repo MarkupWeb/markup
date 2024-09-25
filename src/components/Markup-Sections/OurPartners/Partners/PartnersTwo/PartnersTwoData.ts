@@ -84,10 +84,10 @@ const PartnersTwoData = (t: (key: string) => string): DataType[] => [
     imgSrc: lines,
   },
 
-  // {
-  //   id: 10,
-  //   imgSrc: organo,
-  // },
+  {
+    id: 10,
+    imgSrc: organo,
+  },
 
   {
     id: 11,
