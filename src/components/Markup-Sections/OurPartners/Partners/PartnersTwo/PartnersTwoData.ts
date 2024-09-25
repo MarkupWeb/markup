@@ -1,19 +1,29 @@
 // Images
-import Img01 from "../../../../../../public/images/Partnars_Logos/32-ebn-masr.png";
-import Img02 from "../../../../../../public/images/Partnars_Logos/01-saltaoon.png";
-import Img03 from "../../../../../../public/images/Partnars_Logos/03-baheya.png";
-import Img04 from "../../../../../../public/images/Partnars_Logos/02-nos-dasta.png";
-import Img05 from "../../../../../../public/images/Partnars_Logos/07-elnegma-elnabolsya.png";
-import Img06 from "../../../../../../public/images/Partnars_Logos/09-mshakeek.png";
-import Img07 from "../../../../../../public/images/Partnars_Logos/26-shawerma-halb.png";
-import Img08 from "../../../../../../public/images/Partnars_Logos/06-bonoh.png";
-
-// import Img04 from "../../../../../public/images/Partnars_Logos/04-dokan-fteer.png";
-// import Img05 from "../../../../../public/images/Partnars_Logos/05-kbsha.png";
-// import Img06 from "../../../../../public/images/Partnars_Logos/06-bonoh.png";
-// import Img10 from "../../../../../public/images/Partnars_Logos/10-basha.png";
-// import Img11 from "../../../../../public/images/Partnars_Logos/11-chicken-planet.png";
-// import Img12 from "../../../../../public/images/Partnars_Logos/12-chicken-fila.png";
+import sine from "../../../../../../public/images/other_brands/01-sine.png";
+import dr_cut from "../../../../../../public/images/other_brands/02-dr_cut.png";
+import dasta_cafe from "../../../../../../public/images/other_brands/03-dasta_cafe.png";
+import drivera from "../../../../../../public/images/other_brands/04-drivera.png";
+import elagora from "../../../../../../public/images/other_brands/05-elagora.png";
+import trio_mood from "../../../../../../public/images/other_brands/06-trio_mood.png";
+import elaf from "../../../../../../public/images/other_brands/07-elaf.png";
+import Dr_Rash_plastic_surgery_clinic from "../../../../../../public/images/other_brands/08-Dr_Rash_plastic_surgery_clinic.png";
+import lines from "../../../../../../public/images/other_brands/09-lines.png";
+import organo from "../../../../../../public/images/other_brands/10-organo.png";
+import skyhills from "../../../../../../public/images/other_brands/11-skyhills.png";
+import harm_elsham from "../../../../../../public/images/other_brands/12-harm_elsham.png";
+import cairo_guys from "../../../../../../public/images/other_brands/13-cairo_guys.png";
+import fish_fish from "../../../../../../public/images/other_brands/14-fish_fish.png";
+import hambrger_coses from "../../../../../../public/images/other_brands/15-hambrger&coses.png";
+import fool_nor from "../../../../../../public/images/other_brands/16-fool_nor.png";
+import koshary_elkdawy from "../../../../../../public/images/other_brands/17-koshary_elkdawy.png";
+import checken_fila from "../../../../../../public/images/other_brands/18-checken_fila.png";
+import adrnalin from "../../../../../../public/images/other_brands/19-adrnalin.png";
+import kababgy_elsyda from "../../../../../../public/images/other_brands/20-kababgy-elsyda.png";
+import X_Larg from "../../../../../../public/images/other_brands/21-X_Larg.png";
+import Smatshd from "../../../../../../public/images/other_brands/22-Smatshd.png";
+import checken_planet from "../../../../../../public/images/other_brands/23-checken_planet.png";
+import Ftar_Asha from "../../../../../../public/images/other_brands/24-Ftar&Asha.png";
+import CIRCUS from "../../../../../../public/images/other_brands/25-CIRCUS.png";
 
 interface ContentItem {
   title: string;
@@ -34,200 +44,114 @@ interface DataType {
 const PartnersTwoData = (t: (key: string) => string): DataType[] => [
   {
     id: 1,
-    heading: t("P1.heading"),
-    heading2: t("P1.heading2"),
-    imgSrc: Img01,
-    content: [
-      {
-        title: t("P1.Q1"),
-        description: t("P1.A1"),
-      },
-      {
-        title: t("P1.Q2"),
-        description: t("P1.A2"),
-      },
-      {
-        title: t("P1.Q3"),
-        description: t("P1.A3"),
-      },
-      {
-        title: t("P1.Q4"),
-        description: t("P1.A4"),
-      },
-    ],
+    imgSrc: sine,
   },
+
   {
     id: 2,
-    heading: t("P2.heading"),
-    heading2: t("P2.heading2"),
-    imgSrc: Img02,
-    content: [
-      {
-        title: t("P2.Q1"),
-        description: t("P2.A1"),
-      },
-      {
-        title: t("P2.Q2"),
-        description: t("P2.A2"),
-      },
-      {
-        title: t("P2.Q3"),
-        description: t("P2.A3"),
-      },
-      {
-        title: t("P2.Q4"),
-        description: t("P2.A4"),
-      },
-    ],
+    imgSrc: dr_cut,
   },
+
   {
     id: 3,
-    heading: t("P3.heading"),
-    heading2: t("P3.heading2"),
-    imgSrc: Img03,
-    content: [
-      {
-        title: t("P3.Q1"),
-        description: t("P3.A1"),
-      },
-      {
-        title: t("P3.Q2"),
-        description: t("P3.A2"),
-      },
-      {
-        title: t("P3.Q3"),
-        description: t("P3.A3"),
-      },
-      {
-        title: t("P3.Q4"),
-        description: t("P3.A4"),
-      },
-    ],
+    imgSrc: dasta_cafe,
   },
 
   {
     id: 4,
-    heading: t("P4.heading"),
-    heading2: t("P4.heading2"),
-    imgSrc: Img04,
-    content: [
-      {
-        title: t("P4.Q1"),
-        description: t("P4.A1"),
-      },
-      {
-        title: t("P4.Q2"),
-        description: t("P4.A2"),
-      },
-      {
-        title: t("P4.Q3"),
-        description: t("P4.A3"),
-      },
-      {
-        title: t("P4.Q4"),
-        description: t("P4.A4"),
-      },
-    ],
+    imgSrc: drivera,
   },
-
   {
     id: 5,
-    heading: t("P5.heading"),
-    heading2: t("P5.heading2"),
-    imgSrc: Img05,
-    content: [
-      {
-        title: t("P5.Q1"),
-        description: t("P5.A1"),
-      },
-      {
-        title: t("P5.Q2"),
-        description: t("P5.A2"),
-      },
-      {
-        title: t("P5.Q3"),
-        description: t("P5.A3"),
-      },
-      {
-        title: t("P5.Q4"),
-        description: t("P5.A4"),
-      },
-    ],
+    imgSrc: elagora,
   },
-
   {
     id: 6,
-    heading: t("P6.heading"),
-    heading2: t("P6.heading2"),
-    imgSrc: Img06,
-    content: [
-      {
-        title: t("P6.Q1"),
-        description: t("P6.A1"),
-      },
-      {
-        title: t("P6.Q2"),
-        description: t("P6.A2"),
-      },
-      {
-        title: t("P6.Q3"),
-        description: t("P6.A3"),
-      },
-      {
-        title: t("P6.Q4"),
-        description: t("P6.A4"),
-      },
-    ],
+    imgSrc: trio_mood,
   },
 
   {
     id: 7,
-    heading: t("P6.heading"),
-    heading2: t("P6.heading2"),
-    imgSrc: Img07,
-    content: [
-      {
-        title: t("P6.Q1"),
-        description: t("P6.A1"),
-      },
-      {
-        title: t("P6.Q2"),
-        description: t("P6.A2"),
-      },
-      {
-        title: t("P6.Q3"),
-        description: t("P6.A3"),
-      },
-      {
-        title: t("P6.Q4"),
-        description: t("P6.A4"),
-      },
-    ],
+    imgSrc: elaf,
   },
 
   {
     id: 8,
-    heading: t("P6.heading"),
-    heading2: t("P6.heading2"),
-    imgSrc: Img08,
-    content: [
-      {
-        title: t("P6.Q1"),
-        description: t("P6.A1"),
-      },
-      {
-        title: t("P6.Q2"),
-        description: t("P6.A2"),
-      },
-      {
-        title: t("P6.Q3"),
-        description: t("P6.A3"),
-      },
-      {
-        title: t("P6.Q4"),
-        description: t("P6.A4"),
-      },
-    ],
+    imgSrc: Dr_Rash_plastic_surgery_clinic,
+  },
+  {
+    id: 9,
+    imgSrc: lines,
+  },
+
+  // {
+  //   id: 10,
+  //   imgSrc: organo,
+  // },
+
+  {
+    id: 11,
+    imgSrc: skyhills,
+  },
+
+
+  {
+    id: 12,
+    imgSrc: harm_elsham,
+  },
+
+
+  {
+    id: 13,
+    imgSrc: cairo_guys,
+  },
+{
+    id: 14,
+    imgSrc: fish_fish,
+  },
+{
+    id: 15,
+    imgSrc: hambrger_coses,
+  },
+{
+    id: 16,
+    imgSrc: fool_nor,
+  },
+{
+    id: 17,
+    imgSrc: koshary_elkdawy,
+  },
+{
+    id: 18,
+    imgSrc: checken_fila,
+  },
+{
+    id: 19,
+    imgSrc: adrnalin,
+  },
+  {
+    id: 20,
+    imgSrc: kababgy_elsyda,
+  },
+{
+    id: 21,
+    imgSrc: X_Larg,
+  },
+{
+    id: 22,
+    imgSrc: checken_planet,
+  },
+{
+    id: 23,
+    imgSrc: Smatshd,
+  },
+{
+    id: 24,
+    imgSrc: Ftar_Asha,
+  },
+{
+    id: 25,
+    imgSrc: CIRCUS,
   },
 
   // Add more items similarly...
