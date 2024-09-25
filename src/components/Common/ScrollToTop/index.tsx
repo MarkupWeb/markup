@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useEffect, useState, useCallback } from "react";
 
 export default function ScrollToTop() {
@@ -6,22 +6,23 @@ export default function ScrollToTop() {
 
   // Memoize the toggleVisibility function to avoid unnecessary re-renders
   const toggleVisibility = useCallback(() => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    setIsVisible(window.pageYOffset > 300);
   }, []);
 
-  // Use a more efficient scroll event listener (optional)
+  // Use a more efficient scroll event listener
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility, { passive: true });
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, [toggleVisibility]);
+    const handleScroll = () => {
+      setIsVisible(window.pageYOffset > 300);
+    };
 
-  // Consider using a simpler scroll method (optional)
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Scroll smoothly to the top
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
