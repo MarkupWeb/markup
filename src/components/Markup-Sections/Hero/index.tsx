@@ -67,7 +67,7 @@ const Hero = () => {
                     ? heroContent.map((item) => (
                         <div className="" key={item.id}>
                           <h1
-                            className={`mb-5 overflow-hidden text-[1rem] font-bold leading-tight text-blue-900 dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
+                            className={`mb-5 overflow-hidden text-[0.8rem] font-bold leading-tight text-blue-900 dark:text-white sm:text-[1.4rem] sm:leading-tight md:text-[1.5rem] md:leading-tight ${
                               local === "ar" ? "" : ""
                             }  `}
                           >
@@ -89,7 +89,7 @@ const Hero = () => {
                             </span>
                           </h1>
 
-                          <p className="mb-8 text-[12px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text[14px] md:text-sm lg::text-md">
+                          <p className="mb-8 text-[11px] !leading-relaxed text-body-color dark:text-body-color-dark sm:text[14px] md:text-sm lg::text-md">
                             {item.description}
                           </p>
 
