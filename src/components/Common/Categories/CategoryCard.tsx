@@ -35,7 +35,7 @@ function CategoryCard(itemData: TCategory) {
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block w-[70px] md:w-[120px] bg-[#FCFAEE] shadow-md rounded-full dark:p-1"
+              className="m-auto inline-block w-[70px] md:w-[120px] bg-[#FCFAEE] dark:bg-white shadow-lg dark:shadow-2xl rounded-full dark:p-1"
             />
           </div>
           <div className="">

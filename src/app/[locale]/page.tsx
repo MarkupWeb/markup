@@ -140,6 +140,7 @@ export default function HomePage() {
       <OurServices />
       <Features />
       <NewsUs />
+      <Baner />
       <Temework />
       <Testimonials />
       
