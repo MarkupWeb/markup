@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import { useEffect, useState, useCallback } from "react";
 
@@ -22,17 +21,23 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll smoothly to the top with a configurable speed
-  const scrollToTop = (duration = 500) => {
+  // Smooth scroll with a slower speed using easing function
+  const scrollToTop = (duration = 1500) => {
     const start = performance.now();
     const startY = window.pageYOffset;
+
+    const easeOutCubic = (t) => (--t) * t * t + 1; // Easing function for smooth effect
+
     const scrollStep = (timestamp) => {
       const elapsed = timestamp - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const scrollTo = startY + (0 - startY) * progress;
+      const progress = Math.min(elapsed / duration, 1); // Ensure progress does not exceed 1
+      const easedProgress = easeOutCubic(progress); // Apply easing to progress
+
+      const scrollTo = startY * (1 - easedProgress);
       window.scrollTo(0, scrollTo);
+
       if (progress < 1) {
-        requestAnimationFrame(scrollStep);
+        requestAnimationFrame(scrollStep); // Continue scrolling until done
       }
     };
 
@@ -43,7 +48,7 @@ export default function ScrollToTop() {
     <div className="fixed bottom-8 right-8 z-[99]">
       {isVisible && (
         <button
-          onClick={() => scrollToTop(500)} // Adjust duration as needed
+          onClick={() => scrollToTop(1500)} // Scroll duration is set to 1500ms for slower scroll
           aria-label="Scroll to top"
           className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-blueMain dark:bg-orangeMain text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-lg"
         >
