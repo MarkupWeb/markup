@@ -86,6 +86,7 @@ export default async function RootLayout({
         <link rel="canonical" href={metadataLocale.canonical} />
         <meta property="og:description" content={metadataLocale.openGraph.description} />
       </head>
+
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
         <ProvidersTheme>
           <NextIntlClientProvider locale={locale} messages={messages}>
@@ -94,11 +95,14 @@ export default async function RootLayout({
               {children}
             </main>
             <Footer />
-            <WhatsUpLink />
-            <ScrollToTop />
+            
+            
           </NextIntlClientProvider>
+          <WhatsUpLink />
+          <ScrollToTop />
         </ProvidersTheme>
       </body>
+
     </html>
   );
 }

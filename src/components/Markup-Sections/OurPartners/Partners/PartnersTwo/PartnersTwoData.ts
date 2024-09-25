@@ -94,38 +94,36 @@ const PartnersTwoData = (t: (key: string) => string): DataType[] => [
     imgSrc: skyhills,
   },
 
-
   {
     id: 12,
     imgSrc: harm_elsham,
   },
 
-
   {
     id: 13,
     imgSrc: cairo_guys,
   },
-{
+  {
     id: 14,
     imgSrc: fish_fish,
   },
-{
+  {
     id: 15,
     imgSrc: hambrger_coses,
   },
-{
+  {
     id: 16,
     imgSrc: fool_nor,
   },
-{
+  {
     id: 17,
     imgSrc: koshary_elkdawy,
   },
-{
+  {
     id: 18,
     imgSrc: checken_fila,
   },
-{
+  {
     id: 19,
     imgSrc: adrnalin,
   },
@@ -133,23 +131,23 @@ const PartnersTwoData = (t: (key: string) => string): DataType[] => [
     id: 20,
     imgSrc: kababgy_elsyda,
   },
-{
+  {
     id: 21,
     imgSrc: X_Larg,
   },
-{
+  {
     id: 22,
     imgSrc: checken_planet,
   },
-{
+  {
     id: 23,
     imgSrc: Smatshd,
   },
-{
+  {
     id: 24,
     imgSrc: Ftar_Asha,
   },
-{
+  {
     id: 25,
     imgSrc: CIRCUS,
   },
