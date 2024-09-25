@@ -1,13 +1,9 @@
 import SectionTitle from '@/components/Common/SectionTitle/SectionTitle';
 import React from 'react'
-import PopularPartners from './PopularPartners/PopluarPartners';
-import PopularPartnerRTL from './PopularPartners/PopularPartnerRTL';
-import Popluar from './PopularPartners';
+
 import PartnersCategoryOne from './Partners/PartnersOne/PartnersCategoryOne';
 import HeadCategory from '@/components/Common/Head-Category/HeadCategory';
 
-import obasty from "../../../../public/images/partners/obasity_icon.png"
-import Image from 'next/image';
 import PartnersCategoryTwo from './Partners/PartnersTwo/PartnersCategoryTwo';
 
 
