@@ -1,7 +1,6 @@
 import SectionTitle from '@/components/Common/SectionTitle/SectionTitle';
 import React from 'react'
 import PopularPartners from './PopularPartners/PopluarPartners';
-import PartnersCategory from './Partners/PartnersCategory';
 import PopularPartnerRTL from './PopularPartners/PopularPartnerRTL';
 import Popluar from './PopularPartners';
 import PartnersCategoryOne from './Partners/PartnersOne/PartnersCategoryOne';
