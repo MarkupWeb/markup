@@ -22,7 +22,7 @@ type GridListProps<T> = {
         <div className="">Loading....</div>
       );
     return (
-      <div className="grid grid-cols-3 sm:grid-cols-4  md:grid-cols-5 lg:grid-cols-8 px-8">
+      <div className="grid grid-cols-4 sm:grid-cols-4  md:grid-cols-5 lg:grid-cols-8 lg:px-8 pt-5">
         {renderList}
       </div>
     );

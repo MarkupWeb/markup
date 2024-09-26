@@ -10,25 +10,21 @@ interface OtherBrandsCardProps extends TCategory {
 
 // Memoize the component to avoid unnecessary re-renders
 const OtherBrandsCard: React.FC<OtherBrandsCardProps> = memo(({ id, heading, imgSrc, className = "" }) => {
-  // Check if imgSrc is valid
-  if (!imgSrc) {
-    console.error(`Image source not provided for card with id: ${id}`);
-    return null; // Return null if no image source
-  }
+  
 
   return (
     <div
     key={id}
-    className={`hover:grayscale-0 cursor-pointer text-gray-400 mx-5 bg-white shadow-blue-300 shadow-lg dark:shadow-blue-400 rounded-md duration-300 hover:shadow-one`}
+    className={`flex items-center justify-center hover:grayscale-0 cursor-pointer text-gray-400 mx-5 my-2 bg-white w-[62px] h-[60px] sm:w-[90px] sm:h-[70px] md:w-[110px] md:h-[85px] lg:w-[100px] xl:w-[110px] shadow-blue-300 shadow-lg dark:shadow-blue-400 rounded-md duration-300 hover:shadow-one`}
   >
     <div className={` my-4 `} >
-      <div className=" flex items-center justify-center w-[60px] sm:w-[80px] md:w-[100px] lg:md:w-[120px] md:h-[90px] rounded-full ">
+      <div className=" flex items-center justify-center w-[55px] sm:w-[70px] md:w-[75px] lg:md:w-[120px] md:h-[90px] rounded-full ">
         <Image
           src={imgSrc}
-          alt="user-image"
+          alt={heading}
           width={0}
           height={0}
-          className="w-[80px] "
+          className="lg:w-[80px] "
         />
       </div>
       

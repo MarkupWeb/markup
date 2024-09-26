@@ -22,7 +22,7 @@ const GridList = <T extends { id?: number }>({
       <div className="">Loading....</div>
     );
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-3 lg:grid-cols-5">
+    <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-3 lg:grid-cols-5 md:pt-6">
       {renderList}
     </div>
   );

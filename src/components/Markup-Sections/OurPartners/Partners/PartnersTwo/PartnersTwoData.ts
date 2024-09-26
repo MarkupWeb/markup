@@ -36,123 +36,143 @@ interface DataType {
   id?: number;
   heading?: string;
   heading2?: string;
-  imgSrc?: any;
+  imgSrc?: string | any;
   name?: string;
   content?: ContentItem[]; // Add this property
 }
+
+
 
 const PartnersTwoData = (t: (key: string) => string): DataType[] => [
   {
     id: 1,
     imgSrc: sine,
+    heading: "Sine", // Heading for the image
   },
-
   {
     id: 2,
     imgSrc: dr_cut,
+    heading: "Dr. Cut", // Heading for the image
   },
-
   {
     id: 3,
     imgSrc: dasta_cafe,
+    heading: "Dasta Cafe", // Heading for the image
   },
-
   {
     id: 4,
     imgSrc: drivera,
+    heading: "Drivera", // Heading for the image
   },
   {
     id: 5,
     imgSrc: elagora,
+    heading: "Elagora", // Heading for the image
   },
   {
     id: 6,
     imgSrc: trio_mood,
+    heading: "Trio Mood", // Heading for the image
   },
-
   {
     id: 7,
     imgSrc: elaf,
+    heading: "Elaf", // Heading for the image
   },
-
   {
     id: 8,
     imgSrc: Dr_Rash_plastic_surgery_clinic,
+    heading: "Dr. Rash Plastic Surgery Clinic", // Heading for the image
   },
   {
     id: 9,
     imgSrc: lines,
+    heading: "Lines", // Heading for the image
   },
-
   {
     id: 10,
     imgSrc: organo,
+    heading: "Organo", // Heading for the image
   },
-
   {
     id: 11,
     imgSrc: skyhills,
+    heading: "Skyhills", // Heading for the image
   },
-
   {
     id: 12,
     imgSrc: harm_elsham,
+    heading: "Harm Elsham", // Heading for the image
   },
-
   {
     id: 13,
     imgSrc: cairo_guys,
+    heading: "Cairo Guys", // Heading for the image
   },
   {
     id: 14,
     imgSrc: fish_fish,
+    heading: "Fish Fish", // Heading for the image
   },
   {
     id: 15,
     imgSrc: hambrger_coses,
+    heading: "Hamburger & Coses", // Heading for the image
   },
   {
     id: 16,
     imgSrc: fool_nor,
+    heading: "Fool Nor", // Heading for the image
   },
   {
     id: 17,
     imgSrc: koshary_elkdawy,
+    heading: "Koshary Elkdawy", // Heading for the image
   },
   {
     id: 18,
     imgSrc: checken_fila,
+    heading: "Checken Fila", // Heading for the image
   },
   {
     id: 19,
     imgSrc: adrnalin,
+    heading: "Adrnalin", // Heading for the image
   },
   {
     id: 20,
     imgSrc: kababgy_elsyda,
+    heading: "Kababgy Elsyda", // Heading for the image
   },
   {
     id: 21,
     imgSrc: X_Larg,
+    heading: "X Larg", // Heading for the image
   },
   {
     id: 22,
     imgSrc: checken_planet,
+    heading: "Checken Planet", // Heading for the image
   },
   {
     id: 23,
     imgSrc: Smatshd,
+    heading: "Smatshd", // Heading for the image
   },
   {
     id: 24,
     imgSrc: Ftar_Asha,
+    heading: "Ftar & Asha", // Heading for the image
   },
   {
     id: 25,
     imgSrc: CIRCUS,
+    heading: "CIRCUS", // Heading for the image
   },
-
-  // Add more items similarly...
 ];
 
 export default PartnersTwoData;
+
+
+
+
