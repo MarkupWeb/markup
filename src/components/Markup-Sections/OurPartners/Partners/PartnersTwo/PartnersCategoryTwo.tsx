@@ -26,7 +26,6 @@ function PartnersCategoryTwo() {
         titleEn="Together We Shine: Excellence in Various Marketing Fields"
         titleAr="معًا نتألق: بالتفوق في مجالات التسويق المختلفة"
       />
-      
 
       <GridList2 records={records} renderItem={renderCategories} />
     </div>
