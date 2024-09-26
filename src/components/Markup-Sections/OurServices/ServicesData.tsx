@@ -15,6 +15,7 @@ interface DataType {
   classes: number;
   price: number;
   rating: number;
+  
 }
 
 const ServicesData = (t: (key: string) => string): DataType[] => [

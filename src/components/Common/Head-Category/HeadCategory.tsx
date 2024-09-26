@@ -3,6 +3,7 @@ import { HiChevronRight } from "react-icons/hi2";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import head_icon from "../../../../public/icons/head_icon.svg";
+import { memo } from "react";
 
 interface SubTitlesProps {
   title_en: string;
@@ -12,11 +13,11 @@ interface SubTitlesProps {
   pathText: string;
 }
 
-const HeadCategory: React.FC<SubTitlesProps> = ({
+const HeadCategory: React.FC<SubTitlesProps> = memo(({
   title_en,
   title_ar,
-  btnTitle_en,
-  btnTitle_ar,
+  btnTitle_en = "Default Button", // Provide default values
+  btnTitle_ar = "زر افتراضي", // Provide default values
   pathText,
 }) => {
   const locale = useLocale();
@@ -33,7 +34,7 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
           <Image
             className="w-[60px] md:w-[80px] lg:w-[50px]"
             src={head_icon}
-            alt="head-icon"
+            alt="Head icon" // More descriptive alt text
             width={30}
             height={30}
           />
@@ -60,6 +61,9 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
       )}
     </div>
   );
-};
+});
+
+// Assign a display name for better debugging
+HeadCategory.displayName = "HeadCategory";
 
 export default HeadCategory;

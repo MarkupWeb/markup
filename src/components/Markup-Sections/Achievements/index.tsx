@@ -3,7 +3,6 @@
 import React, { useMemo } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import { useRouter } from "next/router"; // Next.js hook to get locale
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import patternImg from "../../../../public/images/partners/obasity_icon.png";
@@ -27,11 +26,9 @@ const Achievements = () => {
       {
         title_en: "Success Partners",
         title_ar: "شركاء النجاح",
-        
         count: 500,
         color: "bg-green-400",
         Tcolor: "text-green-400",
-
         duration: 10,
       },
       {
@@ -40,14 +37,11 @@ const Achievements = () => {
         count: 2400,
         color: "bg-blueMain ",
         Tcolor: "text-blueMain dark:text-white",
-
         duration: 8,
       },
       {
         title_en: "Designs & Videos",
         title_ar: "تصاميم وفيديوهات",
-
-        
         count: 5000,
         color: "bg-orangeMain",
         Tcolor: "text-orangeMain",
@@ -56,7 +50,6 @@ const Achievements = () => {
       {
         title_en: "Official Addons",
         title_ar: "الاضافات الرسمية",
-        
         count: 1000,
         color: "bg-red-600",
         Tcolor: "text-red-600",
@@ -79,21 +72,20 @@ const Achievements = () => {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className={`  flex flex-col relative z-10 items-center p-2 sm:p-4 md:p-6 text-center shadow-xl  rounded-lg bg-white dark:bg-slate-800`}
-              aria-label={` ${
-                locale === 'en'
-                  ? achievement.title_en
-                  : achievement.title_ar
+              className={`flex flex-col relative z-10 items-center p-2 sm:p-4 md:p-6 text-center shadow-xl rounded-lg bg-white dark:bg-slate-800`}
+              aria-label={`${
+                locale === "en" ? achievement.title_en : achievement.title_ar
               } count: ${achievement.count}`}
             >
-              <div className={`absolute top-2 z-[-1]`}>
-            <Image
-              src={patternImg}
-              alt="pattern"
-              className="m-auto inline-block w-[40px] sm:w-[40px] md:w-[50px] lg:w-[60px] text-blue-500  dark:filter-dark"
-            />
-          </div>
-              <dd className={`mt-2 text-lg lg:text-3xl font-bold  ${achievement.Tcolor}`}>
+              <div className="absolute top-2 z-[-1]">
+                <Image
+                  src={patternImg}
+                  alt="pattern"
+                  loading="lazy"
+                  className="m-auto inline-block w-[40px] sm:w-[40px] md:w-[50px] lg:w-[60px] text-blue-500 dark:filter-dark"
+                />
+              </div>
+              <dd className={`mt-2 text-lg lg:text-3xl font-bold ${achievement.Tcolor}`}>
                 +{inView && (
                   <CountUp
                     end={achievement.count}
@@ -101,10 +93,8 @@ const Achievements = () => {
                   />
                 )}
               </dd>
-              <dt className="text-md lg:text-lg font-medium ">
-                {locale === 'en'
-                  ? achievement.title_en
-                  : achievement.title_ar}
+              <dt className="text-md lg:text-lg font-medium">
+                {locale === "en" ? achievement.title_en : achievement.title_ar}
               </dt>
             </div>
           ))}
