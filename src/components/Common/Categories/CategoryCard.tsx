@@ -26,7 +26,7 @@ function CategoryCard(itemData: TCategory) {
 
       <div
         onClick={() => handleCardClick(itemData)}
-        className={`flex justify-center   w-[135px] sm:w-[180px] md:w-[180px] bg-white    h-[140px] md:h-[190px] lg:w-[180px] xl:w-[210px] my-6 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer text-gray-400    hover:bg-white dark:hover:bg-white hover:text-black    duration-300 hover:shadow-one  dark:bg-slate-800  dark:shadow-2xl  dark:hover:shadow-gray-dark `}
+        className={`flex justify-center   w-[135px] sm:w-[180px] md:w-[180px] bg-white    h-[140px] md:h-[190px] lg:w-[180px] xl:w-[210px] my-6 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer text-gray-400    hover:bg-white dark:hover:bg-white hover:text-black  shadow-[#222]/20   duration-300 hover:shadow-one  dark:bg-slate-800  dark:shadow-lg dark:shadow-blue-950  dark:hover:shadow-gray-dark `}
       >
         <div className={`my-3 pt-2 text-center `}>
           <div className="relative ">
